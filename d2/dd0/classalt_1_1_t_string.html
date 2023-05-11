@@ -1,0 +1,1695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: alt::TString クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d2/dd0/classalt_1_1_t_string.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="../../d5/d03/classalt_1_1_t_string-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alt::TString クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>文字列に関するWindowsAPIを集約したクラス  
+ <a href="../../d2/dd0/classalt_1_1_t_string.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../de/d15/_t_string_8h_source.html">TString.h</a>&gt;</code></p>
+<div class="dynheader">
+alt::TString の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d2/dd0/classalt_1_1_t_string.png" usemap="#alt::TString_map" alt=""/>
+  <map id="alt::TString_map" name="alt::TString_map">
+<area href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="alt::WindowsLibrary" shape="rect" coords="0,0,122,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2fb70d94c8fdba6d90145a01aec1ce3f"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a2fb70d94c8fdba6d90145a01aec1ce3f">TString</a> ()</td></tr>
+<tr class="memdesc:a2fb70d94c8fdba6d90145a01aec1ce3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a2fb70d94c8fdba6d90145a01aec1ce3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0ca3941f743e8db51db3541ee341cb"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a0a0ca3941f743e8db51db3541ee341cb">TString</a> (const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;string)</td></tr>
+<tr class="memdesc:a0a0ca3941f743e8db51db3541ee341cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a0a0ca3941f743e8db51db3541ee341cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7416904594513fed8fa1f79cb81c09f"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ae7416904594513fed8fa1f79cb81c09f">TString</a> (INT length)</td></tr>
+<tr class="memdesc:ae7416904594513fed8fa1f79cb81c09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:ae7416904594513fed8fa1f79cb81c09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd2a7d1163b669f42a4091f914346b4"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a5dd2a7d1163b669f42a4091f914346b4">TString</a> (LPCTSTR lpctszString)</td></tr>
+<tr class="memdesc:a5dd2a7d1163b669f42a4091f914346b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a5dd2a7d1163b669f42a4091f914346b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd0d6824add8c506575610e00735037"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a4cd0d6824add8c506575610e00735037">~TString</a> ()</td></tr>
+<tr class="memdesc:a4cd0d6824add8c506575610e00735037"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:a4cd0d6824add8c506575610e00735037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a51b127c9cb609ea1e93c20a230ec0b"><td class="memItemLeft" align="right" valign="top">INT APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a2a51b127c9cb609ea1e93c20a230ec0b">Byte</a> () const</td></tr>
+<tr class="memdesc:a2a51b127c9cb609ea1e93c20a230ec0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部で確保している文字列(バイト数)を取得します。  <br /></td></tr>
+<tr class="separator:a2a51b127c9cb609ea1e93c20a230ec0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a3fda12bee865d18b9e2983a402cbff"><td class="memItemLeft" align="right" valign="top">LPCTSTR APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a8a3fda12bee865d18b9e2983a402cbff">Ctr</a> () const</td></tr>
+<tr class="memdesc:a8a3fda12bee865d18b9e2983a402cbff"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部で確保している文字列ポインタを取得します。  <br /></td></tr>
+<tr class="separator:a8a3fda12bee865d18b9e2983a402cbff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad2a465990b22f3b6bc701bc3d933a7"><td class="memItemLeft" align="right" valign="top">int APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#acad2a465990b22f3b6bc701bc3d933a7">Find</a> (<a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> keyword, int position=0)</td></tr>
+<tr class="memdesc:acad2a465990b22f3b6bc701bc3d933a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を検索します。  <br /></td></tr>
+<tr class="separator:acad2a465990b22f3b6bc701bc3d933a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce7113032d26f878dc7e73a961a1ef5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a1ce7113032d26f878dc7e73a961a1ef5">Format</a> (LPCTSTR format,...)</td></tr>
+<tr class="memdesc:a1ce7113032d26f878dc7e73a961a1ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">フォーマットに従ってパラメータを文字列化します。  <br /></td></tr>
+<tr class="separator:a1ce7113032d26f878dc7e73a961a1ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83d64fe3bf6f9ea4b4b1ed4a6cd37b12"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a83d64fe3bf6f9ea4b4b1ed4a6cd37b12">FromSJIS</a> (LPCSTR lpcszSJIS)</td></tr>
+<tr class="memdesc:a83d64fe3bf6f9ea4b4b1ed4a6cd37b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">SJIS文字列を取り込みます。  <br /></td></tr>
+<tr class="separator:a83d64fe3bf6f9ea4b4b1ed4a6cd37b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd8ef7f5080a8f2f1b4b46af8187326"><td class="memItemLeft" align="right" valign="top">INT APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a7fd8ef7f5080a8f2f1b4b46af8187326">Len</a> () const</td></tr>
+<tr class="memdesc:a7fd8ef7f5080a8f2f1b4b46af8187326"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部で確保している文字列数を取得します。  <br /></td></tr>
+<tr class="separator:a7fd8ef7f5080a8f2f1b4b46af8187326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad847154e9e2b4be9d02b815b04d30c20"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ad847154e9e2b4be9d02b815b04d30c20">operator!=</a> (const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;string) const</td></tr>
+<tr class="memdesc:ad847154e9e2b4be9d02b815b04d30c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">TStringと文字列を比較します。  <br /></td></tr>
+<tr class="separator:ad847154e9e2b4be9d02b815b04d30c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9572c28579fd15a77c10754f0a24dd1f"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a9572c28579fd15a77c10754f0a24dd1f">operator!=</a> (LPCTSTR lpctszString) const</td></tr>
+<tr class="memdesc:a9572c28579fd15a77c10754f0a24dd1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列と比較します。  <br /></td></tr>
+<tr class="separator:a9572c28579fd15a77c10754f0a24dd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac792da6f97d10d5495c75417bb7ea416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ac792da6f97d10d5495c75417bb7ea416">operator+</a> (LPCTSTR lpctszString)</td></tr>
+<tr class="memdesc:ac792da6f97d10d5495c75417bb7ea416"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を追加します。  <br /></td></tr>
+<tr class="separator:ac792da6f97d10d5495c75417bb7ea416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ab4388a0978474b6cf4bc0359f8584"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ab5ab4388a0978474b6cf4bc0359f8584">operator+</a> (<a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;string)</td></tr>
+<tr class="memdesc:ab5ab4388a0978474b6cf4bc0359f8584"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を追加します。  <br /></td></tr>
+<tr class="separator:ab5ab4388a0978474b6cf4bc0359f8584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7b79704933bfdadd072ee5afa492fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a3e7b79704933bfdadd072ee5afa492fd">operator+=</a> (const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;string)</td></tr>
+<tr class="memdesc:a3e7b79704933bfdadd072ee5afa492fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を追加します。  <br /></td></tr>
+<tr class="separator:a3e7b79704933bfdadd072ee5afa492fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26e791be803de3355e771012978609c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ae26e791be803de3355e771012978609c">operator+=</a> (LPCTSTR lpctszString)</td></tr>
+<tr class="memdesc:ae26e791be803de3355e771012978609c"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を追加します。  <br /></td></tr>
+<tr class="separator:ae26e791be803de3355e771012978609c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af479f05bcac791b92dc6dc74912b72b9"><td class="memItemLeft" align="right" valign="top">bool APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#af479f05bcac791b92dc6dc74912b72b9">operator&lt;</a> (const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;string) const</td></tr>
+<tr class="memdesc:af479f05bcac791b92dc6dc74912b72b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列の大小を比較します。  <br /></td></tr>
+<tr class="separator:af479f05bcac791b92dc6dc74912b72b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5b6492cb5192d10e6379043325c1a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a6d5b6492cb5192d10e6379043325c1a9">operator&lt;&lt;</a> (const int iValue)</td></tr>
+<tr class="memdesc:a6d5b6492cb5192d10e6379043325c1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">数値を代入します。  <br /></td></tr>
+<tr class="separator:a6d5b6492cb5192d10e6379043325c1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605b83daece8e7eb54309854fea5780e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a605b83daece8e7eb54309854fea5780e">operator&lt;&lt;</a> (const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;string)</td></tr>
+<tr class="memdesc:a605b83daece8e7eb54309854fea5780e"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を代入します。  <br /></td></tr>
+<tr class="separator:a605b83daece8e7eb54309854fea5780e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc5e6351b13ef0e3adf2facaf3241f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#aacc5e6351b13ef0e3adf2facaf3241f7">operator&lt;&lt;</a> (LPCTSTR lpctszString)</td></tr>
+<tr class="memdesc:aacc5e6351b13ef0e3adf2facaf3241f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を代入します。  <br /></td></tr>
+<tr class="separator:aacc5e6351b13ef0e3adf2facaf3241f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3f5f4c28e32837a68f325067c7388b"><td class="memItemLeft" align="right" valign="top">VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a3e3f5f4c28e32837a68f325067c7388b">operator=</a> (const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;string)</td></tr>
+<tr class="memdesc:a3e3f5f4c28e32837a68f325067c7388b"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を代入します。  <br /></td></tr>
+<tr class="separator:a3e3f5f4c28e32837a68f325067c7388b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6620f853950ff587f72b1d6293cbfa77"><td class="memItemLeft" align="right" valign="top">VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a6620f853950ff587f72b1d6293cbfa77">operator=</a> (LPCTSTR lpctszString)</td></tr>
+<tr class="memdesc:a6620f853950ff587f72b1d6293cbfa77"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を代入します。  <br /></td></tr>
+<tr class="separator:a6620f853950ff587f72b1d6293cbfa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec835f554cf795b301f525878ad57a48"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#aec835f554cf795b301f525878ad57a48">operator==</a> (const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;string) const</td></tr>
+<tr class="memdesc:aec835f554cf795b301f525878ad57a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">TStringと文字列を比較します。  <br /></td></tr>
+<tr class="separator:aec835f554cf795b301f525878ad57a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac245eeec5b6b46f0b872e42271a8abba"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ac245eeec5b6b46f0b872e42271a8abba">operator==</a> (LPCTSTR lpctszString) const</td></tr>
+<tr class="memdesc:ac245eeec5b6b46f0b872e42271a8abba"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列と比較します。  <br /></td></tr>
+<tr class="separator:ac245eeec5b6b46f0b872e42271a8abba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1004524178bad67a5c99379fbcbdc696"><td class="memItemLeft" align="right" valign="top">TCHAR APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a1004524178bad67a5c99379fbcbdc696">operator[]</a> (int index) const</td></tr>
+<tr class="memdesc:a1004524178bad67a5c99379fbcbdc696"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列の一部を取り出します。  <br /></td></tr>
+<tr class="separator:a1004524178bad67a5c99379fbcbdc696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b1ac940835edd629f8ac01f8fa2431"><td class="memItemLeft" align="right" valign="top">int APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ae6b1ac940835edd629f8ac01f8fa2431">ParseInt</a> () const</td></tr>
+<tr class="memdesc:ae6b1ac940835edd629f8ac01f8fa2431"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列の数値化  <br /></td></tr>
+<tr class="separator:ae6b1ac940835edd629f8ac01f8fa2431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d0db5a90bfe74e12cc384b72454733"><td class="memItemLeft" align="right" valign="top">LPTSTR APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ae3d0db5a90bfe74e12cc384b72454733">Ptr</a> () const</td></tr>
+<tr class="memdesc:ae3d0db5a90bfe74e12cc384b72454733"><td class="mdescLeft">&#160;</td><td class="mdescRight">内部で確保している文字列ポインタを取得します。  <br /></td></tr>
+<tr class="separator:ae3d0db5a90bfe74e12cc384b72454733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8540af1dda49b91f7e555fac62fcab12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a8540af1dda49b91f7e555fac62fcab12">Replace</a> (<a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;charsBefore, <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;charsAfter)</td></tr>
+<tr class="memdesc:a8540af1dda49b91f7e555fac62fcab12"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を置換します。  <br /></td></tr>
+<tr class="separator:a8540af1dda49b91f7e555fac62fcab12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e83e8af03b2c05ad70b09fe5b45699"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#aa5e83e8af03b2c05ad70b09fe5b45699">ReplaceAll</a> (<a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;charsBefore, <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;charsAfter)</td></tr>
+<tr class="memdesc:aa5e83e8af03b2c05ad70b09fe5b45699"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を置換します。  <br /></td></tr>
+<tr class="separator:aa5e83e8af03b2c05ad70b09fe5b45699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e43a48304c5bad472c00dd3f69f449c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">skeleton::Array</a>&lt; <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &gt; APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a0e43a48304c5bad472c00dd3f69f449c">Split</a> (const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;delimiters)</td></tr>
+<tr class="memdesc:a0e43a48304c5bad472c00dd3f69f449c"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を指定した文字列で分割します。  <br /></td></tr>
+<tr class="separator:a0e43a48304c5bad472c00dd3f69f449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac866a608eed54a7ee3f7d18c8912a911"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ac866a608eed54a7ee3f7d18c8912a911">Substring</a> (int startPos, int length=0)</td></tr>
+<tr class="memdesc:ac866a608eed54a7ee3f7d18c8912a911"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列を切り出します。  <br /></td></tr>
+<tr class="separator:ac866a608eed54a7ee3f7d18c8912a911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d32bc0ca92f151705e4336028472fdf"><td class="memItemLeft" align="right" valign="top">int APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a9d32bc0ca92f151705e4336028472fdf">ToSJIS</a> (LPSTR lpszSJIS, DWORD dwLen)</td></tr>
+<tr class="memdesc:a9d32bc0ca92f151705e4336028472fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">SJIS文字列を出力します。  <br /></td></tr>
+<tr class="separator:a9d32bc0ca92f151705e4336028472fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cff57a2181f2d4cf76c0ba1e492bc71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a7cff57a2181f2d4cf76c0ba1e492bc71">Trim</a> ()</td></tr>
+<tr class="memdesc:a7cff57a2181f2d4cf76c0ba1e492bc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">左右の余白を切り取ります。  <br /></td></tr>
+<tr class="separator:a7cff57a2181f2d4cf76c0ba1e492bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15bda05eae37b1a08c000b34f5b49c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ae15bda05eae37b1a08c000b34f5b49c1">TrimLeft</a> ()</td></tr>
+<tr class="memdesc:ae15bda05eae37b1a08c000b34f5b49c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">左側の余白を切り取ります。  <br /></td></tr>
+<tr class="separator:ae15bda05eae37b1a08c000b34f5b49c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96dfce82b33545537f954c9ccbc0a0a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a96dfce82b33545537f954c9ccbc0a0a9">TrimRight</a> ()</td></tr>
+<tr class="memdesc:a96dfce82b33545537f954c9ccbc0a0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">右側の余白を切り取ります。  <br /></td></tr>
+<tr class="separator:a96dfce82b33545537f954c9ccbc0a0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#afb12ae162a339fde5e83254145cd0262">WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ae3c80cf8ddfd3783354b4673c224d085">~WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ad5292326a0ed9002d168af523c2d0efa">GetErrNo</a> () const</td></tr>
+<tr class="memdesc:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowsAPIのエラー値を取得します。  <br /></td></tr>
+<tr class="separator:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a4e0ccc705c5792ff548fa21e07e3dbc4">SetErrNo</a> ()</td></tr>
+<tr class="memdesc:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WINAPIエラーの情報を設定します。  <br /></td></tr>
+<tr class="separator:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa7dc6482b91f261c2ce19ffe981e1798"><td class="memItemLeft" align="right" valign="top">VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#aa7dc6482b91f261c2ce19ffe981e1798">Add</a> (LPCTSTR lpctszString)</td></tr>
+<tr class="separator:aa7dc6482b91f261c2ce19ffe981e1798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c98706f6ea85997725d0a465b5e82e0"><td class="memItemLeft" align="right" valign="top">VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a7c98706f6ea85997725d0a465b5e82e0">Clear</a> ()</td></tr>
+<tr class="separator:a7c98706f6ea85997725d0a465b5e82e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a52700ae0e4da1fcb2c19efa579941"><td class="memItemLeft" align="right" valign="top">int APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a33a52700ae0e4da1fcb2c19efa579941">Compare</a> (LPCTSTR lpctszString1, LPCTSTR lpctszString2, int <a class="el" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>) const</td></tr>
+<tr class="separator:a33a52700ae0e4da1fcb2c19efa579941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e44f6005fe9d799f3707c7b70a0ebf"><td class="memItemLeft" align="right" valign="top">VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a02e44f6005fe9d799f3707c7b70a0ebf">Copy</a> (LPCTSTR lpctszString)</td></tr>
+<tr class="separator:a02e44f6005fe9d799f3707c7b70a0ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a09ec4901e8580c06d36d9636803743"><td class="memItemLeft" align="right" valign="top">LPTSTR APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a1a09ec4901e8580c06d36d9636803743">CreateMemory</a> (ULONGLONG <a class="el" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>)</td></tr>
+<tr class="separator:a1a09ec4901e8580c06d36d9636803743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27133893fc656aa8cdb93ebc8fa1d193"><td class="memItemLeft" align="right" valign="top">INT APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#a27133893fc656aa8cdb93ebc8fa1d193">Length</a> (LPCTSTR lpctszString) const</td></tr>
+<tr class="separator:a27133893fc656aa8cdb93ebc8fa1d193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:aeacc802ed539c0328a6d85f831981f60"><td class="memItemLeft" align="right" valign="top">LPTSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#aeacc802ed539c0328a6d85f831981f60">_lptszString</a></td></tr>
+<tr class="separator:aeacc802ed539c0328a6d85f831981f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a787041388181371791435092055c913c">_dwErrorNo</a></td></tr>
+<tr class="separator:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>文字列に関するWindowsAPIを集約したクラス </p>
+
+<p class="definition"> <a class="el" href="../../de/d15/_t_string_8h_source.html">TString.h</a> の <a class="el" href="../../de/d15/_t_string_8h_source.html#l00016">16</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a2fb70d94c8fdba6d90145a01aec1ce3f" name="a2fb70d94c8fdba6d90145a01aec1ce3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb70d94c8fdba6d90145a01aec1ce3f">&#9670;&#160;</a></span>TString() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TString::TString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00012">12</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>.</p>
+
+</div>
+</div>
+<a id="a5dd2a7d1163b669f42a4091f914346b4" name="a5dd2a7d1163b669f42a4091f914346b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd2a7d1163b669f42a4091f914346b4">&#9670;&#160;</a></span>TString() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TString::TString </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpctszString</td><td>生成時に格納する文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00017">17</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">Copy()</a>.</p>
+
+</div>
+</div>
+<a id="a0a0ca3941f743e8db51db3541ee341cb" name="a0a0ca3941f743e8db51db3541ee341cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a0ca3941f743e8db51db3541ee341cb">&#9670;&#160;</a></span>TString() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TString::TString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>生成時に格納する文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00023">23</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">Copy()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">Ptr()</a>.</p>
+
+</div>
+</div>
+<a id="ae7416904594513fed8fa1f79cb81c09f" name="ae7416904594513fed8fa1f79cb81c09f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7416904594513fed8fa1f79cb81c09f">&#9670;&#160;</a></span>TString() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TString::TString </td>
+          <td>(</td>
+          <td class="paramtype">INT&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>生成時に確保するメモリサイズ(文字数) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>APIなどで、TCHAR[256]が必要な場合に使用します。 <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html#ae3d0db5a90bfe74e12cc384b72454733" title="内部で確保している文字列ポインタを取得します。">Ptr()</a>を使用すると、メモリ確保済みのポインタが 使用できます。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00029">29</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00411">CreateMemory()</a>.</p>
+
+</div>
+</div>
+<a id="a4cd0d6824add8c506575610e00735037" name="a4cd0d6824add8c506575610e00735037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd0d6824add8c506575610e00735037">&#9670;&#160;</a></span>~TString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TString::~TString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00034">34</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00405">Clear()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aa7dc6482b91f261c2ce19ffe981e1798" name="aa7dc6482b91f261c2ce19ffe981e1798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7dc6482b91f261c2ce19ffe981e1798">&#9670;&#160;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID TString::Add </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">435</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00405">Clear()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00411">CreateMemory()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00469">Length()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00128">operator+=()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00088">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a id="a2a51b127c9cb609ea1e93c20a230ec0b" name="a2a51b127c9cb609ea1e93c20a230ec0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a51b127c9cb609ea1e93c20a230ec0b">&#9670;&#160;</a></span>Byte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT TString::Byte </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>内部で確保している文字列(バイト数)を取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>バイト長 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00044">44</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/dbb/_array_test_8cpp_source.html#l00019">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a7c98706f6ea85997725d0a465b5e82e0" name="a7c98706f6ea85997725d0a465b5e82e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c98706f6ea85997725d0a465b5e82e0">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID TString::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00405">405</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00034">~TString()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">Copy()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00333">Format()</a>.</p>
+
+</div>
+</div>
+<a id="a33a52700ae0e4da1fcb2c19efa579941" name="a33a52700ae0e4da1fcb2c19efa579941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a52700ae0e4da1fcb2c19efa579941">&#9670;&#160;</a></span>Compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TString::Compare </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00450">450</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00142">operator&lt;()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00049">operator==()</a>.</p>
+
+</div>
+</div>
+<a id="a02e44f6005fe9d799f3707c7b70a0ebf" name="a02e44f6005fe9d799f3707c7b70a0ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e44f6005fe9d799f3707c7b70a0ebf">&#9670;&#160;</a></span>Copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID TString::Copy </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">418</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00405">Clear()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00411">CreateMemory()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00469">Length()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00017">TString()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00078">operator=()</a>.</p>
+
+</div>
+</div>
+<a id="a1a09ec4901e8580c06d36d9636803743" name="a1a09ec4901e8580c06d36d9636803743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a09ec4901e8580c06d36d9636803743">&#9670;&#160;</a></span>CreateMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPTSTR TString::CreateMemory </td>
+          <td>(</td>
+          <td class="paramtype">ULONGLONG&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00411">411</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00029">TString()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">Copy()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00333">Format()</a>.</p>
+
+</div>
+</div>
+<a id="a8a3fda12bee865d18b9e2983a402cbff" name="a8a3fda12bee865d18b9e2983a402cbff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a3fda12bee865d18b9e2983a402cbff">&#9670;&#160;</a></span>Ctr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPCTSTR APIENTRY alt::TString::Ctr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>内部で確保している文字列ポインタを取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>保持している文字列のポインタ </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/d15/_t_string_8h_source.html">TString.h</a> の <a class="el" href="../../de/d15/_t_string_8h_source.html#l00046">46</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00109">alt::FactoryMethod::ClockElement::ClockElement()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00330">alt::FactoryMethod::DummyProduct::DummyProduct()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00289">alt::FactoryMethod::TerminateElement::TerminateElement()</a>, <a class="el" href="../../db/d64/_console_driver_8cpp_source.html#l00025">_tmain()</a>, <a class="el" href="../../db/d11/_performance_data_helper_8cpp_source.html#l00026">alt::PerformanceDataItem::AddCounter()</a>, <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00045">alt::Log::AppendLog()</a>, <a class="el" href="../../d1/d38/_utility_8cpp_source.html#l00122">alt::Utility::Base64Decode()</a>, <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00093">PerfCheck::TStringPerformanceCheck::Core2()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00458">alt::FactoryMethod::Creator::CreateElement()</a>, <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00068">alt::Log::CreateLog()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00442">alt::FactoryMethod::Creator::CreateProduct()</a>, <a class="el" href="../../db/d64/_console_driver_8cpp_source.html#l00128">DrivePipelineFactory()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00078">DriveTcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00119">DriveTcpProxy()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00045">DriveTcpServer()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00067">DriveUdpController1()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00145">DriveUdpController2()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00407">alt::FactoryMethod::DummyProduct::Exit()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00134">alt::FileUtility::Find()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00205">alt::FileUtility::Find2()</a>, <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00155">alt::Log::FindHistory()</a>, <a class="el" href="../../da/dcc/_middle_library_8cpp_source.html#l00052">alt::MiddleLibrary::GetProfileStr()</a>, <a class="el" href="../../da/dcc/_middle_library_8cpp_source.html#l00068">alt::MiddleLibrary::GetProfileValue()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00347">alt::FactoryMethod::DummyProduct::Init()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00166">alt::FactoryMethod::ClockElement::Invoke()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00055">alt::FactoryMethod::Config::Load()</a>, <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00078">alt::Log::OpenLog()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00142">operator&lt;()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00060">operator==()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00369">alt::FactoryMethod::DummyProduct::Process()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00082">alt::FactoryMethod::Config::Reload()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00246">ReplaceAll()</a>, <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00162">alt::Log::RotateLogFile()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00359">alt::FactoryMethod::DummyProduct::Start()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00397">alt::FactoryMethod::DummyProduct::Stop()</a>, <a class="el" href="../../da/dbb/_array_test_8cpp_source.html#l00019">WindowsLibraryTest::TEST_CLASS()</a>, <a class="el" href="../../d1/d91/_design_pattern_test_8cpp_source.html#l00017">MiddleLibraryTest::TEST_CLASS()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00306">alt::FactoryMethod::TerminateElement::Update()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00417">alt::FactoryMethod::DummyProduct::Update()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00555">alt::FactoryMethod::ProductManager::Update()</a>, <a class="el" href="../../d1/d38/_utility_8cpp_source.html#l00204">alt::Utility::WriteIniFile()</a> (計41項目).</p>
+
+</div>
+</div>
+<a id="acad2a465990b22f3b6bc701bc3d933a7" name="acad2a465990b22f3b6bc701bc3d933a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad2a465990b22f3b6bc701bc3d933a7">&#9670;&#160;</a></span>Find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TString::Find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a>&#160;</td>
+          <td class="paramname"><em>keyword</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を検索します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">keyword</td><td>検索する文字列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>検索開始位置 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>検索した文字列の開始位置 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00296">296</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">Ptr()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00233">Replace()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00246">ReplaceAll()</a>.</p>
+
+</div>
+</div>
+<a id="a1ce7113032d26f878dc7e73a961a1ef5" name="a1ce7113032d26f878dc7e73a961a1ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ce7113032d26f878dc7e73a961a1ef5">&#9670;&#160;</a></span>Format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::Format </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>フォーマットに従ってパラメータを文字列化します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>文字列フォーマット </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>フォーマットに従って書式化した自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00333">333</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00405">Clear()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00411">CreateMemory()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00093">PerfCheck::TStringPerformanceCheck::Core2()</a>, <a class="el" href="../../d4/d4e/_t_string_memory_leak_check_8cpp_source.html#l00087">LeakCheck::TStringMemoryLeakCheck::DoAction4()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00134">alt::FileUtility::Find()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00205">alt::FileUtility::Find2()</a>, <a class="el" href="../../d1/d38/_utility_8cpp_source.html#l00055">alt::Utility::GetFormatTime()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00166">alt::FactoryMethod::ClockElement::Invoke()</a>, <a class="el" href="../../d1/d38/_utility_8cpp_source.html#l00022">alt::Utility::MakeGUID()</a>, <a class="el" href="../../da/dbb/_array_test_8cpp_source.html#l00019">WindowsLibraryTest::TEST_CLASS()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00306">alt::FactoryMethod::TerminateElement::Update()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00417">alt::FactoryMethod::DummyProduct::Update()</a>, <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00555">alt::FactoryMethod::ProductManager::Update()</a>.</p>
+
+</div>
+</div>
+<a id="a83d64fe3bf6f9ea4b4b1ed4a6cd37b12" name="a83d64fe3bf6f9ea4b4b1ed4a6cd37b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83d64fe3bf6f9ea4b4b1ed4a6cd37b12">&#9670;&#160;</a></span>FromSJIS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL TString::FromSJIS </td>
+          <td>(</td>
+          <td class="paramtype">LPCSTR&#160;</td>
+          <td class="paramname"><em>lpcszSJIS</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SJIS文字列を取り込みます。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpcszSJIS</td><td>ヌルターミネートされた文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>BOOL 変換に成功か否か </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>成功 </td></tr>
+    <tr><td class="paramname">false</td><td>失敗 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00350">350</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">Ptr()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dd/d0c/_tcp_connector_test_8cpp_source.html#l00017">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a7fd8ef7f5080a8f2f1b4b46af8187326" name="a7fd8ef7f5080a8f2f1b4b46af8187326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd8ef7f5080a8f2f1b4b46af8187326">&#9670;&#160;</a></span>Len()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT TString::Len </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>内部で確保している文字列数を取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>文字列長 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">39</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00469">Length()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>, <a class="el" href="../../d1/d38/_utility_8cpp_source.html#l00122">alt::Utility::Base64Decode()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00044">Byte()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00296">Find()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00142">operator&lt;()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00060">operator==()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00149">operator[]()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00370">ParseInt()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00233">Replace()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00246">ReplaceAll()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00267">Split()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00219">Substring()</a>, <a class="el" href="../../dd/d0c/_tcp_connector_test_8cpp_source.html#l00017">WindowsLibraryTest::TEST_CLASS()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00165">TrimLeft()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00189">TrimRight()</a> (計15項目).</p>
+
+</div>
+</div>
+<a id="a27133893fc656aa8cdb93ebc8fa1d193" name="a27133893fc656aa8cdb93ebc8fa1d193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27133893fc656aa8cdb93ebc8fa1d193">&#9670;&#160;</a></span>Length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">INT TString::Length </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00469">469</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">Copy()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00142">operator&lt;()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00049">operator==()</a>.</p>
+
+</div>
+</div>
+<a id="ad847154e9e2b4be9d02b815b04d30c20" name="ad847154e9e2b4be9d02b815b04d30c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad847154e9e2b4be9d02b815b04d30c20">&#9670;&#160;</a></span>operator!=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL TString::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TStringと文字列を比較します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>比較するTStringオブジェクト </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>一致しないか否か </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>一致する </td></tr>
+    <tr><td class="paramname">FALSE</td><td>一致しない </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00073">73</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00049">operator==()</a>.</p>
+
+</div>
+</div>
+<a id="a9572c28579fd15a77c10754f0a24dd1f" name="a9572c28579fd15a77c10754f0a24dd1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9572c28579fd15a77c10754f0a24dd1f">&#9670;&#160;</a></span>operator!=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL TString::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列と比較します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>一致しないか否か </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>一致する </td></tr>
+    <tr><td class="paramname">FALSE</td><td>一致しない </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00068">68</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00049">operator==()</a>.</p>
+
+</div>
+</div>
+<a id="ac792da6f97d10d5495c75417bb7ea416" name="ac792da6f97d10d5495c75417bb7ea416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac792da6f97d10d5495c75417bb7ea416">&#9670;&#160;</a></span>operator+() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> TString::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を追加します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpctszString</td><td>文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>追加された文字列の結果 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00112">112</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>.</p>
+
+</div>
+</div>
+<a id="ab5ab4388a0978474b6cf4bc0359f8584" name="ab5ab4388a0978474b6cf4bc0359f8584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5ab4388a0978474b6cf4bc0359f8584">&#9670;&#160;</a></span>operator+() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> TString::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を追加します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>追加された文字列の結果 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00120">120</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>.</p>
+
+</div>
+</div>
+<a id="a3e7b79704933bfdadd072ee5afa492fd" name="a3e7b79704933bfdadd072ee5afa492fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7b79704933bfdadd072ee5afa492fd">&#9670;&#160;</a></span>operator+=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を追加します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>代入された自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00135">135</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">Ptr()</a>.</p>
+
+</div>
+</div>
+<a id="ae26e791be803de3355e771012978609c" name="ae26e791be803de3355e771012978609c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26e791be803de3355e771012978609c">&#9670;&#160;</a></span>operator+=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を追加します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpctszString</td><td>文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>代入された自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00128">128</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>.</p>
+
+</div>
+</div>
+<a id="af479f05bcac791b92dc6dc74912b72b9" name="af479f05bcac791b92dc6dc74912b72b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af479f05bcac791b92dc6dc74912b72b9">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TString::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列の大小を比較します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>比較対象 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>比較結果 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>比較する側が小さい </td></tr>
+    <tr><td class="paramname">false</td><td>比較する側が大きい </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00142">142</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00450">Compare()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00046">Ctr()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00469">Length()</a>, <a class="el" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>.</p>
+
+</div>
+</div>
+<a id="a6d5b6492cb5192d10e6379043325c1a9" name="a6d5b6492cb5192d10e6379043325c1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5b6492cb5192d10e6379043325c1a9">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>iValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>数値を代入します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iValue</td><td>数値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>代入された自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00102">102</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>.</p>
+
+</div>
+</div>
+<a id="a605b83daece8e7eb54309854fea5780e" name="a605b83daece8e7eb54309854fea5780e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a605b83daece8e7eb54309854fea5780e">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を代入します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>代入された自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00095">95</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">Ptr()</a>.</p>
+
+</div>
+</div>
+<a id="aacc5e6351b13ef0e3adf2facaf3241f7" name="aacc5e6351b13ef0e3adf2facaf3241f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc5e6351b13ef0e3adf2facaf3241f7">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を代入します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpctszString</td><td>文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>代入された自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00088">88</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>.</p>
+
+</div>
+</div>
+<a id="a3e3f5f4c28e32837a68f325067c7388b" name="a3e3f5f4c28e32837a68f325067c7388b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3f5f4c28e32837a68f325067c7388b">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID TString::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を代入します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00083">83</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">Copy()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">Ptr()</a>.</p>
+
+</div>
+</div>
+<a id="a6620f853950ff587f72b1d6293cbfa77" name="a6620f853950ff587f72b1d6293cbfa77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6620f853950ff587f72b1d6293cbfa77">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID TString::operator= </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を代入します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpctszString</td><td>文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00078">78</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">Copy()</a>.</p>
+
+</div>
+</div>
+<a id="aec835f554cf795b301f525878ad57a48" name="aec835f554cf795b301f525878ad57a48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec835f554cf795b301f525878ad57a48">&#9670;&#160;</a></span>operator==() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL TString::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TStringと文字列を比較します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">string</td><td>比較するTStringオブジェクト </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>一致するか否か </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>一致する </td></tr>
+    <tr><td class="paramname">FALSE</td><td>一致しない </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00060">60</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00450">Compare()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00046">Ctr()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00469">Length()</a>, <a class="el" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>.</p>
+
+</div>
+</div>
+<a id="ac245eeec5b6b46f0b872e42271a8abba" name="ac245eeec5b6b46f0b872e42271a8abba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac245eeec5b6b46f0b872e42271a8abba">&#9670;&#160;</a></span>operator==() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL TString::operator== </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszString</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列と比較します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>一致するか否か </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE</td><td>一致する </td></tr>
+    <tr><td class="paramname">FALSE</td><td>一致しない </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00049">49</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00450">Compare()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00469">Length()</a>, <a class="el" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00068">operator!=()</a>.</p>
+
+</div>
+</div>
+<a id="a1004524178bad67a5c99379fbcbdc696" name="a1004524178bad67a5c99379fbcbdc696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1004524178bad67a5c99379fbcbdc696">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TCHAR TString::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列の一部を取り出します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>場所の指定 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>指定された場所にある文字 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00149">149</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>.</p>
+
+</div>
+</div>
+<a id="ae6b1ac940835edd629f8ac01f8fa2431" name="ae6b1ac940835edd629f8ac01f8fa2431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b1ac940835edd629f8ac01f8fa2431">&#9670;&#160;</a></span>ParseInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TString::ParseInt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列の数値化 </p>
+<dl class="section return"><dt>戻り値</dt><dd>数値(INT) </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00370">370</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d2/dd2/_t_string_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="ae3d0db5a90bfe74e12cc384b72454733" name="ae3d0db5a90bfe74e12cc384b72454733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d0db5a90bfe74e12cc384b72454733">&#9670;&#160;</a></span>Ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPTSTR APIENTRY alt::TString::Ptr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>内部で確保している文字列ポインタを取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>保持している文字列のポインタ </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/d15/_t_string_8h_source.html">TString.h</a> の <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">42</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00023">TString()</a>, <a class="el" href="../../db/d64/_console_driver_8cpp_source.html#l00025">_tmain()</a>, <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00059">PerfCheck::TStringPerformanceCheck::Core1()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00271">alt::FileUtility::DirectoryWatch()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00078">DriveTcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00119">DriveTcpProxy()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00045">DriveTcpServer()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00067">DriveUdpController1()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00145">DriveUdpController2()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00296">Find()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00350">FromSJIS()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00115">alt::FileUtility::GetAbsolutePath()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00097">alt::FileUtility::GetCurrentDir()</a>, <a class="el" href="../../d1/d38/_utility_8cpp_source.html#l00164">alt::Utility::GetEnv()</a>, <a class="el" href="../../da/dcc/_middle_library_8cpp_source.html#l00085">alt::MiddleLibrary::GetFormattedDateTime()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00072">alt::FileUtility::GetTemporaryFileName()</a>, <a class="el" href="../../df/d76/_file_utility_8cpp_source.html#l00106">alt::FileUtility::GetTemporaryPath()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00135">operator+=()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00095">operator&lt;&lt;()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00083">operator=()</a>, <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00162">alt::Log::RotateLogFile()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00267">Split()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00219">Substring()</a>, <a class="el" href="../../da/dbb/_array_test_8cpp_source.html#l00019">WindowsLibraryTest::TEST_CLASS()</a>, <a class="el" href="../../d1/d91/_design_pattern_test_8cpp_source.html#l00017">MiddleLibraryTest::TEST_CLASS()</a> (計25項目).</p>
+
+</div>
+</div>
+<a id="a8540af1dda49b91f7e555fac62fcab12" name="a8540af1dda49b91f7e555fac62fcab12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8540af1dda49b91f7e555fac62fcab12">&#9670;&#160;</a></span>Replace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> TString::Replace </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>charsBefore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>charsAfter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を置換します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">charsBefore</td><td>検索する文字列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">charsAfter</td><td>置換する文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>検索結果を置換した文字列 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00233">233</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00296">Find()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00219">Substring()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d4/d4e/_t_string_memory_leak_check_8cpp_source.html#l00087">LeakCheck::TStringMemoryLeakCheck::DoAction4()</a>, <a class="el" href="../../d2/dd2/_t_string_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="aa5e83e8af03b2c05ad70b09fe5b45699" name="aa5e83e8af03b2c05ad70b09fe5b45699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e83e8af03b2c05ad70b09fe5b45699">&#9670;&#160;</a></span>ReplaceAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> TString::ReplaceAll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>charsBefore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>charsAfter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を置換します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">charsBefore</td><td>検索する文字列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">charsAfter</td><td>置換する文字列 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>検索結果をすべて置換した文字列 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00246">246</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00046">Ctr()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00296">Find()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00219">Substring()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d4/d4e/_t_string_memory_leak_check_8cpp_source.html#l00087">LeakCheck::TStringMemoryLeakCheck::DoAction4()</a>, <a class="el" href="../../d2/dd2/_t_string_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a0e43a48304c5bad472c00dd3f69f449c" name="a0e43a48304c5bad472c00dd3f69f449c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e43a48304c5bad472c00dd3f69f449c">&#9670;&#160;</a></span>Split()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">skeleton::Array</a>&lt; <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &gt; TString::Split </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp;&#160;</td>
+          <td class="paramname"><em>delimiters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を指定した文字列で分割します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">delimiters</td><td>分割する文字の集合 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>delimiters単位で分割した文字列群 </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>delimiterに入っている文字はすべて分割対象です。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00267">267</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../db/d5e/_array_8hpp_source.html#l00083">alt::skeleton::Array&lt; T &gt;::Add()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">Ptr()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00059">PerfCheck::TStringPerformanceCheck::Core1()</a>.</p>
+
+</div>
+</div>
+<a id="ac866a608eed54a7ee3f7d18c8912a911" name="ac866a608eed54a7ee3f7d18c8912a911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac866a608eed54a7ee3f7d18c8912a911">&#9670;&#160;</a></span>Substring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> TString::Substring </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startPos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>文字列を切り出します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">startPos</td><td>切り出し開始位置 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">length</td><td>切り出しサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>切り出した文字列 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00219">219</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/d15/_t_string_8h_source.html#l00042">Ptr()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../db/d2f/_pipeline_factory_method_8cpp_source.html#l00442">alt::FactoryMethod::Creator::CreateProduct()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00233">Replace()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00246">ReplaceAll()</a>, <a class="el" href="../../d2/dd2/_t_string_test_8cpp_source.html#l00013">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a9d32bc0ca92f151705e4336028472fdf" name="a9d32bc0ca92f151705e4336028472fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d32bc0ca92f151705e4336028472fdf">&#9670;&#160;</a></span>ToSJIS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TString::ToSJIS </td>
+          <td>(</td>
+          <td class="paramtype">LPSTR&#160;</td>
+          <td class="paramname"><em>lpszSJIS</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SJIS文字列を出力します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">lpszSJIS</td><td>SJIS文字列 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwLen</td><td>SJIS文字列を格納するバッファサイズ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>書き込んだバイト数 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00364">364</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/dbb/_array_test_8cpp_source.html#l00019">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a7cff57a2181f2d4cf76c0ba1e492bc71" name="a7cff57a2181f2d4cf76c0ba1e492bc71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cff57a2181f2d4cf76c0ba1e492bc71">&#9670;&#160;</a></span>Trim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::Trim </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>左右の余白を切り取ります。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>左右の余白を切り取った自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00211">211</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00165">TrimLeft()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00189">TrimRight()</a>.</p>
+
+</div>
+</div>
+<a id="ae15bda05eae37b1a08c000b34f5b49c1" name="ae15bda05eae37b1a08c000b34f5b49c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae15bda05eae37b1a08c000b34f5b49c1">&#9670;&#160;</a></span>TrimLeft()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::TrimLeft </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>左側の余白を切り取ります。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>左側余白を切り取った自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00165">165</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00211">Trim()</a>.</p>
+
+</div>
+</div>
+<a id="a96dfce82b33545537f954c9ccbc0a0a9" name="a96dfce82b33545537f954c9ccbc0a0a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96dfce82b33545537f954c9ccbc0a0a9">&#9670;&#160;</a></span>TrimRight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> &amp; TString::TrimRight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>右側の余白を切り取ります。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>右側余白を切り取った自分自身 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a> の <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00189">189</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">_lptszString</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00211">Trim()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aeacc802ed539c0328a6d85f831981f60" name="aeacc802ed539c0328a6d85f831981f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeacc802ed539c0328a6d85f831981f60">&#9670;&#160;</a></span>_lptszString</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPTSTR alt::TString::_lptszString</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d15/_t_string_8h_source.html">TString.h</a> の <a class="el" href="../../de/d15/_t_string_8h_source.html#l00212">212</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00012">TString()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00435">Add()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00405">Clear()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00418">Copy()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00296">Find()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00333">Format()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00350">FromSJIS()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00039">Len()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00112">operator+()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00142">operator&lt;()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00049">operator==()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00149">operator[]()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00370">ParseInt()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00267">Split()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00219">Substring()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00364">ToSJIS()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00165">TrimLeft()</a>, <a class="el" href="../../de/dae/_t_string_8cpp_source.html#l00189">TrimRight()</a> (計18項目).</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/<a class="el" href="../../de/d15/_t_string_8h_source.html">TString.h</a></li>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/<a class="el" href="../../de/dae/_t_string_8cpp_source.html">TString.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d94/namespacealt.html">alt</a></li><li class="navelem"><a class="el" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

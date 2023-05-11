@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: alt::SocketLibrary クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d8/d51/classalt_1_1_socket_library.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="../../d0/dec/classalt_1_1_socket_library-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alt::SocketLibrary クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>WinSockを使用するAPIを集約したクラス  
+ <a href="../../d8/d51/classalt_1_1_socket_library.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a>&gt;</code></p>
+<div class="dynheader">
+alt::SocketLibrary の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d8/d51/classalt_1_1_socket_library.png" usemap="#alt::SocketLibrary_map" alt=""/>
+  <map id="alt::SocketLibrary_map" name="alt::SocketLibrary_map">
+<area href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="alt::WindowsLibrary" shape="rect" coords="132,0,254,24"/>
+<area href="../../dd/db7/classalt_1_1_socket_builder.html" title="ソケットに関するWindowsAPIを集約したクラス" alt="alt::SocketBuilder" shape="rect" coords="0,112,122,136"/>
+<area href="../../d3/d45/classalt_1_1_tcp_connector.html" title="TCP通信に関するWindowsAPIを集約したクラス" alt="alt::TcpConnector" shape="rect" coords="132,112,254,136"/>
+<area href="../../d3/d2b/classalt_1_1_udp_connector.html" title="UDP通信に関するWindowsAPIを集約したクラス" alt="alt::UdpConnector" shape="rect" coords="264,112,386,136"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:acef9742145783f7006c609cc5eec61a3"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html#acef9742145783f7006c609cc5eec61a3">SocketLibrary</a> ()</td></tr>
+<tr class="memdesc:acef9742145783f7006c609cc5eec61a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:acef9742145783f7006c609cc5eec61a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae775249d1160ce4dd2d4daefa51de863"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html#ae775249d1160ce4dd2d4daefa51de863">~SocketLibrary</a> ()</td></tr>
+<tr class="memdesc:ae775249d1160ce4dd2d4daefa51de863"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:ae775249d1160ce4dd2d4daefa51de863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43af809b35c49a75a544e554c4b98ea3"><td class="memItemLeft" align="right" valign="top">int APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html#a43af809b35c49a75a544e554c4b98ea3">Close</a> ()</td></tr>
+<tr class="memdesc:a43af809b35c49a75a544e554c4b98ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ソケットが使用されていた場合、クローズします。  <br /></td></tr>
+<tr class="separator:a43af809b35c49a75a544e554c4b98ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190c48b6b10a86b4cf069f1832052673"><td class="memItemLeft" align="right" valign="top">DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html#a190c48b6b10a86b4cf069f1832052673">GetErrNo</a> () const</td></tr>
+<tr class="memdesc:a190c48b6b10a86b4cf069f1832052673"><td class="mdescLeft">&#160;</td><td class="mdescRight">WinSock API呼び出し時にエラーとなった時、 エラーの詳細を返します。  <br /></td></tr>
+<tr class="separator:a190c48b6b10a86b4cf069f1832052673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867668d4135a0dc7cdcc55f96278f5d8"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html#a867668d4135a0dc7cdcc55f96278f5d8">SetKeepAliveValue</a> (ULONG onoff, ULONG time, ULONG interval) const</td></tr>
+<tr class="memdesc:a867668d4135a0dc7cdcc55f96278f5d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">KeepAlive送出タイミング、間隔をセッション個別に設定します。  <br /></td></tr>
+<tr class="separator:a867668d4135a0dc7cdcc55f96278f5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#afb12ae162a339fde5e83254145cd0262">WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ae3c80cf8ddfd3783354b4673c224d085">~WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ad5292326a0ed9002d168af523c2d0efa">GetErrNo</a> () const</td></tr>
+<tr class="memdesc:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowsAPIのエラー値を取得します。  <br /></td></tr>
+<tr class="separator:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a4e0ccc705c5792ff548fa21e07e3dbc4">SetErrNo</a> ()</td></tr>
+<tr class="memdesc:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WINAPIエラーの情報を設定します。  <br /></td></tr>
+<tr class="separator:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5f37ec7549e1f21b571dd901e628faa3"><td class="memItemLeft" align="right" valign="top">int APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html#a5f37ec7549e1f21b571dd901e628faa3">WSAIoctl</a> (DWORD dwIoControlCode, LPVOID lpvInBuffer, DWORD dwInBuffer, LPVOID lpvOutBuffer, DWORD dwOutBuffer, LPDWORD lpdwBytesReturned, LPWSAOVERLAPPED lpOverlapped, LPWSAOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine) const</td></tr>
+<tr class="separator:a5f37ec7549e1f21b571dd901e628faa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a6f9674e2f11f50aebec0df7b0556577c"><td class="memItemLeft" align="right" valign="top">SOCKET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html#a6f9674e2f11f50aebec0df7b0556577c">_socket</a></td></tr>
+<tr class="memdesc:a6f9674e2f11f50aebec0df7b0556577c"><td class="mdescLeft">&#160;</td><td class="mdescRight">このクラスで管理するソケットオブジェクト  <br /></td></tr>
+<tr class="separator:a6f9674e2f11f50aebec0df7b0556577c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a787041388181371791435092055c913c">_dwErrorNo</a></td></tr>
+<tr class="separator:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>WinSockを使用するAPIを集約したクラス </p>
+
+<p class="definition"> <a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a> の <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00117">117</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="acef9742145783f7006c609cc5eec61a3" name="acef9742145783f7006c609cc5eec61a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef9742145783f7006c609cc5eec61a3">&#9670;&#160;</a></span>SocketLibrary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SocketLibrary::SocketLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="section note"><dt>覚え書き</dt><dd>_socketを INVALID_SOCKET で初期化します。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00130">130</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00163">_socket</a>.</p>
+
+</div>
+</div>
+<a id="ae775249d1160ce4dd2d4daefa51de863" name="ae775249d1160ce4dd2d4daefa51de863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae775249d1160ce4dd2d4daefa51de863">&#9670;&#160;</a></span>~SocketLibrary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SocketLibrary::~SocketLibrary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+<dl class="section note"><dt>覚え書き</dt><dd>管理しているソケットをクローズします。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00135">135</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00140">Close()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a43af809b35c49a75a544e554c4b98ea3" name="a43af809b35c49a75a544e554c4b98ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43af809b35c49a75a544e554c4b98ea3">&#9670;&#160;</a></span>Close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SocketLibrary::Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ソケットが使用されていた場合、クローズします。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>ソケットクローズが成功したか否か。 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">closesocket()の戻り値</td><td></td></tr>
+    <tr><td class="paramname">成功(0)</td><td>ソケットではない(WSAENOTSOCK)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>WinSock APIの戻り値はネットで確認 </p>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00140">140</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00163">_socket</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00301">PerfCheck::ServerWorker::~ServerWorker()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00018">alt::SocketBuilder::~SocketBuilder()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00135">~SocketLibrary()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00493">PerfCheck::TcpClient::~TcpClient()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00606">PerfCheck::TcpProxy::~TcpProxy()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00210">PerfCheck::UdpController::~UdpController()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00202">alt::SocketBuilder::CreateTcpConnector()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00171">alt::SocketBuilder::CreateUdpConnector()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00417">PerfCheck::TcpServer::Stop()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00546">PerfCheck::TcpClient::Stop()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00267">PerfCheck::UdpController::Stop()</a>, <a class="el" href="../../dd/d0c/_tcp_connector_test_8cpp_source.html#l00017">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a190c48b6b10a86b4cf069f1832052673" name="a190c48b6b10a86b4cf069f1832052673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190c48b6b10a86b4cf069f1832052673">&#9670;&#160;</a></span>GetErrNo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD SocketLibrary::GetErrNo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>WinSock API呼び出し時にエラーとなった時、 エラーの詳細を返します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>WinSock APIのエラー時のエラー番号 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">DWORD</td><td>詳細はネットで。 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参照</dt><dd><a href="http://chokuto.ifdef.jp/advanced/prm/winsock_error_code.html">http://chokuto.ifdef.jp/advanced/prm/winsock_error_code.html</a></dd></dl>
+<p>WSAGetLastError()を使用します。 </p>
+
+<p><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ad5292326a0ed9002d168af523c2d0efa">alt::WindowsLibrary</a>を再実装しています。</p>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00153">153</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00202">alt::SocketBuilder::CreateTcpConnector()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00514">PerfCheck::TcpClient::Start()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00231">PerfCheck::UdpController::Start()</a>.</p>
+
+</div>
+</div>
+<a id="a867668d4135a0dc7cdcc55f96278f5d8" name="a867668d4135a0dc7cdcc55f96278f5d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867668d4135a0dc7cdcc55f96278f5d8">&#9670;&#160;</a></span>SetKeepAliveValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL SocketLibrary::SetKeepAliveValue </td>
+          <td>(</td>
+          <td class="paramtype">ULONG&#160;</td>
+          <td class="paramname"><em>onoff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ULONG&#160;</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ULONG&#160;</td>
+          <td class="paramname"><em>interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>KeepAlive送出タイミング、間隔をセッション個別に設定します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">onoff</td><td>(0:OFF 1:ON) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>無通信となった時からKeepAlive送出開始までの時間(ミリ秒) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interval</td><td>切断検知後にリトライ送出する時のインターバル </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>WinSock APIのエラー時のエラー番号 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">DWORD</td><td>詳細はネットで。</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>SetSockOption()で設定されるKeepAlive送出設定はレジストリの 設定値(既定値は２時間後)に従います。この関数により、KeepAlive の設定タイミングをセッション個別に設定することができます。 </p>
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00158">158</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00174">WSAIoctl()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00432">PerfCheck::TcpServer::Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00514">PerfCheck::TcpClient::Start()</a>.</p>
+
+</div>
+</div>
+<a id="a5f37ec7549e1f21b571dd901e628faa3" name="a5f37ec7549e1f21b571dd901e628faa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f37ec7549e1f21b571dd901e628faa3">&#9670;&#160;</a></span>WSAIoctl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SocketLibrary::WSAIoctl </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwIoControlCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpvInBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwInBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpvOutBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwOutBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPDWORD&#160;</td>
+          <td class="paramname"><em>lpdwBytesReturned</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPWSAOVERLAPPED&#160;</td>
+          <td class="paramname"><em>lpOverlapped</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPWSAOVERLAPPED_COMPLETION_ROUTINE&#160;</td>
+          <td class="paramname"><em>lpCompletionRoutine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a> の <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00174">174</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00163">_socket</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00158">SetKeepAliveValue()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a6f9674e2f11f50aebec0df7b0556577c" name="a6f9674e2f11f50aebec0df7b0556577c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f9674e2f11f50aebec0df7b0556577c">&#9670;&#160;</a></span>_socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SOCKET alt::SocketLibrary::_socket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>このクラスで管理するソケットオブジェクト </p>
+
+<p class="definition"> <a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a> の <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00163">163</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00130">SocketLibrary()</a>, <a class="el" href="../../d8/db3/_udp_connector_8cpp_source.html#l00012">alt::UdpConnector::UdpConnector()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00130">alt::SocketBuilder::Bind()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00140">Close()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00116">alt::SocketBuilder::Connect()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00202">alt::SocketBuilder::CreateTcpConnector()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00171">alt::SocketBuilder::CreateUdpConnector()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00157">alt::SocketBuilder::Ioctl()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00143">alt::SocketBuilder::Listen()</a>, <a class="el" href="../../d8/db3/_udp_connector_8cpp_source.html#l00033">alt::UdpConnector::Recv()</a>, <a class="el" href="../../d0/d86/_tcp_connector_8cpp_source.html#l00019">alt::TcpConnector::Recv()</a>, <a class="el" href="../../d0/d86/_tcp_connector_8cpp_source.html#l00012">alt::TcpConnector::Send()</a>, <a class="el" href="../../d8/db3/_udp_connector_8cpp_source.html#l00024">alt::UdpConnector::Send()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00102">alt::SocketBuilder::SetSockOpt()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00070">alt::SocketBuilder::Socket()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00318">alt::SocketBuilder::Wait()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00174">WSAIoctl()</a> (計17項目).</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/<a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a></li>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/<a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html">WindowsLibrary.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d94/namespacealt.html">alt</a></li><li class="navelem"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html">SocketLibrary</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

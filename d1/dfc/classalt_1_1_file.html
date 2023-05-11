@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: alt::File クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d1/dfc/classalt_1_1_file.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="../../d8/d05/classalt_1_1_file-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">alt::File クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ファイルIOに関するWindowsAPIを集約したクラス  
+ <a href="../../d1/dfc/classalt_1_1_file.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d0c/_file_8h_source.html">File.h</a>&gt;</code></p>
+<div class="dynheader">
+alt::File の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d1/dfc/classalt_1_1_file.png" usemap="#alt::File_map" alt=""/>
+  <map id="alt::File_map" name="alt::File_map">
+<area href="../../d2/d8c/classalt_1_1_read_write_handle_library.html" title="HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス" alt="alt::ReadWriteHandleLibrary" shape="rect" coords="0,112,170,136"/>
+<area href="../../d0/d99/classalt_1_1_handle_library.html" title="HANDLEを扱うWindowsAPIを集約した基底クラス" alt="alt::HandleLibrary" shape="rect" coords="0,56,170,80"/>
+<area href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="alt::WindowsLibrary" shape="rect" coords="0,0,170,24"/>
+<area href="../../d4/d3b/classalt_1_1_transaction_file.html" title="トランザクションNTFSに関するクラス" alt="alt::TransactionFile" shape="rect" coords="0,224,170,248"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a340a9e50d9a495c5f6761df89768258a"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/classalt_1_1_file.html#a340a9e50d9a495c5f6761df89768258a">Create</a> (LPCTSTR lpctszFileName, DWORD dwDesiredAccess, DWORD dwShareMode, DWORD dwCreationDisposition)</td></tr>
+<tr class="memdesc:a340a9e50d9a495c5f6761df89768258a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルを作成、オープンします。  <br /></td></tr>
+<tr class="separator:a340a9e50d9a495c5f6761df89768258a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac804bbff55fb75d9b43932d081660b1d"><td class="memItemLeft" align="right" valign="top">LONGLONG APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/classalt_1_1_file.html#ac804bbff55fb75d9b43932d081660b1d">GetSize</a> () const</td></tr>
+<tr class="memdesc:ac804bbff55fb75d9b43932d081660b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルサイズを取得します。  <br /></td></tr>
+<tr class="separator:ac804bbff55fb75d9b43932d081660b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6d1be00852c2c55e36268abe64d1a8"><td class="memItemLeft" align="right" valign="top">DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/classalt_1_1_file.html#a2c6d1be00852c2c55e36268abe64d1a8">GetType</a> () const</td></tr>
+<tr class="memdesc:a2c6d1be00852c2c55e36268abe64d1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルの種類を取得します。  <br /></td></tr>
+<tr class="separator:a2c6d1be00852c2c55e36268abe64d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459d7aa04861d6acf93fe7b8bf5fc89c"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/classalt_1_1_file.html#a459d7aa04861d6acf93fe7b8bf5fc89c">IsOpen</a> () const</td></tr>
+<tr class="memdesc:a459d7aa04861d6acf93fe7b8bf5fc89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルがすでに操作可能か否か。  <br /></td></tr>
+<tr class="separator:a459d7aa04861d6acf93fe7b8bf5fc89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c2e56f448c3668c9f99bc45d1bf80d"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/classalt_1_1_file.html#ab2c2e56f448c3668c9f99bc45d1bf80d">SetEOF</a> () const</td></tr>
+<tr class="memdesc:ab2c2e56f448c3668c9f99bc45d1bf80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">今のファイル読み込み位置でファイルを終端します。  <br /></td></tr>
+<tr class="separator:ab2c2e56f448c3668c9f99bc45d1bf80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa57942f0ef78103707df3d07dfa7baf"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dfc/classalt_1_1_file.html#afa57942f0ef78103707df3d07dfa7baf">SetPointer</a> (DWORD dwMoveMethod, LARGE_INTEGER liDistanceToMove={ 0 }) const</td></tr>
+<tr class="memdesc:afa57942f0ef78103707df3d07dfa7baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルポインタを移動します。  <br /></td></tr>
+<tr class="separator:afa57942f0ef78103707df3d07dfa7baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_read_write_handle_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_read_write_handle_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d2/d8c/classalt_1_1_read_write_handle_library.html">alt::ReadWriteHandleLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a1dec2af06df0923529bdc012ea6dcaf7 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8c/classalt_1_1_read_write_handle_library.html#a1dec2af06df0923529bdc012ea6dcaf7">Flush</a> () const</td></tr>
+<tr class="memdesc:a1dec2af06df0923529bdc012ea6dcaf7 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">まだデバイスに出力されていないデータを吐き出させます。  <br /></td></tr>
+<tr class="separator:a1dec2af06df0923529bdc012ea6dcaf7 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3343e75cb7928aa4200dab24f88f4f47 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="memItemLeft" align="right" valign="top">DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8c/classalt_1_1_read_write_handle_library.html#a3343e75cb7928aa4200dab24f88f4f47">Read</a> (LPVOID lpvBuffer, DWORD dwSize) const</td></tr>
+<tr class="memdesc:a3343e75cb7928aa4200dab24f88f4f47 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">HANDLEを使ってデータを読み込みます。  <br /></td></tr>
+<tr class="separator:a3343e75cb7928aa4200dab24f88f4f47 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae1db1f84600a3bce9fd59459087b55 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="memItemLeft" align="right" valign="top">DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8c/classalt_1_1_read_write_handle_library.html#adae1db1f84600a3bce9fd59459087b55">Write</a> (LPCVOID lpcvBuffer, DWORD dwSize) const</td></tr>
+<tr class="memdesc:adae1db1f84600a3bce9fd59459087b55 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">HANDLEを使ってデータを書き込みます。  <br /></td></tr>
+<tr class="separator:adae1db1f84600a3bce9fd59459087b55 inherit pub_methods_classalt_1_1_read_write_handle_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_handle_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_handle_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/d99/classalt_1_1_handle_library.html">alt::HandleLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aa51f3ae3a74acc7b07203d94c947844e inherit pub_methods_classalt_1_1_handle_library"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#aa51f3ae3a74acc7b07203d94c947844e">HandleLibrary</a> ()</td></tr>
+<tr class="memdesc:aa51f3ae3a74acc7b07203d94c947844e inherit pub_methods_classalt_1_1_handle_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:aa51f3ae3a74acc7b07203d94c947844e inherit pub_methods_classalt_1_1_handle_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43512e9d9203f92663aa11fff67d136 inherit pub_methods_classalt_1_1_handle_library"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#aa43512e9d9203f92663aa11fff67d136">~HandleLibrary</a> ()</td></tr>
+<tr class="memdesc:aa43512e9d9203f92663aa11fff67d136 inherit pub_methods_classalt_1_1_handle_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:aa43512e9d9203f92663aa11fff67d136 inherit pub_methods_classalt_1_1_handle_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55ea73b1c4338a2fa8096fc31e65718 inherit pub_methods_classalt_1_1_handle_library"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#ad55ea73b1c4338a2fa8096fc31e65718">Close</a> ()</td></tr>
+<tr class="memdesc:ad55ea73b1c4338a2fa8096fc31e65718 inherit pub_methods_classalt_1_1_handle_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用しなくなったハンドルはこれでクローズします。  <br /></td></tr>
+<tr class="separator:ad55ea73b1c4338a2fa8096fc31e65718 inherit pub_methods_classalt_1_1_handle_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54dc078536ba2b8275e1582ac500dba9 inherit pub_methods_classalt_1_1_handle_library"><td class="memItemLeft" align="right" valign="top">HANDLE APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#a54dc078536ba2b8275e1582ac500dba9">GetHandle</a> () const</td></tr>
+<tr class="memdesc:a54dc078536ba2b8275e1582ac500dba9 inherit pub_methods_classalt_1_1_handle_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">継承先はこの関数でハンドルを取得します。  <br /></td></tr>
+<tr class="separator:a54dc078536ba2b8275e1582ac500dba9 inherit pub_methods_classalt_1_1_handle_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#afb12ae162a339fde5e83254145cd0262">WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ae3c80cf8ddfd3783354b4673c224d085">~WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ad5292326a0ed9002d168af523c2d0efa">GetErrNo</a> () const</td></tr>
+<tr class="memdesc:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowsAPIのエラー値を取得します。  <br /></td></tr>
+<tr class="separator:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a4e0ccc705c5792ff548fa21e07e3dbc4">SetErrNo</a> ()</td></tr>
+<tr class="memdesc:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WINAPIエラーの情報を設定します。  <br /></td></tr>
+<tr class="separator:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_attribs_classalt_1_1_handle_library"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classalt_1_1_handle_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/d99/classalt_1_1_handle_library.html">alt::HandleLibrary</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a03edc7a6d9d82f83145167dde56c3742 inherit pro_attribs_classalt_1_1_handle_library"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a></td></tr>
+<tr class="memdesc:a03edc7a6d9d82f83145167dde56c3742 inherit pro_attribs_classalt_1_1_handle_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">ハンドルを使用するWindowsAPIで保持するHANDLE値  <br /></td></tr>
+<tr class="separator:a03edc7a6d9d82f83145167dde56c3742 inherit pro_attribs_classalt_1_1_handle_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a787041388181371791435092055c913c">_dwErrorNo</a></td></tr>
+<tr class="separator:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ファイルIOに関するWindowsAPIを集約したクラス </p>
+
+<p class="definition"> <a class="el" href="../../df/d0c/_file_8h_source.html">File.h</a> の <a class="el" href="../../df/d0c/_file_8h_source.html#l00015">15</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">関数詳解</h2>
+<a id="a340a9e50d9a495c5f6761df89768258a" name="a340a9e50d9a495c5f6761df89768258a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a340a9e50d9a495c5f6761df89768258a">&#9670;&#160;</a></span>Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL File::Create </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwDesiredAccess</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwShareMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwCreationDisposition</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルを作成、オープンします。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpctszFileName</td><td>作成するファイル名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwDesiredAccess</td><td>{GENERIC_READ, GENERIC_WRITE, GENERIC_ALL} </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwShareMode</td><td>{FILE_SHARE_READ, FILE_SHARE_WRITE} </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwCreationDisposition</td><td>{CREATE_ALWAYS, OPEN_EXISTING} </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>BOOL </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE(成功)</td><td></td></tr>
+    <tr><td class="paramname">FALSE(失敗)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/d7b/_file_8cpp_source.html">File.cpp</a> の <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00012">12</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00069">alt::HandleLibrary::_hObject</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00059">PerfCheck::TStringPerformanceCheck::Core1()</a>, <a class="el" href="../../d5/d30/_file_performance_check_8cpp_source.html#l00070">PerfCheck::FilePerformanceCheck::Core1()</a>, <a class="el" href="../../d5/d30/_file_performance_check_8cpp_source.html#l00103">PerfCheck::FilePerformanceCheck::Core2()</a>, <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00068">alt::Log::CreateLog()</a>, <a class="el" href="../../d1/d38/_utility_8cpp_source.html#l00260">alt::Utility::CreateMD5()</a>, <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00078">alt::Log::OpenLog()</a>, <a class="el" href="../../d3/dc8/_diagnostics_test_8cpp_source.html#l00017">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="ac804bbff55fb75d9b43932d081660b1d" name="ac804bbff55fb75d9b43932d081660b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac804bbff55fb75d9b43932d081660b1d">&#9670;&#160;</a></span>GetSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LONGLONG File::GetSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルサイズを取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>ファイルサイズ(バイト) </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/d7b/_file_8cpp_source.html">File.cpp</a> の <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00051">51</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00069">alt::HandleLibrary::_hObject</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00045">alt::Log::AppendLog()</a>, <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00059">PerfCheck::TStringPerformanceCheck::Core1()</a>, <a class="el" href="../../d0/d55/_file_test_8cpp_source.html#l00022">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a2c6d1be00852c2c55e36268abe64d1a8" name="a2c6d1be00852c2c55e36268abe64d1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6d1be00852c2c55e36268abe64d1a8">&#9670;&#160;</a></span>GetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD File::GetType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルの種類を取得します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>DWORD </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">FILE_TYPE_CHAR(0x0002)</td><td></td></tr>
+    <tr><td class="paramname">FILE_TYPE_DISK(0x0001)</td><td></td></tr>
+    <tr><td class="paramname">FILE_TYPE_PIPE(0x0003)</td><td></td></tr>
+    <tr><td class="paramname">FILE_TYPE_REMOTE(0x8000)</td><td>unused. </td></tr>
+    <tr><td class="paramname">FILE_TYPE_UNKNOWN(0x0000)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>WindowsAPI GetFileType()を使用します。 </dd></dl>
+
+<p class="definition"> <a class="el" href="../../de/d7b/_file_8cpp_source.html">File.cpp</a> の <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00069">69</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00069">alt::HandleLibrary::_hObject</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d0/d55/_file_test_8cpp_source.html#l00022">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a459d7aa04861d6acf93fe7b8bf5fc89c" name="a459d7aa04861d6acf93fe7b8bf5fc89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a459d7aa04861d6acf93fe7b8bf5fc89c">&#9670;&#160;</a></span>IsOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL File::IsOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルがすでに操作可能か否か。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>BOOL </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">FALSE(まだファイル操作はできない)</td><td></td></tr>
+    <tr><td class="paramname">TRUE(ファイル操作可能)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/d7b/_file_8cpp_source.html">File.cpp</a> の <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00074">74</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00069">alt::HandleLibrary::_hObject</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d0/d55/_file_test_8cpp_source.html#l00022">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="ab2c2e56f448c3668c9f99bc45d1bf80d" name="ab2c2e56f448c3668c9f99bc45d1bf80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c2e56f448c3668c9f99bc45d1bf80d">&#9670;&#160;</a></span>SetEOF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL File::SetEOF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>今のファイル読み込み位置でファイルを終端します。 </p>
+<dl class="section return"><dt>戻り値</dt><dd>BOOL </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE(成功)</td><td></td></tr>
+    <tr><td class="paramname">FALSE(失敗)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/d7b/_file_8cpp_source.html">File.cpp</a> の <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00046">46</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00069">alt::HandleLibrary::_hObject</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d0/d55/_file_test_8cpp_source.html#l00022">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="afa57942f0ef78103707df3d07dfa7baf" name="afa57942f0ef78103707df3d07dfa7baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa57942f0ef78103707df3d07dfa7baf">&#9670;&#160;</a></span>SetPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL File::SetPointer </td>
+          <td>(</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwMoveMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LARGE_INTEGER&#160;</td>
+          <td class="paramname"><em>liDistanceToMove</em> = <code>{&#160;0&#160;}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ファイルポインタを移動します。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwMoveMethod</td><td>{FILE_BEGIN, FILE_CURRENT, FILE_END} </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">liDistanceToMove</td><td>ファイルポインタの移動距離 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>BOOL </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE(成功)</td><td></td></tr>
+    <tr><td class="paramname">FALSE(失敗)</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="../../de/d7b/_file_8cpp_source.html">File.cpp</a> の <a class="el" href="../../de/d7b/_file_8cpp_source.html#l00037">37</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00069">alt::HandleLibrary::_hObject</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d0/da7/_log_8cpp_source.html#l00045">alt::Log::AppendLog()</a>, <a class="el" href="../../d3/dc8/_diagnostics_test_8cpp_source.html#l00017">WindowsLibraryTest::TEST_CLASS()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/<a class="el" href="../../df/d0c/_file_8h_source.html">File.h</a></li>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/<a class="el" href="../../de/d7b/_file_8cpp_source.html">File.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d94/namespacealt.html">alt</a></li><li class="navelem"><a class="el" href="../../d1/dfc/classalt_1_1_file.html">File</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

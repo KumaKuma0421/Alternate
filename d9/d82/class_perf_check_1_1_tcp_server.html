@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: PerfCheck::TcpServer クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d9/d82/class_perf_check_1_1_tcp_server.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d0/d58/class_perf_check_1_1_tcp_server-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">PerfCheck::TcpServer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>TCP性能測定用（サーバー）  
+ <a href="../../d9/d82/class_perf_check_1_1_tcp_server.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a>&gt;</code></p>
+<div class="dynheader">
+PerfCheck::TcpServer の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d9/d82/class_perf_check_1_1_tcp_server.png" usemap="#PerfCheck::TcpServer_map" alt=""/>
+  <map id="PerfCheck::TcpServer_map" name="PerfCheck::TcpServer_map">
+<area href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="alt::skeleton::ICallback" shape="rect" coords="0,56,138,80"/>
+<area href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="alt::WindowsLibrary" shape="rect" coords="0,0,138,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:abc977059ef61f1c42f5fda1bc5945ab0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#abc977059ef61f1c42f5fda1bc5945ab0">TcpServer</a> ()</td></tr>
+<tr class="separator:abc977059ef61f1c42f5fda1bc5945ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a728a9e31c53cf86887f1f6149b1c46dd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a728a9e31c53cf86887f1f6149b1c46dd">~TcpServer</a> ()</td></tr>
+<tr class="separator:a728a9e31c53cf86887f1f6149b1c46dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc84c73704ae5d8175255e6ab439e5f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#afc84c73704ae5d8175255e6ab439e5f8">Init</a> (LPCTSTR lpctszIP, USHORT wPort)</td></tr>
+<tr class="separator:afc84c73704ae5d8175255e6ab439e5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d819aea481b515bdc36e0a40c912e70"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a1d819aea481b515bdc36e0a40c912e70">Start</a> ()</td></tr>
+<tr class="separator:a1d819aea481b515bdc36e0a40c912e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a0db0999f82c4addba261b9c3e918a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a19a0db0999f82c4addba261b9c3e918a">Stop</a> ()</td></tr>
+<tr class="separator:a19a0db0999f82c4addba261b9c3e918a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c64f5711382bb41c094ef91749fd70f"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a1c64f5711382bb41c094ef91749fd70f">Wait</a> ()</td></tr>
+<tr class="separator:a1c64f5711382bb41c094ef91749fd70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16105dd2d54b46b2f4bee402faabb51e"><td class="memItemLeft" align="right" valign="top">virtual DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a16105dd2d54b46b2f4bee402faabb51e">Invoke</a> (LPVOID lpvParam)=0</td></tr>
+<tr class="memdesc:a16105dd2d54b46b2f4bee402faabb51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">コールバック関数プレースホルダ  <br /></td></tr>
+<tr class="separator:a16105dd2d54b46b2f4bee402faabb51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#afb12ae162a339fde5e83254145cd0262">WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ae3c80cf8ddfd3783354b4673c224d085">~WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ad5292326a0ed9002d168af523c2d0efa">GetErrNo</a> () const</td></tr>
+<tr class="memdesc:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowsAPIのエラー値を取得します。  <br /></td></tr>
+<tr class="separator:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a4e0ccc705c5792ff548fa21e07e3dbc4">SetErrNo</a> ()</td></tr>
+<tr class="memdesc:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WINAPIエラーの情報を設定します。  <br /></td></tr>
+<tr class="separator:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3b1d6af61604eae9f1c46684a96ff4ff"><td class="memItemLeft" align="right" valign="top">virtual DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a3b1d6af61604eae9f1c46684a96ff4ff">Invoke</a> (LPVOID lpvParam)</td></tr>
+<tr class="memdesc:a3b1d6af61604eae9f1c46684a96ff4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">コールバック関数プレースホルダ  <br /></td></tr>
+<tr class="separator:a3b1d6af61604eae9f1c46684a96ff4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a9d33c2f068739235d6a18fd79280aa5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/db7/classalt_1_1_socket_builder.html">alt::SocketBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a9d33c2f068739235d6a18fd79280aa5d">_builder</a></td></tr>
+<tr class="separator:a9d33c2f068739235d6a18fd79280aa5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77efbeca65954f92f43439a3b3f94b2"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#af77efbeca65954f92f43439a3b3f94b2">_stop</a></td></tr>
+<tr class="separator:af77efbeca65954f92f43439a3b3f94b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f230abb88840312e0c8cfb40fbaa584"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#a6f230abb88840312e0c8cfb40fbaa584">_thread</a></td></tr>
+<tr class="separator:a6f230abb88840312e0c8cfb40fbaa584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab228ff18257fbb6bc59019098f9d70e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">alt::skeleton::Array</a>&lt; <a class="el" href="../../df/d72/class_perf_check_1_1_server_worker.html">ServerWorker</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html#ab228ff18257fbb6bc59019098f9d70e6">_workerHolder</a></td></tr>
+<tr class="separator:ab228ff18257fbb6bc59019098f9d70e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classalt_1_1skeleton_1_1_i_callback')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a25856556e76fc642dfa7c9243ee833bf inherit pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memItemLeft" align="right" valign="top">static DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a25856556e76fc642dfa7c9243ee833bf">Invoker</a> (LPVOID me)</td></tr>
+<tr class="memdesc:a25856556e76fc642dfa7c9243ee833bf inherit pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td class="mdescLeft">&#160;</td><td class="mdescRight">コールバック関数呼び出し用インターフェース  <br /></td></tr>
+<tr class="separator:a25856556e76fc642dfa7c9243ee833bf inherit pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a787041388181371791435092055c913c">_dwErrorNo</a></td></tr>
+<tr class="separator:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>TCP性能測定用（サーバー） </p>
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00082">82</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="abc977059ef61f1c42f5fda1bc5945ab0" name="abc977059ef61f1c42f5fda1bc5945ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc977059ef61f1c42f5fda1bc5945ab0">&#9670;&#160;</a></span>TcpServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TcpServer::TcpServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00368">368</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00098">_builder</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00097">_stop</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00099">_thread</a>.</p>
+
+</div>
+</div>
+<a id="a728a9e31c53cf86887f1f6149b1c46dd" name="a728a9e31c53cf86887f1f6149b1c46dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a728a9e31c53cf86887f1f6149b1c46dd">&#9670;&#160;</a></span>~TcpServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TcpServer::~TcpServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00379">379</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00098">_builder</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00099">_thread</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00071">alt::HandleLibrary::Close()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="afc84c73704ae5d8175255e6ab439e5f8" name="afc84c73704ae5d8175255e6ab439e5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc84c73704ae5d8175255e6ab439e5f8">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TcpServer::Init </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&#160;</td>
+          <td class="paramname"><em>wPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00391">391</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00098">_builder</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00097">_stop</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00262">alt::SocketBuilder::Prepare()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00025">alt::SocketBuilder::Startup()</a>.</p>
+
+</div>
+</div>
+<a id="a3b1d6af61604eae9f1c46684a96ff4ff" name="a3b1d6af61604eae9f1c46684a96ff4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1d6af61604eae9f1c46684a96ff4ff">&#9670;&#160;</a></span>Invoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD TcpServer::Invoke </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpvParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コールバック関数プレースホルダ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpvParam</td><td>コールバック関数に渡されるパラメータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>DWORD </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>ユーザー側でコールバック関数の実体を記載します。 </dd></dl>
+
+<p><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a16105dd2d54b46b2f4bee402faabb51e">alt::skeleton::ICallback</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00432">432</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00098">_builder</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00097">_stop</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00102">_workerHolder</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00158">alt::SocketLibrary::SetKeepAliveValue()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00314">PerfCheck::ServerWorker::Start()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00318">alt::SocketBuilder::Wait()</a>.</p>
+
+</div>
+</div>
+<a id="a1d819aea481b515bdc36e0a40c912e70" name="a1d819aea481b515bdc36e0a40c912e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d819aea481b515bdc36e0a40c912e70">&#9670;&#160;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL TcpServer::Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00403">403</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00099">_thread</a>, <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00024">alt::Thread::Create()</a>.</p>
+
+</div>
+</div>
+<a id="a19a0db0999f82c4addba261b9c3e918a" name="a19a0db0999f82c4addba261b9c3e918a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a0db0999f82c4addba261b9c3e918a">&#9670;&#160;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TcpServer::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00417">417</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00098">_builder</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00097">_stop</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00102">_workerHolder</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00140">alt::SocketLibrary::Close()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00166">DriveTcpServerConsoleHandler()</a>.</p>
+
+</div>
+</div>
+<a id="a1c64f5711382bb41c094ef91749fd70f" name="a1c64f5711382bb41c094ef91749fd70f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c64f5711382bb41c094ef91749fd70f">&#9670;&#160;</a></span>Wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD TcpServer::Wait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a> の <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00410">410</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00099">_thread</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00125">alt::WaitableHandleLibrary::Wait()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a9d33c2f068739235d6a18fd79280aa5d" name="a9d33c2f068739235d6a18fd79280aa5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d33c2f068739235d6a18fd79280aa5d">&#9670;&#160;</a></span>_builder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/db7/classalt_1_1_socket_builder.html">alt::SocketBuilder</a>* PerfCheck::TcpServer::_builder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00098">98</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00368">TcpServer()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00379">~TcpServer()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00391">Init()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00432">Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00417">Stop()</a>.</p>
+
+</div>
+</div>
+<a id="af77efbeca65954f92f43439a3b3f94b2" name="af77efbeca65954f92f43439a3b3f94b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af77efbeca65954f92f43439a3b3f94b2">&#9670;&#160;</a></span>_stop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool PerfCheck::TcpServer::_stop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00097">97</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00368">TcpServer()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00391">Init()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00432">Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00417">Stop()</a>.</p>
+
+</div>
+</div>
+<a id="a6f230abb88840312e0c8cfb40fbaa584" name="a6f230abb88840312e0c8cfb40fbaa584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f230abb88840312e0c8cfb40fbaa584">&#9670;&#160;</a></span>_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>* PerfCheck::TcpServer::_thread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00099">99</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00368">TcpServer()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00379">~TcpServer()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00403">Start()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00410">Wait()</a>.</p>
+
+</div>
+</div>
+<a id="ab228ff18257fbb6bc59019098f9d70e6" name="ab228ff18257fbb6bc59019098f9d70e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab228ff18257fbb6bc59019098f9d70e6">&#9670;&#160;</a></span>_workerHolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">alt::skeleton::Array</a>&lt;<a class="el" href="../../df/d72/class_perf_check_1_1_server_worker.html">ServerWorker</a>&gt; PerfCheck::TcpServer::_workerHolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a> の <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00102">102</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00432">Invoke()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00417">Stop()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/PerformanceCheck/<a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html">TCPPerformanceCheck.h</a></li>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/PerformanceCheck/<a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html">TCPPerformanceCheck.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></li><li class="navelem"><a class="el" href="../../d9/d82/class_perf_check_1_1_tcp_server.html">TcpServer</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

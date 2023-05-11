@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/masah/source/repos/KumaKuma0421/Alternate/MiddleLibraryTest/WorkerTemplateTest.cpp ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d0/ddd/_worker_template_test_8cpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">WorkerTemplateTest.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/ddd/_worker_template_test_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> https://docs.microsoft.com/ja-jp/visualstudio/test/microsoft-visualstudio-testtools-cppunittestframework-api-reference?view=vs-2019#general_asserts</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> Microsoft.VisualStudio.TestTools.CppUnitTestFramework API リファレンス</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d7e/_worker_template_8hpp.html">WorkerTemplate.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">using namespace </span>Microsoft::VisualStudio::CppUnitTestFramework;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../d6/d94/namespacealt.html">alt</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html">   13</a></span>    <span class="keyword">class </span><a class="code hl_class" href="../../db/d8c/classalt_1_1_worker_function.html">WorkerFunction</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#a5c52137fbca3b9d0b2ec14018097a166">   16</a></span>        <a class="code hl_function" href="../../db/d8c/classalt_1_1_worker_function.html#a5c52137fbca3b9d0b2ec14018097a166">WorkerFunction</a> ()</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">_message</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab69114ead6df294f53ec8cbe349eb806">_dwSize</a> = 0;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#af2949c9dbb0b174afa6144b2e297b84d">_data</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        };</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#af5a0a78c63e87d8c8a607895eaf6f77e">   23</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="../../db/d8c/classalt_1_1_worker_function.html#af5a0a78c63e87d8c8a607895eaf6f77e">~WorkerFunction</a> ()</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">delete</span> <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">_message</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keyword">delete</span> <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#af2949c9dbb0b174afa6144b2e297b84d">_data</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        };</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#a39b212ae32497b8b1e37a334b9f4db9e">   29</a></span>        std::function&lt;bool ()&gt; <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#a39b212ae32497b8b1e37a334b9f4db9e">init</a> = [&amp;]()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">_message</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../d5/d42/classalt_1_1_message.html">Message</a> ();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">_message</a>-&gt;<a class="code hl_function" href="../../d5/d42/classalt_1_1_message.html#a4b703b4eb4547ae4c28f97842a853835">SetFrom</a> (0);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">_message</a>-&gt;<a class="code hl_function" href="../../d5/d42/classalt_1_1_message.html#a2f3035974df6e2a6412bc395ecec751d">SetTo</a> (1);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">_message</a>-&gt;<a class="code hl_function" href="../../d5/d42/classalt_1_1_message.html#a7062bafffa2b02f0cc749f5939cca35c">SetCommand</a> (-1);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#af2949c9dbb0b174afa6144b2e297b84d">_data</a> = <span class="keyword">new</span> <a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a> (64);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#af2949c9dbb0b174afa6144b2e297b84d">_data</a>-&gt;<a class="code hl_function" href="../../db/d63/classalt_1_1_data.html#ad25c407a8f2176bc47adec79efd6ff6a">SetByte</a> ((LPBYTE)<span class="stringliteral">&quot;THIS IS A SAMPLE STRING.&quot;</span>, 24);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        };</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#aecae10173a5fd2759ffab9a6ec89d4dd">   42</a></span>        std::function&lt;bool ()&gt; <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#aecae10173a5fd2759ffab9a6ec89d4dd">start</a> = [&amp;]()</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#aa3b97278d84a7dfa33752487be3dca63">   47</a></span>        std::function&lt;bool (<a class="code hl_class" href="../../d5/d42/classalt_1_1_message.html">Message</a> message)&gt; <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#aa3b97278d84a7dfa33752487be3dca63">command</a> = [&amp;](<a class="code hl_class" href="../../d5/d42/classalt_1_1_message.html">Message</a> message)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        };</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#af76621f51def544243c192ed5064841b">   52</a></span>        std::function&lt;<a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a> (<a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a> data)&gt; <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#af76621f51def544243c192ed5064841b">process</a> = [&amp;](<a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a> data) -&gt; <a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keywordflow">return</span> data;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        };</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#a66f3138cbf242f493580541bee1c4b1c">   57</a></span>        std::function&lt;bool ()&gt; <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#a66f3138cbf242f493580541bee1c4b1c">stop</a> = [&amp;]()</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        };</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#ac0c6192f18ca17f4ff7e97541179f32e">   62</a></span>        std::function&lt;bool ()&gt; <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ac0c6192f18ca17f4ff7e97541179f32e">exit</a> = [&amp;]()</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        };</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">   68</a></span>        <a class="code hl_class" href="../../d5/d42/classalt_1_1_message.html">Message</a>* <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">_message</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#af2949c9dbb0b174afa6144b2e297b84d">   69</a></span>        <a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a>* <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#af2949c9dbb0b174afa6144b2e297b84d">_data</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../db/d8c/classalt_1_1_worker_function.html#ab69114ead6df294f53ec8cbe349eb806">   70</a></span>        DWORD <a class="code hl_variable" href="../../db/d8c/classalt_1_1_worker_function.html#ab69114ead6df294f53ec8cbe349eb806">_dwSize</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    };</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/d51/namespace_middle_library_test.html">MiddleLibraryTest</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="../../d2/d51/namespace_middle_library_test.html#a8faa4cbe899c3abd590426860a1f342b">   76</a></span>    <a class="code hl_function" href="../../d2/d51/namespace_middle_library_test.html#a457faaa40ecc3a830b53ee1e3f9ee3a7">TEST_CLASS</a> (WorkerTemplateTest)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        TEST_CLASS_INITIALIZE (ClassInitialize)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            Logger::WriteMessage (<span class="stringliteral">&quot;class initialize.\n&quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        TEST_CLASS_CLEANUP (ClassCleanup)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            Logger::WriteMessage (<span class="stringliteral">&quot;class cleanup.\n&quot;</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        TEST_METHOD_INITIALIZE (MethodInitialize)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            Logger::WriteMessage (<span class="stringliteral">&quot;--&gt;&gt;method initialize.\n&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        TEST_METHOD_CLEANUP (MethodCleanup)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            Logger::WriteMessage (<span class="stringliteral">&quot;&lt;&lt;--method cleanup.\n&quot;</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        TEST_METHOD (SequencialCall)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <a class="code hl_class" href="../../d6/d9a/classalt_1_1_worker_template.html">WorkerTemplate</a> workerTemplate;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_class" href="../../db/d8c/classalt_1_1_worker_function.html">WorkerFunction</a> workerFunction;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a> data (128);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            data.<a class="code hl_function" href="../../db/d63/classalt_1_1_data.html#ad25c407a8f2176bc47adec79efd6ff6a">SetByte</a> ((LPBYTE)<span class="stringliteral">&quot;1234567890&quot;</span>, 10);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <a class="code hl_class" href="../../d5/d42/classalt_1_1_message.html">Message</a> message;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            [] (<a class="code hl_class" href="../../d6/d9a/classalt_1_1_worker_template.html">WorkerTemplate</a>&amp; t, <a class="code hl_class" href="../../db/d8c/classalt_1_1_worker_function.html">WorkerFunction</a>&amp; f)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <span class="keywordtype">bool</span> ret = t.<a class="code hl_function" href="../../d6/d9a/classalt_1_1_worker_template.html#a8822b45b9fb3702e63bf7f192f266dc5">Init</a> (f.init);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                Assert::AreEqual&lt;bool&gt; (<span class="keyword">true</span>, ret);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            }(workerTemplate, workerFunction);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            [] (<a class="code hl_class" href="../../d6/d9a/classalt_1_1_worker_template.html">WorkerTemplate</a>&amp; t, <a class="code hl_class" href="../../db/d8c/classalt_1_1_worker_function.html">WorkerFunction</a>&amp; f)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <span class="keywordtype">bool</span> ret = t.<a class="code hl_function" href="../../d6/d9a/classalt_1_1_worker_template.html#a153d211ff7ac52eae378fa9a0e581928">Start</a> (f.start);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                Assert::AreEqual&lt;bool&gt; (<span class="keyword">true</span>, ret);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            }(workerTemplate, workerFunction);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            [] (<a class="code hl_class" href="../../d6/d9a/classalt_1_1_worker_template.html">WorkerTemplate</a>&amp; t, <a class="code hl_class" href="../../db/d8c/classalt_1_1_worker_function.html">WorkerFunction</a>&amp; f, <a class="code hl_class" href="../../d5/d42/classalt_1_1_message.html">Message</a>&amp; msg)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                <span class="keywordtype">bool</span> ret = t.<a class="code hl_function" href="../../d6/d9a/classalt_1_1_worker_template.html#a9722e61c8157d30efc491fcdd79cc55e">Command</a> (f.command, msg);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                Assert::AreEqual&lt;bool&gt; (<span class="keyword">true</span>, ret);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }(workerTemplate, workerFunction, message);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            [] (<a class="code hl_class" href="../../d6/d9a/classalt_1_1_worker_template.html">WorkerTemplate</a>&amp; t, <a class="code hl_class" href="../../db/d8c/classalt_1_1_worker_function.html">WorkerFunction</a>&amp; f, <a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a>&amp; d)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                <a class="code hl_class" href="../../db/d63/classalt_1_1_data.html">Data</a> ret = t.<a class="code hl_function" href="../../d6/d9a/classalt_1_1_worker_template.html#abbcd6d499c65aae89a585a8c7db2e424">Process</a> (f.process, d);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                Assert::AreEqual (0, lstrcmpA (<span class="stringliteral">&quot;1234567890&quot;</span>, (LPSTR)ret.<a class="code hl_function" href="../../db/d63/classalt_1_1_data.html#a02c404f58196230cff16f3288b8a81ec">GetByte</a> ()));</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            }(workerTemplate, workerFunction, data);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            [] (<a class="code hl_class" href="../../d6/d9a/classalt_1_1_worker_template.html">WorkerTemplate</a>&amp; t, <a class="code hl_class" href="../../db/d8c/classalt_1_1_worker_function.html">WorkerFunction</a>&amp; f)</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordtype">bool</span> ret = t.<a class="code hl_function" href="../../d6/d9a/classalt_1_1_worker_template.html#a0c7959f62845abeedcf2ef5cdaffca5f">Stop</a> (f.stop);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                Assert::AreEqual&lt;bool&gt; (<span class="keyword">true</span>, ret);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            }(workerTemplate, workerFunction);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            [] (<a class="code hl_class" href="../../d6/d9a/classalt_1_1_worker_template.html">WorkerTemplate</a>&amp; t, <a class="code hl_class" href="../../db/d8c/classalt_1_1_worker_function.html">WorkerFunction</a>&amp; f)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                <span class="keywordtype">bool</span> ret = t.<a class="code hl_function" href="../../d6/d9a/classalt_1_1_worker_template.html#a8509a99c8c5c3f039d45eddfc18d125b">Exit</a> (f.exit);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                Assert::AreEqual&lt;bool&gt; (<span class="keyword">true</span>, ret);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            }(workerTemplate, workerFunction);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    };</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
+<div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
+<div class="ttc" id="a_worker_template_8hpp_html"><div class="ttname"><a href="../../da/d7e/_worker_template_8hpp.html">WorkerTemplate.hpp</a></div></div>
+<div class="ttc" id="aclassalt_1_1_data_html"><div class="ttname"><a href="../../db/d63/classalt_1_1_data.html">alt::Data</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00073">WorkerTemplate.hpp:74</a></div></div>
+<div class="ttc" id="aclassalt_1_1_data_html_a02c404f58196230cff16f3288b8a81ec"><div class="ttname"><a href="../../db/d63/classalt_1_1_data.html#a02c404f58196230cff16f3288b8a81ec">alt::Data::GetByte</a></div><div class="ttdeci">LPBYTE GetByte()</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00093">WorkerTemplate.hpp:93</a></div></div>
+<div class="ttc" id="aclassalt_1_1_data_html_ad25c407a8f2176bc47adec79efd6ff6a"><div class="ttname"><a href="../../db/d63/classalt_1_1_data.html#ad25c407a8f2176bc47adec79efd6ff6a">alt::Data::SetByte</a></div><div class="ttdeci">void SetByte(LPBYTE pbyData, DWORD dwSize)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00097">WorkerTemplate.hpp:97</a></div></div>
+<div class="ttc" id="aclassalt_1_1_message_html"><div class="ttname"><a href="../../d5/d42/classalt_1_1_message.html">alt::Message</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00046">WorkerTemplate.hpp:47</a></div></div>
+<div class="ttc" id="aclassalt_1_1_message_html_a2f3035974df6e2a6412bc395ecec751d"><div class="ttname"><a href="../../d5/d42/classalt_1_1_message.html#a2f3035974df6e2a6412bc395ecec751d">alt::Message::SetTo</a></div><div class="ttdeci">void SetTo(int to)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00062">WorkerTemplate.hpp:62</a></div></div>
+<div class="ttc" id="aclassalt_1_1_message_html_a4b703b4eb4547ae4c28f97842a853835"><div class="ttname"><a href="../../d5/d42/classalt_1_1_message.html#a4b703b4eb4547ae4c28f97842a853835">alt::Message::SetFrom</a></div><div class="ttdeci">void SetFrom(int from)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00059">WorkerTemplate.hpp:59</a></div></div>
+<div class="ttc" id="aclassalt_1_1_message_html_a7062bafffa2b02f0cc749f5939cca35c"><div class="ttname"><a href="../../d5/d42/classalt_1_1_message.html#a7062bafffa2b02f0cc749f5939cca35c">alt::Message::SetCommand</a></div><div class="ttdeci">void SetCommand(int command)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00065">WorkerTemplate.hpp:65</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html">alt::WorkerFunction</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00013">WorkerTemplateTest.cpp:14</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_a39b212ae32497b8b1e37a334b9f4db9e"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#a39b212ae32497b8b1e37a334b9f4db9e">alt::WorkerFunction::init</a></div><div class="ttdeci">std::function&lt; bool()&gt; init</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00029">WorkerTemplateTest.cpp:29</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_a5c52137fbca3b9d0b2ec14018097a166"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#a5c52137fbca3b9d0b2ec14018097a166">alt::WorkerFunction::WorkerFunction</a></div><div class="ttdeci">WorkerFunction()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00016">WorkerTemplateTest.cpp:16</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_a66f3138cbf242f493580541bee1c4b1c"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#a66f3138cbf242f493580541bee1c4b1c">alt::WorkerFunction::stop</a></div><div class="ttdeci">std::function&lt; bool()&gt; stop</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00057">WorkerTemplateTest.cpp:57</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_aa3b97278d84a7dfa33752487be3dca63"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#aa3b97278d84a7dfa33752487be3dca63">alt::WorkerFunction::command</a></div><div class="ttdeci">std::function&lt; bool(Message message)&gt; command</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00047">WorkerTemplateTest.cpp:47</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_ab69114ead6df294f53ec8cbe349eb806"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#ab69114ead6df294f53ec8cbe349eb806">alt::WorkerFunction::_dwSize</a></div><div class="ttdeci">DWORD _dwSize</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00070">WorkerTemplateTest.cpp:70</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_ab803adf283728f443a5fab4212ed514a"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#ab803adf283728f443a5fab4212ed514a">alt::WorkerFunction::_message</a></div><div class="ttdeci">Message * _message</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00068">WorkerTemplateTest.cpp:68</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_ac0c6192f18ca17f4ff7e97541179f32e"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#ac0c6192f18ca17f4ff7e97541179f32e">alt::WorkerFunction::exit</a></div><div class="ttdeci">std::function&lt; bool()&gt; exit</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00062">WorkerTemplateTest.cpp:62</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_aecae10173a5fd2759ffab9a6ec89d4dd"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#aecae10173a5fd2759ffab9a6ec89d4dd">alt::WorkerFunction::start</a></div><div class="ttdeci">std::function&lt; bool()&gt; start</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00042">WorkerTemplateTest.cpp:42</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_af2949c9dbb0b174afa6144b2e297b84d"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#af2949c9dbb0b174afa6144b2e297b84d">alt::WorkerFunction::_data</a></div><div class="ttdeci">Data * _data</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00069">WorkerTemplateTest.cpp:69</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_af5a0a78c63e87d8c8a607895eaf6f77e"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#af5a0a78c63e87d8c8a607895eaf6f77e">alt::WorkerFunction::~WorkerFunction</a></div><div class="ttdeci">virtual ~WorkerFunction()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00023">WorkerTemplateTest.cpp:23</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_function_html_af76621f51def544243c192ed5064841b"><div class="ttname"><a href="../../db/d8c/classalt_1_1_worker_function.html#af76621f51def544243c192ed5064841b">alt::WorkerFunction::process</a></div><div class="ttdeci">std::function&lt; Data(Data data)&gt; process</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddd/_worker_template_test_8cpp_source.html#l00052">WorkerTemplateTest.cpp:52</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_template_html"><div class="ttname"><a href="../../d6/d9a/classalt_1_1_worker_template.html">alt::WorkerTemplate</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00118">WorkerTemplate.hpp:119</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_template_html_a0c7959f62845abeedcf2ef5cdaffca5f"><div class="ttname"><a href="../../d6/d9a/classalt_1_1_worker_template.html#a0c7959f62845abeedcf2ef5cdaffca5f">alt::WorkerTemplate::Stop</a></div><div class="ttdeci">bool Stop(Function function)</div><div class="ttdoc">終了処理</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00184">WorkerTemplate.hpp:184</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_template_html_a153d211ff7ac52eae378fa9a0e581928"><div class="ttname"><a href="../../d6/d9a/classalt_1_1_worker_template.html#a153d211ff7ac52eae378fa9a0e581928">alt::WorkerTemplate::Start</a></div><div class="ttdeci">bool Start(Function function)</div><div class="ttdoc">開始処理</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00145">WorkerTemplate.hpp:145</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_template_html_a8509a99c8c5c3f039d45eddfc18d125b"><div class="ttname"><a href="../../d6/d9a/classalt_1_1_worker_template.html#a8509a99c8c5c3f039d45eddfc18d125b">alt::WorkerTemplate::Exit</a></div><div class="ttdeci">bool Exit(Function function)</div><div class="ttdoc">退出処理</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00197">WorkerTemplate.hpp:197</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_template_html_a8822b45b9fb3702e63bf7f192f266dc5"><div class="ttname"><a href="../../d6/d9a/classalt_1_1_worker_template.html#a8822b45b9fb3702e63bf7f192f266dc5">alt::WorkerTemplate::Init</a></div><div class="ttdeci">bool Init(Function function)</div><div class="ttdoc">初期化処理</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00132">WorkerTemplate.hpp:132</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_template_html_a9722e61c8157d30efc491fcdd79cc55e"><div class="ttname"><a href="../../d6/d9a/classalt_1_1_worker_template.html#a9722e61c8157d30efc491fcdd79cc55e">alt::WorkerTemplate::Command</a></div><div class="ttdeci">bool Command(Function function, Message message)</div><div class="ttdoc">コマンド処理</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00158">WorkerTemplate.hpp:158</a></div></div>
+<div class="ttc" id="aclassalt_1_1_worker_template_html_abbcd6d499c65aae89a585a8c7db2e424"><div class="ttname"><a href="../../d6/d9a/classalt_1_1_worker_template.html#abbcd6d499c65aae89a585a8c7db2e424">alt::WorkerTemplate::Process</a></div><div class="ttdeci">Data Process(Function function, Data data)</div><div class="ttdoc">プロセス処理</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d7e/_worker_template_8hpp_source.html#l00171">WorkerTemplate.hpp:171</a></div></div>
+<div class="ttc" id="anamespace_middle_library_test_html"><div class="ttname"><a href="../../d2/d51/namespace_middle_library_test.html">MiddleLibraryTest</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d91/_design_pattern_test_8cpp_source.html#l00015">DesignPatternTest.cpp:16</a></div></div>
+<div class="ttc" id="anamespace_middle_library_test_html_a457faaa40ecc3a830b53ee1e3f9ee3a7"><div class="ttname"><a href="../../d2/d51/namespace_middle_library_test.html#a457faaa40ecc3a830b53ee1e3f9ee3a7">MiddleLibraryTest::TEST_CLASS</a></div><div class="ttdeci">TEST_CLASS(DesignPatternTest)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d91/_design_pattern_test_8cpp_source.html#l00017">DesignPatternTest.cpp:17</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_83cf2abc9096b1c88138b961eae23dc7.html">MiddleLibraryTest</a></li><li class="navelem"><a class="el" href="../../d0/ddd/_worker_template_test_8cpp.html">WorkerTemplateTest.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

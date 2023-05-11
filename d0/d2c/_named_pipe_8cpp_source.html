@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/NamedPipe.cpp ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d0/d2c/_named_pipe_8cpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NamedPipe.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/d2c/_named_pipe_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"></span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d21/_named_pipe_8h.html">NamedPipe.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../d6/d94/namespacealt.html">alt</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d9/de1/classalt_1_1_named_pipe.html#a8a5dede618fea0ee66c98c5d56a4c062">   12</a></span>BOOL <a class="code hl_function" href="../../d9/de1/classalt_1_1_named_pipe.html#a8a5dede618fea0ee66c98c5d56a4c062">NamedPipe::Create</a> (LPCTSTR lpctszName, BOOL bStreamMode)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    BOOL ret = TRUE;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    TCHAR tszPipeName[MAX_PATH];</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// PIPE_ACCESS_INBOUND, PIPE_ACCESS_OUTBOUND, PIPE_ACCESS_DUPLEX</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// FILE_FLAG_WRITE_THROUGH バイトタイプ＆端点がリモートPCの時のみ有効</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// FILE_FLAG_OVERLAPPED 非同期モード</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    DWORD dwOpenMode = PIPE_ACCESS_DUPLEX;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// PIPE_TYPE_BYTE 通常のバイナリ操作</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">// PIPE_TYPE_MESSAGE 一度に一文</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// PIPE_READMODE_BYTE バイトストリーム</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// PIPE_READMODE_MESSAGE メッセージストリーム</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// PIPE_WAIT 完了するまで制御を返さない</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// PIPE_NO_WAIT ReadFile, WriteFile, ConnectNamedPipeは制御をすぐ返す</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    DWORD dwPipeMode =</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        bStreamMode == FALSE ? PIPE_TYPE_BYTE | PIPE_READMODE_BYTE :</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        PIPE_TYPE_MESSAGE | PIPE_READMODE_MESSAGE;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    DWORD dwMaxInstance = PIPE_UNLIMITED_INSTANCES;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    DWORD dwOutBuffSize = USHRT_MAX;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    DWORD dwInBufSize = USHRT_MAX;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    DWORD dwDefaultTimeOut = SHRT_MAX;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    wsprintf (tszPipeName, <a class="code hl_define" href="../../df/d21/_named_pipe_8h.html#a7d99c7d0dda1a9ae976a776d360cfc38">PIPE_NAME_FORMAT</a>, lpctszName);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_variable" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> = ::CreateNamedPipe (</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        tszPipeName, dwOpenMode, dwPipeMode, dwMaxInstance, dwOutBuffSize,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        dwInBufSize, dwDefaultTimeOut, NULL);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> == INVALID_HANDLE_VALUE)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        ret = FALSE;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d9/de1/classalt_1_1_named_pipe.html#a43c8f2ce85c81b83e4a2ac1cabef6d7d">   47</a></span>BOOL <a class="code hl_function" href="../../d9/de1/classalt_1_1_named_pipe.html#a43c8f2ce85c81b83e4a2ac1cabef6d7d">NamedPipe::Connect</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    return ::ConnectNamedPipe (<a class="code hl_variable" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>, NULL);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d9/de1/classalt_1_1_named_pipe.html#ad24548aa10c02433175522e123d5e930">   52</a></span>BOOL <a class="code hl_function" href="../../d9/de1/classalt_1_1_named_pipe.html#ad24548aa10c02433175522e123d5e930">NamedPipe::Disconnect</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    return ::DisconnectNamedPipe (<a class="code hl_variable" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d9/de1/classalt_1_1_named_pipe.html#a20e7bd2a7fa522288d30453d7854cfa3">   57</a></span>BOOL <a class="code hl_function" href="../../d9/de1/classalt_1_1_named_pipe.html#a20e7bd2a7fa522288d30453d7854cfa3">NamedPipe::Open</a> (LPCTSTR lpctszName)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    BOOL ret = TRUE;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    TCHAR tszPipeName[MAX_PATH];</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    wsprintf (tszPipeName, <a class="code hl_define" href="../../df/d21/_named_pipe_8h.html#a7d99c7d0dda1a9ae976a776d360cfc38">PIPE_NAME_FORMAT</a>, lpctszName);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_variable" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> = ::CreateFile (</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        tszPipeName, GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        FILE_ATTRIBUTE_NORMAL, NULL);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a> == INVALID_HANDLE_VALUE)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        ret = FALSE;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d9/de1/classalt_1_1_named_pipe.html#a6c0d7c9cb7cc639a567ed19d0a47b6c9">   75</a></span>BOOL <a class="code hl_function" href="../../d9/de1/classalt_1_1_named_pipe.html#a6c0d7c9cb7cc639a567ed19d0a47b6c9">NamedPipe::Wait</a> (LPCTSTR lpctszName, DWORD dwTimeout)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    TCHAR tszPipeName[MAX_PATH];</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    wsprintf (tszPipeName, <a class="code hl_define" href="../../df/d21/_named_pipe_8h.html#a7d99c7d0dda1a9ae976a776d360cfc38">PIPE_NAME_FORMAT</a>, lpctszName);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    return ::WaitNamedPipe (tszPipeName, dwTimeout);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../d9/de1/classalt_1_1_named_pipe.html#a8e48c319e34194280d7a2b93b9df9c99">   84</a></span>DWORD <a class="code hl_function" href="../../d9/de1/classalt_1_1_named_pipe.html#a8e48c319e34194280d7a2b93b9df9c99">NamedPipe::PeekData</a> (LPVOID lpvData, DWORD dwSize)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    DWORD dwBytesRead;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    BOOL ret;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    ret = ::PeekNamedPipe (</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_variable" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>, lpvData, dwSize, &amp;dwBytesRead, NULL, NULL);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">return</span> ret == TRUE ? dwBytesRead : (DWORD)(-1);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d9/de1/classalt_1_1_named_pipe.html#a893cc8387bdadd601cf281e586a346f6">   95</a></span>DWORD <a class="code hl_function" href="../../d9/de1/classalt_1_1_named_pipe.html#a893cc8387bdadd601cf281e586a346f6">NamedPipe::PeekRemain</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    DWORD dwTotalBytesAvail;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    BOOL ret;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    ret = ::PeekNamedPipe (<a class="code hl_variable" href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">_hObject</a>, NULL, 0, NULL, &amp;dwTotalBytesAvail, NULL);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span> ret == FALSE ? -1 : dwTotalBytesAvail;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+<div class="ttc" id="a_named_pipe_8h_html"><div class="ttname"><a href="../../df/d21/_named_pipe_8h.html">NamedPipe.h</a></div><div class="ttdoc">名前付きパイプに関するWindowsAPIを集約したクラス</div></div>
+<div class="ttc" id="a_named_pipe_8h_html_a7d99c7d0dda1a9ae976a776d360cfc38"><div class="ttname"><a href="../../df/d21/_named_pipe_8h.html#a7d99c7d0dda1a9ae976a776d360cfc38">PIPE_NAME_FORMAT</a></div><div class="ttdeci">#define PIPE_NAME_FORMAT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d21/_named_pipe_8h_source.html#l00011">NamedPipe.h:11</a></div></div>
+<div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
+<div class="ttc" id="aclassalt_1_1_handle_library_html_a03edc7a6d9d82f83145167dde56c3742"><div class="ttname"><a href="../../d0/d99/classalt_1_1_handle_library.html#a03edc7a6d9d82f83145167dde56c3742">alt::HandleLibrary::_hObject</a></div><div class="ttdeci">HANDLE _hObject</div><div class="ttdoc">ハンドルを使用するWindowsAPIで保持するHANDLE値</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00069">WindowsLibrary.h:69</a></div></div>
+<div class="ttc" id="aclassalt_1_1_named_pipe_html_a20e7bd2a7fa522288d30453d7854cfa3"><div class="ttname"><a href="../../d9/de1/classalt_1_1_named_pipe.html#a20e7bd2a7fa522288d30453d7854cfa3">alt::NamedPipe::Open</a></div><div class="ttdeci">BOOL APIENTRY Open(LPCTSTR lpctszName)</div><div class="ttdoc">パイプをオープンします。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2c/_named_pipe_8cpp_source.html#l00057">NamedPipe.cpp:57</a></div></div>
+<div class="ttc" id="aclassalt_1_1_named_pipe_html_a43c8f2ce85c81b83e4a2ac1cabef6d7d"><div class="ttname"><a href="../../d9/de1/classalt_1_1_named_pipe.html#a43c8f2ce85c81b83e4a2ac1cabef6d7d">alt::NamedPipe::Connect</a></div><div class="ttdeci">BOOL APIENTRY Connect() const</div><div class="ttdoc">サーバー側でクライアント接続を待機します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2c/_named_pipe_8cpp_source.html#l00047">NamedPipe.cpp:47</a></div></div>
+<div class="ttc" id="aclassalt_1_1_named_pipe_html_a6c0d7c9cb7cc639a567ed19d0a47b6c9"><div class="ttname"><a href="../../d9/de1/classalt_1_1_named_pipe.html#a6c0d7c9cb7cc639a567ed19d0a47b6c9">alt::NamedPipe::Wait</a></div><div class="ttdeci">BOOL APIENTRY Wait(LPCTSTR lpctszName, DWORD dwTimeout=NMPWAIT_USE_DEFAULT_WAIT) const</div><div class="ttdoc">クライアント側でサーバー接続を待機します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2c/_named_pipe_8cpp_source.html#l00075">NamedPipe.cpp:75</a></div></div>
+<div class="ttc" id="aclassalt_1_1_named_pipe_html_a893cc8387bdadd601cf281e586a346f6"><div class="ttname"><a href="../../d9/de1/classalt_1_1_named_pipe.html#a893cc8387bdadd601cf281e586a346f6">alt::NamedPipe::PeekRemain</a></div><div class="ttdeci">DWORD APIENTRY PeekRemain() const</div><div class="ttdoc">バッファ内に残っているメッセージサイズを取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2c/_named_pipe_8cpp_source.html#l00095">NamedPipe.cpp:95</a></div></div>
+<div class="ttc" id="aclassalt_1_1_named_pipe_html_a8a5dede618fea0ee66c98c5d56a4c062"><div class="ttname"><a href="../../d9/de1/classalt_1_1_named_pipe.html#a8a5dede618fea0ee66c98c5d56a4c062">alt::NamedPipe::Create</a></div><div class="ttdeci">BOOL APIENTRY Create(LPCTSTR lpctszName, BOOL bStreamMode)</div><div class="ttdoc">パイプを作成します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2c/_named_pipe_8cpp_source.html#l00012">NamedPipe.cpp:12</a></div></div>
+<div class="ttc" id="aclassalt_1_1_named_pipe_html_a8e48c319e34194280d7a2b93b9df9c99"><div class="ttname"><a href="../../d9/de1/classalt_1_1_named_pipe.html#a8e48c319e34194280d7a2b93b9df9c99">alt::NamedPipe::PeekData</a></div><div class="ttdeci">DWORD APIENTRY PeekData(LPVOID lpvData, DWORD dwSize) const</div><div class="ttdoc">メッセージ内容を取り出さずに読み取ります。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2c/_named_pipe_8cpp_source.html#l00084">NamedPipe.cpp:84</a></div></div>
+<div class="ttc" id="aclassalt_1_1_named_pipe_html_ad24548aa10c02433175522e123d5e930"><div class="ttname"><a href="../../d9/de1/classalt_1_1_named_pipe.html#ad24548aa10c02433175522e123d5e930">alt::NamedPipe::Disconnect</a></div><div class="ttdeci">BOOL APIENTRY Disconnect() const</div><div class="ttdoc">サーバー側でクライアント接続を切断します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d2c/_named_pipe_8cpp_source.html#l00052">NamedPipe.cpp:52</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a23eecd3b4421913eed0c0eed82e230d.html">WindowsLibrary</a></li><li class="navelem"><a class="el" href="../../d0/d2c/_named_pipe_8cpp.html">NamedPipe.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

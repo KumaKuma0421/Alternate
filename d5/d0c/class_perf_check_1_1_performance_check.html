@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: PerfCheck::PerformanceCheck クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d5/d0c/class_perf_check_1_1_performance_check.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="../../d4/dec/class_perf_check_1_1_performance_check-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">PerfCheck::PerformanceCheck クラス<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>性能測定用  
+ <a href="../../d5/d0c/class_perf_check_1_1_performance_check.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../dd/da6/_performance_check_8h_source.html">PerformanceCheck.h</a>&gt;</code></p>
+<div class="dynheader">
+PerfCheck::PerformanceCheck の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d5/d0c/class_perf_check_1_1_performance_check.png" usemap="#PerfCheck::PerformanceCheck_map" alt=""/>
+  <map id="PerfCheck::PerformanceCheck_map" name="PerfCheck::PerformanceCheck_map">
+<area href="../../d8/dbf/class_perf_check_1_1_array_performance_check.html" title="Arrayクラス性能測定用" alt="PerfCheck::ArrayPerformanceCheck" shape="rect" coords="286,56,562,80"/>
+<area href="../../d8/d50/class_perf_check_1_1_console_performance_check.html" title="Console性能測定用" alt="PerfCheck::ConsolePerformanceCheck" shape="rect" coords="286,112,562,136"/>
+<area href="../../df/db5/class_perf_check_1_1_deque_performance_check.html" title="双方向キュークラス性能測定用" alt="PerfCheck::DequePerformanceCheck" shape="rect" coords="286,168,562,192"/>
+<area href="../../d1/d7a/class_perf_check_1_1_file_performance_check.html" title="Fileクラス性能測定用" alt="PerfCheck::FilePerformanceCheck" shape="rect" coords="286,224,562,248"/>
+<area href="../../db/dee/class_perf_check_1_1_freight_performance_check.html" title="Freightクラス性能測定用" alt="PerfCheck::FreightPerformanceCheck" shape="rect" coords="286,280,562,304"/>
+<area href="../../db/dbe/class_perf_check_1_1_heap_performance_check.html" title="HeapMemoryクラス性能測定用" alt="PerfCheck::HeapPerformanceCheck" shape="rect" coords="286,336,562,360"/>
+<area href="../../df/d93/class_perf_check_1_1_linked_list_performance_check.html" title="連結リストクラス性能測定用" alt="PerfCheck::LinkedListPerformanceCheck" shape="rect" coords="286,392,562,416"/>
+<area href="../../d0/d31/class_perf_check_1_1_new_performance_check.html" title="newの性能測定用" alt="PerfCheck::NewPerformanceCheck" shape="rect" coords="286,448,562,472"/>
+<area href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html" title="Fileクラスの比較用" alt="PerfCheck::StdFilePerformanceCheck" shape="rect" coords="286,504,562,528"/>
+<area href="../../da/d9c/class_perf_check_1_1_t_c_p_performance_check.html" title="TCP性能測定用" alt="PerfCheck::TCPPerformanceCheck" shape="rect" coords="286,560,562,584"/>
+<area href="../../d6/d10/class_perf_check_1_1_t_string_performance_check.html" title="TStringクラス性能測定用" alt="PerfCheck::TStringPerformanceCheck" shape="rect" coords="286,616,562,640"/>
+<area href="../../de/d39/class_perf_check_1_1_u_d_p_performance_check.html" title="UDP性能測定用" alt="PerfCheck::UDPPerformanceCheck" shape="rect" coords="286,672,562,696"/>
+<area href="../../da/de7/class_perf_check_1_1_vector_performance_check.html" title="std::vector&lt;T&gt;クラス性能測定用" alt="PerfCheck::VectorPerformanceCheck" shape="rect" coords="286,728,562,752"/>
+<area href="../../d6/d59/class_perf_check_1_1_watch_doc_timer_performance_check.html" title="WatchDocTimerクラス性能測定用" alt="PerfCheck::WatchDocTimerPerformanceCheck" shape="rect" coords="286,784,562,808"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a61b8f9f188408537823fa0658ff40ea0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a61b8f9f188408537823fa0658ff40ea0">PerformanceCheck</a> (<a class="el" href="../../d1/de5/classalt_1_1_console.html">alt::Console</a> &amp;console)</td></tr>
+<tr class="memdesc:a61b8f9f188408537823fa0658ff40ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a61b8f9f188408537823fa0658ff40ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c45865c1a3b3fd26a1464e556f664e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#af5c45865c1a3b3fd26a1464e556f664e">~PerformanceCheck</a> ()</td></tr>
+<tr class="memdesc:af5c45865c1a3b3fd26a1464e556f664e"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:af5c45865c1a3b3fd26a1464e556f664e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486312a92bc41660de1dbaa1e7489333"><td class="memItemLeft" align="right" valign="top">virtual BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a486312a92bc41660de1dbaa1e7489333">DoAction</a> ()=0</td></tr>
+<tr class="memdesc:a486312a92bc41660de1dbaa1e7489333"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理開始  <br /></td></tr>
+<tr class="separator:a486312a92bc41660de1dbaa1e7489333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000663cfb5bb1defc9815da45fd50e13"><td class="memItemLeft" align="right" valign="top">virtual VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a000663cfb5bb1defc9815da45fd50e13">Init</a> ()</td></tr>
+<tr class="memdesc:a000663cfb5bb1defc9815da45fd50e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化処理  <br /></td></tr>
+<tr class="separator:a000663cfb5bb1defc9815da45fd50e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a74f2057538e42eb27b07ae403028d89f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de5/classalt_1_1_console.html">alt::Console</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#a74f2057538e42eb27b07ae403028d89f">_console</a></td></tr>
+<tr class="separator:a74f2057538e42eb27b07ae403028d89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ada63c46227f3bf603dc09590fc701199"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0c/class_perf_check_1_1_performance_check.html#ada63c46227f3bf603dc09590fc701199">PerformanceCheck</a> ()=delete</td></tr>
+<tr class="separator:ada63c46227f3bf603dc09590fc701199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>性能測定用 </p>
+
+<p class="definition"> <a class="el" href="../../dd/da6/_performance_check_8h_source.html">PerformanceCheck.h</a> の <a class="el" href="../../dd/da6/_performance_check_8h_source.html#l00018">18</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a61b8f9f188408537823fa0658ff40ea0" name="a61b8f9f188408537823fa0658ff40ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b8f9f188408537823fa0658ff40ea0">&#9670;&#160;</a></span>PerformanceCheck() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PerfCheck::PerformanceCheck::PerformanceCheck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/de5/classalt_1_1_console.html">alt::Console</a> &amp;&#160;</td>
+          <td class="paramname"><em>console</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+
+<p class="definition"> <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html">PerformanceCheck.cpp</a> の <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00151">151</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af5c45865c1a3b3fd26a1464e556f664e" name="af5c45865c1a3b3fd26a1464e556f664e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5c45865c1a3b3fd26a1464e556f664e">&#9670;&#160;</a></span>~PerformanceCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PerfCheck::PerformanceCheck::~PerformanceCheck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>デストラクタ </p>
+
+<p class="definition"> <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html">PerformanceCheck.cpp</a> の <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00156">156</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ada63c46227f3bf603dc09590fc701199" name="ada63c46227f3bf603dc09590fc701199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada63c46227f3bf603dc09590fc701199">&#9670;&#160;</a></span>PerformanceCheck() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PerfCheck::PerformanceCheck::PerformanceCheck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a486312a92bc41660de1dbaa1e7489333" name="a486312a92bc41660de1dbaa1e7489333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486312a92bc41660de1dbaa1e7489333">&#9670;&#160;</a></span>DoAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual BOOL PerfCheck::PerformanceCheck::DoAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>処理開始 </p>
+<dl class="section return"><dt>戻り値</dt><dd>処理成否 </dd></dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE:成功</td><td></td></tr>
+    <tr><td class="paramname">FALSE:失敗</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>純粋仮想関数です。 </dd></dl>
+
+<p><a class="el" href="../../d8/dbf/class_perf_check_1_1_array_performance_check.html#a1dcc85fbe2dc20d8e2ae503c5d945198">PerfCheck::ArrayPerformanceCheck</a>, <a class="el" href="../../d8/d50/class_perf_check_1_1_console_performance_check.html#a068f6ba7f6cc15e1ca5cf765d73f8e71">PerfCheck::ConsolePerformanceCheck</a>, <a class="el" href="../../df/db5/class_perf_check_1_1_deque_performance_check.html#aaa4930db6bcee6b0333dfe123a5f65e2">PerfCheck::DequePerformanceCheck</a>, <a class="el" href="../../d1/d7a/class_perf_check_1_1_file_performance_check.html#a8e13cb7e11e16ac5e0c380f1136940fc">PerfCheck::FilePerformanceCheck</a>, <a class="el" href="../../db/dee/class_perf_check_1_1_freight_performance_check.html#a9d9a6e471c6337da516d037ff81deb13">PerfCheck::FreightPerformanceCheck</a>, <a class="el" href="../../db/dbe/class_perf_check_1_1_heap_performance_check.html#a05502760c6c32787b39c7dec05050861">PerfCheck::HeapPerformanceCheck</a>, <a class="el" href="../../df/d93/class_perf_check_1_1_linked_list_performance_check.html#a9e79d579087e7bfc5c05fe8241cf248a">PerfCheck::LinkedListPerformanceCheck</a>, <a class="el" href="../../d0/d31/class_perf_check_1_1_new_performance_check.html#a66377ecda4ea5c4e847ac4ff6eda05b3">PerfCheck::NewPerformanceCheck</a>, <a class="el" href="../../d1/dbe/class_perf_check_1_1_std_file_performance_check.html#a2587b7073b9f7f2836efc44f0ba8b45d">PerfCheck::StdFilePerformanceCheck</a>, <a class="el" href="../../da/d9c/class_perf_check_1_1_t_c_p_performance_check.html#a07ebbfa5abb102e140ed66987e24a541">PerfCheck::TCPPerformanceCheck</a>, <a class="el" href="../../d6/d10/class_perf_check_1_1_t_string_performance_check.html#a98586f86b22fa4d4bd12ab146b0721e7">PerfCheck::TStringPerformanceCheck</a>, <a class="el" href="../../de/d39/class_perf_check_1_1_u_d_p_performance_check.html#aea986f0375a929fcc3a407a88ccd0b96">PerfCheck::UDPPerformanceCheck</a>, <a class="el" href="../../da/de7/class_perf_check_1_1_vector_performance_check.html#a11da18d52465777f04b68f52b9a7a24d">PerfCheck::VectorPerformanceCheck</a>, <a class="el" href="../../d6/d59/class_perf_check_1_1_watch_doc_timer_performance_check.html#adbadcc62bc975b532d32dd1b0033f407">PerfCheck::WatchDocTimerPerformanceCheck</a>で実装されています。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00023">_tmain()</a>.</p>
+
+</div>
+</div>
+<a id="a000663cfb5bb1defc9815da45fd50e13" name="a000663cfb5bb1defc9815da45fd50e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000663cfb5bb1defc9815da45fd50e13">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID PerfCheck::PerformanceCheck::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化処理 </p>
+
+<p class="definition"> <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html">PerformanceCheck.cpp</a> の <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00160">160</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d2/d44/_performance_check_8cpp_source.html#l00023">_tmain()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a74f2057538e42eb27b07ae403028d89f" name="a74f2057538e42eb27b07ae403028d89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f2057538e42eb27b07ae403028d89f">&#9670;&#160;</a></span>_console</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/de5/classalt_1_1_console.html">alt::Console</a>&amp; PerfCheck::PerformanceCheck::_console</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../dd/da6/_performance_check_8h_source.html">PerformanceCheck.h</a> の <a class="el" href="../../dd/da6/_performance_check_8h_source.html#l00038">38</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d0/dd5/_console_performance_check_8cpp_source.html#l00036">PerfCheck::ConsolePerformanceCheck::Core()</a>, <a class="el" href="../../de/d97/_heap_performance_check_8cpp_source.html#l00025">PerfCheck::HeapPerformanceCheck::Core()</a>, <a class="el" href="../../d3/d9f/_new_performance_check_8cpp_source.html#l00025">PerfCheck::NewPerformanceCheck::Core()</a>, <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00029">PerfCheck::TStringPerformanceCheck::Core()</a>, <a class="el" href="../../dd/d58/_array_performance_check_8cpp_source.html#l00034">PerfCheck::ArrayPerformanceCheck::Core()</a>, <a class="el" href="../../d0/d5f/_deque_performance_check_8cpp_source.html#l00034">PerfCheck::DequePerformanceCheck::Core()</a>, <a class="el" href="../../d6/d97/_linked_list_performance_check_8cpp_source.html#l00035">PerfCheck::LinkedListPerformanceCheck::Core()</a>, <a class="el" href="../../d8/d98/_vector_performance_check_8cpp_source.html#l00034">PerfCheck::VectorPerformanceCheck::Core()</a>, <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00059">PerfCheck::TStringPerformanceCheck::Core1()</a>, <a class="el" href="../../d5/d30/_file_performance_check_8cpp_source.html#l00070">PerfCheck::FilePerformanceCheck::Core1()</a>, <a class="el" href="../../d0/d24/_std_file_performance_check_8cpp_source.html#l00072">PerfCheck::StdFilePerformanceCheck::Core1()</a>, <a class="el" href="../../d5/d1e/_t_string_performance_check_8cpp_source.html#l00093">PerfCheck::TStringPerformanceCheck::Core2()</a>, <a class="el" href="../../d5/d30/_file_performance_check_8cpp_source.html#l00103">PerfCheck::FilePerformanceCheck::Core2()</a>, <a class="el" href="../../d0/d24/_std_file_performance_check_8cpp_source.html#l00105">PerfCheck::StdFilePerformanceCheck::Core2()</a>, <a class="el" href="../../dd/d58/_array_performance_check_8cpp_source.html#l00021">PerfCheck::ArrayPerformanceCheck::DoAction()</a>, <a class="el" href="../../d0/dd5/_console_performance_check_8cpp_source.html#l00024">PerfCheck::ConsolePerformanceCheck::DoAction()</a>, <a class="el" href="../../d0/d5f/_deque_performance_check_8cpp_source.html#l00021">PerfCheck::DequePerformanceCheck::DoAction()</a>, <a class="el" href="../../d7/db3/_freight_performance_check_8cpp_source.html#l00020">PerfCheck::FreightPerformanceCheck::DoAction()</a>, <a class="el" href="../../d6/d97/_linked_list_performance_check_8cpp_source.html#l00022">PerfCheck::LinkedListPerformanceCheck::DoAction()</a>, <a class="el" href="../../d8/d98/_vector_performance_check_8cpp_source.html#l00021">PerfCheck::VectorPerformanceCheck::DoAction()</a>, <a class="el" href="../../d7/db3/_freight_performance_check_8cpp_source.html#l00083">PerfCheck::FreightPerformanceCheck::Measure()</a> (計21項目).</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/PerformanceCheck/<a class="el" href="../../dd/da6/_performance_check_8h_source.html">PerformanceCheck.h</a></li>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/PerformanceCheck/<a class="el" href="../../d2/d44/_performance_check_8cpp_source.html">PerformanceCheck.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></li><li class="navelem"><a class="el" href="../../d5/d0c/class_perf_check_1_1_performance_check.html">PerformanceCheck</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

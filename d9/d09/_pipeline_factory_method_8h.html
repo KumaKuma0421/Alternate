@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/masah/source/repos/KumaKuma0421/Alternate/MiddleLibrary/PipelineFactoryMethod.h ファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d9/d09/_pipeline_factory_method_8h.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a>  </div>
+  <div class="headertitle"><div class="title">PipelineFactoryMethod.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../de/d08/_i_factory_method_8h_source.html">IFactoryMethod.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/df8/_function_pointers_8hpp_source.html">FunctionPointers.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dd0/_watch_dog_timer_8h_source.html">WatchDogTimer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d05/_critical_section_8h_source.html">CriticalSection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d15/_t_string_8h_source.html">TString.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d6d/_event_8h_source.html">Event.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d48/_thread_8h_source.html">Thread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/df4/_log_8h_source.html">Log.h</a>&quot;</code><br />
+</div>
+<p><a href="../../d9/d09/_pipeline_factory_method_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d00/classalt_1_1_factory_method_1_1_byte_data.html">alt::FactoryMethod::ByteData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dcb/classalt_1_1_factory_method_1_1_clock_element.html">alt::FactoryMethod::ClockElement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d43/classalt_1_1_factory_method_1_1_config.html">alt::FactoryMethod::Config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d15/classalt_1_1_factory_method_1_1_creator.html">alt::FactoryMethod::Creator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/da8/classalt_1_1_factory_method_1_1_dummy_product.html">alt::FactoryMethod::DummyProduct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5c/classalt_1_1_factory_method_1_1_pipeline_factory_method.html">alt::FactoryMethod::PipelineFactoryMethod</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dae/classalt_1_1_factory_method_1_1_product_manager.html">alt::FactoryMethod::ProductManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dc2/classalt_1_1_factory_method_1_1_queue_element.html">alt::FactoryMethod::QueueElement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3b/classalt_1_1_factory_method_1_1_sync_element.html">alt::FactoryMethod::SyncElement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9a/classalt_1_1_factory_method_1_1_terminate_element.html">alt::FactoryMethod::TerminateElement</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:d6/d94/namespacealt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d94/namespacealt.html">alt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/d81/namespacealt_1_1_factory_method"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d81/namespacealt_1_1_factory_method.html">alt::FactoryMethod</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a8dd1ca9e54b258afc24e3b297300d841"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/_pipeline_factory_method_8h.html#a8dd1ca9e54b258afc24e3b297300d841">KEYWORD_DUMMY_PROCESS_TIME</a>&#160;&#160;&#160;_T(&quot;DummyProcessTime&quot;)</td></tr>
+<tr class="separator:a8dd1ca9e54b258afc24e3b297300d841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5a3bbaf83234866131ac6a67efc283d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/_pipeline_factory_method_8h.html#ac5a3bbaf83234866131ac6a67efc283d">KEYWORD_INTERVAL</a>&#160;&#160;&#160;_T(&quot;Interval&quot;)</td></tr>
+<tr class="separator:ac5a3bbaf83234866131ac6a67efc283d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77c535c3c8fb8e694333ce2126597dda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d09/_pipeline_factory_method_8h.html#a77c535c3c8fb8e694333ce2126597dda">SECTION_PIPELINE_FACTORY</a>&#160;&#160;&#160;_T(&quot;PipelineFactory&quot;)</td></tr>
+<tr class="separator:a77c535c3c8fb8e694333ce2126597dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a8dd1ca9e54b258afc24e3b297300d841" name="a8dd1ca9e54b258afc24e3b297300d841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd1ca9e54b258afc24e3b297300d841">&#9670;&#160;</a></span>KEYWORD_DUMMY_PROCESS_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEYWORD_DUMMY_PROCESS_TIME&#160;&#160;&#160;_T(&quot;DummyProcessTime&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d9/d09/_pipeline_factory_method_8h_source.html">PipelineFactoryMethod.h</a> の <a class="el" href="../../d9/d09/_pipeline_factory_method_8h_source.html#l00014">14</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac5a3bbaf83234866131ac6a67efc283d" name="ac5a3bbaf83234866131ac6a67efc283d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a3bbaf83234866131ac6a67efc283d">&#9670;&#160;</a></span>KEYWORD_INTERVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KEYWORD_INTERVAL&#160;&#160;&#160;_T(&quot;Interval&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d9/d09/_pipeline_factory_method_8h_source.html">PipelineFactoryMethod.h</a> の <a class="el" href="../../d9/d09/_pipeline_factory_method_8h_source.html#l00013">13</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a77c535c3c8fb8e694333ce2126597dda" name="a77c535c3c8fb8e694333ce2126597dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77c535c3c8fb8e694333ce2126597dda">&#9670;&#160;</a></span>SECTION_PIPELINE_FACTORY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SECTION_PIPELINE_FACTORY&#160;&#160;&#160;_T(&quot;PipelineFactory&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d9/d09/_pipeline_factory_method_8h_source.html">PipelineFactoryMethod.h</a> の <a class="el" href="../../d9/d09/_pipeline_factory_method_8h_source.html#l00012">12</a> 行目に定義があります。</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_85f777d57858d0d3d6920548ea9cb915.html">MiddleLibrary</a></li><li class="navelem"><a class="el" href="../../d9/d09/_pipeline_factory_method_8h.html">PipelineFactoryMethod.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/Log.h ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('da/df4/_log_8h_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Log.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/df4/_log_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"></span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d0c/_file_8h.html">File.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/dd4/_file_utility_8h.html">FileUtility.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d15/_t_string_8h.html">TString.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d05/_critical_section_8h.html">CriticalSection.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95b">   18</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95b">LogLevel</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba882384ec38ce8d9582b57e70861730e4">Fatal</a>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba902b0d55fddef6f8d651fe1035b7d4bd">Error</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba56525ae64d370c0b448ac0d60710ef17">Warn</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba4059b0251f66a18cb56f544728796875">Info</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95baa603905470e2a5b8c13e96b579ef0dba">Debug</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95badd4ec0ac4e58f7c32a01244ae91150b1">Trace</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    };</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html">   36</a></span>    <span class="keyword">class </span><a class="code hl_define" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code hl_class" href="../../d8/dfd/classalt_1_1_log.html">Log</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../de/dcb/classalt_1_1_windows_library.html">WindowsLibrary</a></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        APIENTRY <a class="code hl_class" href="../../d8/dfd/classalt_1_1_log.html">Log</a> ();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        APIENTRY <a class="code hl_class" href="../../d8/dfd/classalt_1_1_log.html">Log</a> (</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_enumeration" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95b">LogLevel</a> logLevel, LPCTSTR fileName, SHORT sRotation,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            DWORD dwFileSize);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        APIENTRY <a class="code hl_class" href="../../d8/dfd/classalt_1_1_log.html">~Log</a> ();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        BOOL APIENTRY <a class="code hl_function" href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a> (</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_enumeration" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95b">LogLevel</a> logLevel, LPCTSTR fileName, SHORT sRotation,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            DWORD dwFileSize);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        VOID APIENTRY <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba882384ec38ce8d9582b57e70861730e4">Fatal</a> (LPCTSTR message, DWORD dwThreadID = GetCurrentThreadId ());</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        VOID APIENTRY <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba902b0d55fddef6f8d651fe1035b7d4bd">Error</a> (LPCTSTR message, DWORD dwThreadID = GetCurrentThreadId ());</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        VOID APIENTRY <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba56525ae64d370c0b448ac0d60710ef17">Warn</a> (LPCTSTR message, DWORD dwThreadID = GetCurrentThreadId ());</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        VOID APIENTRY <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba4059b0251f66a18cb56f544728796875">Info</a> (LPCTSTR message, DWORD dwThreadID = GetCurrentThreadId ());</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        VOID APIENTRY <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95baa603905470e2a5b8c13e96b579ef0dba">Debug</a> (LPCTSTR message, DWORD dwThreadID = GetCurrentThreadId ());</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        VOID APIENTRY <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95badd4ec0ac4e58f7c32a01244ae91150b1">Trace</a> (LPCTSTR message, DWORD dwThreadID = GetCurrentThreadId ());</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        BOOL APIENTRY AppendLog ();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        BOOL APIENTRY CreateLog ();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        BOOL APIENTRY OpenLog ();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        VOID APIENTRY FindHistory ();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        VOID APIENTRY RotateLogFile ();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        LPCTSTR APIENTRY GetLogLevelString (<a class="code hl_enumeration" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95b">LogLevel</a> logLevel);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        VOID APIENTRY LogWrite (</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <a class="code hl_enumeration" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95b">LogLevel</a> logLevel, LPCTSTR pctszMessage, DWORD dwThreadID);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a4433382ad82360cefe03beaee81ff183">  108</a></span>        <a class="code hl_class" href="../../d1/dfc/classalt_1_1_file.html">File</a> <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#a4433382ad82360cefe03beaee81ff183">_file</a>;                 </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#ac4e82b420080626f2877dc3ddb6c0d61">  109</a></span>        <a class="code hl_enumeration" href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95b">LogLevel</a> <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#ac4e82b420080626f2877dc3ddb6c0d61">_level</a>;            </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a88d4ced007398a632fcd0b7edfcda010">  110</a></span>        <a class="code hl_class" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#a88d4ced007398a632fcd0b7edfcda010">_baseFileName</a>;      </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#afa74b799d6e55629cd1fa931167a1fee">  111</a></span>        <a class="code hl_class" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a> <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#afa74b799d6e55629cd1fa931167a1fee">_logFileName</a>;       </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a87e8e226945e27159eec4218cd80c092">  112</a></span>        SYSTEMTIME <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#a87e8e226945e27159eec4218cd80c092">_localTime</a>;      </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#af8eed8b557d4f5f14d52dfb99326b5b9">  113</a></span>        DWORD <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#af8eed8b557d4f5f14d52dfb99326b5b9">_dwCurrentWriteSize</a>;  </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#af19c0bbd65a36bf91c82276a5c0367c0">  114</a></span>        SHORT <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#af19c0bbd65a36bf91c82276a5c0367c0">_sFileCount</a>;          </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a882b52f9c846b66e4e830fd54bb7649d">  115</a></span>        SHORT <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#a882b52f9c846b66e4e830fd54bb7649d">_sRotation</a>;           </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a22014f0b1411df9b67d8c53679be55df">  116</a></span>        DWORD <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#a22014f0b1411df9b67d8c53679be55df">_dwFileSize</a>;          </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#abf3b05f841f859d79945302c57fe6e1d">  117</a></span>        <a class="code hl_class" href="../../d4/d33/classalt_1_1_critical_section.html">CriticalSection</a> <a class="code hl_variable" href="../../d8/dfd/classalt_1_1_log.html#abf3b05f841f859d79945302c57fe6e1d">_lock</a>;      </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#abea9321da0f91837271c9ba7d11cd938">  118</a></span>        LPCTSTR _format = _T (<span class="stringliteral">&quot;%04d/%02d/%02d %02d:%02d:%02d.%03d %5d %5s %s\r\n&quot;</span>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#affa230b31cd75fd89b40dc620e82e0a1">  120</a></span>        LPCTSTR _lpctszExtension = _T (<span class="stringliteral">&quot;.log&quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a7380b79cc429e84f3c273ed9040b2230">  121</a></span>        LPCTSTR _lpctszLogFileName = _T (<span class="stringliteral">&quot;%s.log&quot;</span>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a65a8492326d903052c196d6536779f78">  122</a></span>        LPCTSTR _lpctszSearchKeyword = _T (<span class="stringliteral">&quot;??.log&quot;</span>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a50a7af6a2bc217faecb6031828de30f4">  123</a></span>        LPCTSTR _lpctszRotationFileName = _T (<span class="stringliteral">&quot;%s%02d.log&quot;</span>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a45e28b10f561fa6929af54b00e7d5628">  125</a></span>        LPCTSTR _lpctszLogLevelFatal = _T (<span class="stringliteral">&quot;Fatal&quot;</span>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#ac404a028818fa1df3d8a04c8209d57d6">  126</a></span>        LPCTSTR _lpctszLogLevelError = _T (<span class="stringliteral">&quot;Error&quot;</span>);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#abd89a9737a0c0de32ce5a2f6ecf5013b">  127</a></span>        LPCTSTR _lpctszLogLevelWarn = _T (<span class="stringliteral">&quot;Warn &quot;</span>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a86766b285d62f1bc0127516af515022f">  128</a></span>        LPCTSTR _lpctszLogLevelInfo = _T (<span class="stringliteral">&quot;Info &quot;</span>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#ab0626f23f3319cac5b75044fac7779fd">  129</a></span>        LPCTSTR _lpctszLoglevelDebug = _T (<span class="stringliteral">&quot;Debug&quot;</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="../../d8/dfd/classalt_1_1_log.html#a2ced81150bba33cd871488c14e182969">  130</a></span>        LPCTSTR _lpctszLogLevelTrace = _T (<span class="stringliteral">&quot;Trace&quot;</span>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    };</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+<div class="ttc" id="a_console_driver_8cpp_html_a1e3b6d38df0786ccf7f938d60e386aae"><div class="ttname"><a href="../../db/d64/_console_driver_8cpp.html#a1e3b6d38df0786ccf7f938d60e386aae">Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">ストラテジーの初期化を行います。</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d64/_console_driver_8cpp_source.html#l00092">ConsoleDriver.cpp:92</a></div></div>
+<div class="ttc" id="a_critical_section_8h_html"><div class="ttname"><a href="../../df/d05/_critical_section_8h.html">CriticalSection.h</a></div><div class="ttdoc">CriticalSectionに関するWindowsAPIを集約したクラス</div></div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
+<div class="ttc" id="a_file_8h_html"><div class="ttname"><a href="../../df/d0c/_file_8h.html">File.h</a></div><div class="ttdoc">ファイルIOに関するWindowsAPIを集約したクラス</div></div>
+<div class="ttc" id="a_file_utility_8h_html"><div class="ttname"><a href="../../da/dd4/_file_utility_8h.html">FileUtility.h</a></div><div class="ttdoc">ファイルハンドルを伴わないファイルIOに関するWindowsAPIを集約した クラス</div></div>
+<div class="ttc" id="a_t_string_8h_html"><div class="ttname"><a href="../../de/d15/_t_string_8h.html">TString.h</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div></div>
+<div class="ttc" id="aclassalt_1_1_critical_section_html"><div class="ttname"><a href="../../d4/d33/classalt_1_1_critical_section.html">alt::CriticalSection</a></div><div class="ttdoc">CriticalSectionに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d05/_critical_section_8h_source.html#l00015">CriticalSection.h:16</a></div></div>
+<div class="ttc" id="aclassalt_1_1_file_html"><div class="ttname"><a href="../../d1/dfc/classalt_1_1_file.html">alt::File</a></div><div class="ttdoc">ファイルIOに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0c/_file_8h_source.html#l00015">File.h:16</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html">alt::Log</a></div><div class="ttdoc">Fileをベースとしたログに関する機能を集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00036">Log.h:37</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_a22014f0b1411df9b67d8c53679be55df"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#a22014f0b1411df9b67d8c53679be55df">alt::Log::_dwFileSize</a></div><div class="ttdeci">DWORD _dwFileSize</div><div class="ttdoc">ログローテーション数</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00116">Log.h:116</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_a4433382ad82360cefe03beaee81ff183"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#a4433382ad82360cefe03beaee81ff183">alt::Log::_file</a></div><div class="ttdeci">File _file</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00108">Log.h:108</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_a87e8e226945e27159eec4218cd80c092"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#a87e8e226945e27159eec4218cd80c092">alt::Log::_localTime</a></div><div class="ttdeci">SYSTEMTIME _localTime</div><div class="ttdoc">ログファイル完全名</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00112">Log.h:112</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_a882b52f9c846b66e4e830fd54bb7649d"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#a882b52f9c846b66e4e830fd54bb7649d">alt::Log::_sRotation</a></div><div class="ttdeci">SHORT _sRotation</div><div class="ttdoc">現在までに確認できる履歴ファイル数</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00115">Log.h:115</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_a88d4ced007398a632fcd0b7edfcda010"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#a88d4ced007398a632fcd0b7edfcda010">alt::Log::_baseFileName</a></div><div class="ttdeci">TString _baseFileName</div><div class="ttdoc">出力ログレベル</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00110">Log.h:110</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_abf3b05f841f859d79945302c57fe6e1d"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#abf3b05f841f859d79945302c57fe6e1d">alt::Log::_lock</a></div><div class="ttdeci">CriticalSection _lock</div><div class="ttdoc">ログファイルサイズ</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00117">Log.h:117</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_ac4e82b420080626f2877dc3ddb6c0d61"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#ac4e82b420080626f2877dc3ddb6c0d61">alt::Log::_level</a></div><div class="ttdeci">LogLevel _level</div><div class="ttdoc">現在出力中のログファイル</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00109">Log.h:109</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_af19c0bbd65a36bf91c82276a5c0367c0"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#af19c0bbd65a36bf91c82276a5c0367c0">alt::Log::_sFileCount</a></div><div class="ttdeci">SHORT _sFileCount</div><div class="ttdoc">現在までに書き込んでいるログファイルサイズ</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00114">Log.h:114</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_af8eed8b557d4f5f14d52dfb99326b5b9"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#af8eed8b557d4f5f14d52dfb99326b5b9">alt::Log::_dwCurrentWriteSize</a></div><div class="ttdeci">DWORD _dwCurrentWriteSize</div><div class="ttdoc">ログに出力するシステム時刻</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00113">Log.h:113</a></div></div>
+<div class="ttc" id="aclassalt_1_1_log_html_afa74b799d6e55629cd1fa931167a1fee"><div class="ttname"><a href="../../d8/dfd/classalt_1_1_log.html#afa74b799d6e55629cd1fa931167a1fee">alt::Log::_logFileName</a></div><div class="ttdeci">TString _logFileName</div><div class="ttdoc">ログファイルユーザー設定名</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00111">Log.h:111</a></div></div>
+<div class="ttc" id="aclassalt_1_1_t_string_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00016">TString.h:17</a></div></div>
+<div class="ttc" id="aclassalt_1_1_windows_library_html"><div class="ttname"><a href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a></div><div class="ttdoc">プロジェクト共通基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00017">WindowsLibrary.h:18</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="anamespacealt_html_aa228371f4f36e785b72cdbf00ea4a95b"><div class="ttname"><a href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95b">alt::LogLevel</a></div><div class="ttdeci">LogLevel</div><div class="ttdoc">ログの出力レベル</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00018">Log.h:19</a></div></div>
+<div class="ttc" id="anamespacealt_html_aa228371f4f36e785b72cdbf00ea4a95ba4059b0251f66a18cb56f544728796875"><div class="ttname"><a href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba4059b0251f66a18cb56f544728796875">alt::LogLevel::Info</a></div><div class="ttdeci">@ Info</div><div class="ttdoc">(3)情報</div></div>
+<div class="ttc" id="anamespacealt_html_aa228371f4f36e785b72cdbf00ea4a95ba56525ae64d370c0b448ac0d60710ef17"><div class="ttname"><a href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba56525ae64d370c0b448ac0d60710ef17">alt::LogLevel::Warn</a></div><div class="ttdeci">@ Warn</div><div class="ttdoc">(2)警告</div></div>
+<div class="ttc" id="anamespacealt_html_aa228371f4f36e785b72cdbf00ea4a95ba882384ec38ce8d9582b57e70861730e4"><div class="ttname"><a href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba882384ec38ce8d9582b57e70861730e4">alt::LogLevel::Fatal</a></div><div class="ttdeci">@ Fatal</div><div class="ttdoc">(0)異常終了レベル</div></div>
+<div class="ttc" id="anamespacealt_html_aa228371f4f36e785b72cdbf00ea4a95ba902b0d55fddef6f8d651fe1035b7d4bd"><div class="ttname"><a href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95ba902b0d55fddef6f8d651fe1035b7d4bd">alt::LogLevel::Error</a></div><div class="ttdeci">@ Error</div><div class="ttdoc">(1)エラー</div></div>
+<div class="ttc" id="anamespacealt_html_aa228371f4f36e785b72cdbf00ea4a95baa603905470e2a5b8c13e96b579ef0dba"><div class="ttname"><a href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95baa603905470e2a5b8c13e96b579ef0dba">alt::LogLevel::Debug</a></div><div class="ttdeci">@ Debug</div><div class="ttdoc">(4)デバッグ</div></div>
+<div class="ttc" id="anamespacealt_html_aa228371f4f36e785b72cdbf00ea4a95badd4ec0ac4e58f7c32a01244ae91150b1"><div class="ttname"><a href="../../d6/d94/namespacealt.html#aa228371f4f36e785b72cdbf00ea4a95badd4ec0ac4e58f7c32a01244ae91150b1">alt::LogLevel::Trace</a></div><div class="ttdeci">@ Trace</div><div class="ttdoc">(5)トレース</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a23eecd3b4421913eed0c0eed82e230d.html">WindowsLibrary</a></li><li class="navelem"><a class="el" href="../../da/df4/_log_8h.html">Log.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

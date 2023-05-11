@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: PerfCheck::UdpController クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('dc/d1c/class_perf_check_1_1_udp_controller.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d2/d90/class_perf_check_1_1_udp_controller-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">PerfCheck::UdpController クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>UDP性能測定用  
+ <a href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a>&gt;</code></p>
+<div class="dynheader">
+PerfCheck::UdpController の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../dc/d1c/class_perf_check_1_1_udp_controller.png" usemap="#PerfCheck::UdpController_map" alt=""/>
+  <map id="PerfCheck::UdpController_map" name="PerfCheck::UdpController_map">
+<area href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html" title="Threadクラスのスレッド実行関数を設定します。" alt="alt::skeleton::ICallback" shape="rect" coords="0,56,156,80"/>
+<area href="../../de/dcb/classalt_1_1_windows_library.html" title="プロジェクト共通基底クラス" alt="alt::WindowsLibrary" shape="rect" coords="0,0,156,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aba0d38a2615709469ac345be74334780"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#aba0d38a2615709469ac345be74334780">UdpController</a> ()</td></tr>
+<tr class="separator:aba0d38a2615709469ac345be74334780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad488a18df0a39ff1f4748eddafaa1026"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#ad488a18df0a39ff1f4748eddafaa1026">~UdpController</a> ()</td></tr>
+<tr class="separator:ad488a18df0a39ff1f4748eddafaa1026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1ce2e830f92e752903c3867699ea43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a7f1ce2e830f92e752903c3867699ea43">Init</a> ()</td></tr>
+<tr class="separator:a7f1ce2e830f92e752903c3867699ea43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4654ae313cf5a802a1c215e0e67279a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a4654ae313cf5a802a1c215e0e67279a2">SetClient</a> (LPCTSTR lpctszIP, USHORT wPort)</td></tr>
+<tr class="separator:a4654ae313cf5a802a1c215e0e67279a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e5ad20fa0327e70503a5c2aa91dafc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a47e5ad20fa0327e70503a5c2aa91dafc">Start</a> (LPCTSTR lpctszIP, USHORT wPort, LPCTSTR lpctszTargetIP, USHORT wTargetPort, bool kickOff)</td></tr>
+<tr class="separator:a47e5ad20fa0327e70503a5c2aa91dafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fee7e998e4d10ee6f6d10467af39448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a0fee7e998e4d10ee6f6d10467af39448">Stop</a> ()</td></tr>
+<tr class="separator:a0fee7e998e4d10ee6f6d10467af39448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16105dd2d54b46b2f4bee402faabb51e"><td class="memItemLeft" align="right" valign="top">virtual DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a16105dd2d54b46b2f4bee402faabb51e">Invoke</a> (LPVOID lpvParam)=0</td></tr>
+<tr class="memdesc:a16105dd2d54b46b2f4bee402faabb51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">コールバック関数プレースホルダ  <br /></td></tr>
+<tr class="separator:a16105dd2d54b46b2f4bee402faabb51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#afb12ae162a339fde5e83254145cd0262">WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:afb12ae162a339fde5e83254145cd0262 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ae3c80cf8ddfd3783354b4673c224d085">~WindowsLibrary</a> ()</td></tr>
+<tr class="memdesc:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">デストラクタ  <br /></td></tr>
+<tr class="separator:ae3c80cf8ddfd3783354b4673c224d085 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#ad5292326a0ed9002d168af523c2d0efa">GetErrNo</a> () const</td></tr>
+<tr class="memdesc:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WindowsAPIのエラー値を取得します。  <br /></td></tr>
+<tr class="separator:ad5292326a0ed9002d168af523c2d0efa inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">virtual VOID APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a4e0ccc705c5792ff548fa21e07e3dbc4">SetErrNo</a> ()</td></tr>
+<tr class="memdesc:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="mdescLeft">&#160;</td><td class="mdescRight">WINAPIエラーの情報を設定します。  <br /></td></tr>
+<tr class="separator:a4e0ccc705c5792ff548fa21e07e3dbc4 inherit pub_methods_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:af8470a61a776700fe354e90c5c0f029c"><td class="memItemLeft" align="right" valign="top">virtual DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#af8470a61a776700fe354e90c5c0f029c">Invoke</a> (LPVOID lpvParam)</td></tr>
+<tr class="memdesc:af8470a61a776700fe354e90c5c0f029c"><td class="mdescLeft">&#160;</td><td class="mdescRight">コールバック関数プレースホルダ  <br /></td></tr>
+<tr class="separator:af8470a61a776700fe354e90c5c0f029c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:abd546fc71a686a5193886a2f9156626d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/db7/classalt_1_1_socket_builder.html">alt::SocketBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#abd546fc71a686a5193886a2f9156626d">_builder</a></td></tr>
+<tr class="separator:abd546fc71a686a5193886a2f9156626d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad334c581da5a12d431eba77f6b176aed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d2b/classalt_1_1_udp_connector.html">alt::UdpConnector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#ad334c581da5a12d431eba77f6b176aed">_connector</a></td></tr>
+<tr class="separator:ad334c581da5a12d431eba77f6b176aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38516952a06a6258f4ecba49976a5b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#af38516952a06a6258f4ecba49976a5b5">_stop</a></td></tr>
+<tr class="separator:af38516952a06a6258f4ecba49976a5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f1a1d5872c5ab1ad28ed61df9ec1d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html#a92f1a1d5872c5ab1ad28ed61df9ec1d2">_thread</a></td></tr>
+<tr class="separator:a92f1a1d5872c5ab1ad28ed61df9ec1d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classalt_1_1skeleton_1_1_i_callback')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a25856556e76fc642dfa7c9243ee833bf inherit pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memItemLeft" align="right" valign="top">static DWORD APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a25856556e76fc642dfa7c9243ee833bf">Invoker</a> (LPVOID me)</td></tr>
+<tr class="memdesc:a25856556e76fc642dfa7c9243ee833bf inherit pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td class="mdescLeft">&#160;</td><td class="mdescRight">コールバック関数呼び出し用インターフェース  <br /></td></tr>
+<tr class="separator:a25856556e76fc642dfa7c9243ee833bf inherit pub_static_methods_classalt_1_1skeleton_1_1_i_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classalt_1_1_windows_library"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classalt_1_1_windows_library')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/classalt_1_1_windows_library.html#a787041388181371791435092055c913c">_dwErrorNo</a></td></tr>
+<tr class="separator:a787041388181371791435092055c913c inherit pro_attribs_classalt_1_1_windows_library"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>UDP性能測定用 </p>
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00052">52</a> 行目に定義があります。</p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="aba0d38a2615709469ac345be74334780" name="aba0d38a2615709469ac345be74334780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba0d38a2615709469ac345be74334780">&#9670;&#160;</a></span>UdpController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UdpController::UdpController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00198">198</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00068">_builder</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00069">_connector</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00067">_stop</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00070">_thread</a>.</p>
+
+</div>
+</div>
+<a id="ad488a18df0a39ff1f4748eddafaa1026" name="ad488a18df0a39ff1f4748eddafaa1026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad488a18df0a39ff1f4748eddafaa1026">&#9670;&#160;</a></span>~UdpController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">UdpController::~UdpController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00210">210</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00068">_builder</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00069">_connector</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00070">_thread</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00071">alt::HandleLibrary::Close()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00140">alt::SocketLibrary::Close()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a7f1ce2e830f92e752903c3867699ea43" name="a7f1ce2e830f92e752903c3867699ea43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f1ce2e830f92e752903c3867699ea43">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UdpController::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00224">224</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00068">_builder</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00025">alt::SocketBuilder::Startup()</a>.</p>
+
+</div>
+</div>
+<a id="af8470a61a776700fe354e90c5c0f029c" name="af8470a61a776700fe354e90c5c0f029c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8470a61a776700fe354e90c5c0f029c">&#9670;&#160;</a></span>Invoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD UdpController::Invoke </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>lpvParam</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コールバック関数プレースホルダ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lpvParam</td><td>コールバック関数に渡されるパラメータ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>DWORD </dd></dl>
+<dl class="section note"><dt>覚え書き</dt><dd>ユーザー側でコールバック関数の実体を記載します。 </dd></dl>
+
+<p><a class="el" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html#a16105dd2d54b46b2f4bee402faabb51e">alt::skeleton::ICallback</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00274">274</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00069">_connector</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00067">_stop</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00031">DATA_SIZE</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00262">DumpData()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00243">MakeData()</a>, <a class="el" href="../../d8/db3/_udp_connector_8cpp_source.html#l00033">alt::UdpConnector::Recv()</a>, <a class="el" href="../../d8/db3/_udp_connector_8cpp_source.html#l00024">alt::UdpConnector::Send()</a>.</p>
+
+</div>
+</div>
+<a id="a4654ae313cf5a802a1c215e0e67279a2" name="a4654ae313cf5a802a1c215e0e67279a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4654ae313cf5a802a1c215e0e67279a2">&#9670;&#160;</a></span>SetClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UdpController::SetClient </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&#160;</td>
+          <td class="paramname"><em>wPort</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00260">260</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a47e5ad20fa0327e70503a5c2aa91dafc" name="a47e5ad20fa0327e70503a5c2aa91dafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47e5ad20fa0327e70503a5c2aa91dafc">&#9670;&#160;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UdpController::Start </td>
+          <td>(</td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&#160;</td>
+          <td class="paramname"><em>wPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPCTSTR&#160;</td>
+          <td class="paramname"><em>lpctszTargetIP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">USHORT&#160;</td>
+          <td class="paramname"><em>wTargetPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>kickOff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00231">231</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00068">_builder</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00069">_connector</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00070">_thread</a>, <a class="el" href="../../d9/d00/_thread_8cpp_source.html#l00024">alt::Thread::Create()</a>, <a class="el" href="../../dc/d2c/_socket_builder_8cpp_source.html#l00171">alt::SocketBuilder::CreateUdpConnector()</a>, <a class="el" href="../../d3/dfb/_t_c_p_performance_check_8h_source.html#l00031">DATA_SIZE</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00153">alt::SocketLibrary::GetErrNo()</a>, <a class="el" href="../../da/d1b/_t_c_p_performance_check_8cpp_source.html#l00243">MakeData()</a>, <a class="el" href="../../d8/db3/_udp_connector_8cpp_source.html#l00024">alt::UdpConnector::Send()</a>, <a class="el" href="../../d8/db3/_udp_connector_8cpp_source.html#l00040">alt::UdpConnector::SetSockAddr()</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00125">alt::WaitableHandleLibrary::Wait()</a>.</p>
+
+</div>
+</div>
+<a id="a0fee7e998e4d10ee6f6d10467af39448" name="a0fee7e998e4d10ee6f6d10467af39448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fee7e998e4d10ee6f6d10467af39448">&#9670;&#160;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UdpController::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a> の <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00267">267</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00069">_connector</a>, <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00067">_stop</a>, <a class="el" href="../../dc/d8b/_windows_library_8cpp_source.html#l00140">alt::SocketLibrary::Close()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00042">DriveUdpController1ConsoleHandler()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00120">DriveUdpController2ConsoleHandler()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="abd546fc71a686a5193886a2f9156626d" name="abd546fc71a686a5193886a2f9156626d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd546fc71a686a5193886a2f9156626d">&#9670;&#160;</a></span>_builder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/db7/classalt_1_1_socket_builder.html">alt::SocketBuilder</a>* PerfCheck::UdpController::_builder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00068">68</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00198">UdpController()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00210">~UdpController()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00224">Init()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00231">Start()</a>.</p>
+
+</div>
+</div>
+<a id="ad334c581da5a12d431eba77f6b176aed" name="ad334c581da5a12d431eba77f6b176aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad334c581da5a12d431eba77f6b176aed">&#9670;&#160;</a></span>_connector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d2b/classalt_1_1_udp_connector.html">alt::UdpConnector</a>* PerfCheck::UdpController::_connector</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00069">69</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00198">UdpController()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00210">~UdpController()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00274">Invoke()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00231">Start()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00267">Stop()</a>.</p>
+
+</div>
+</div>
+<a id="af38516952a06a6258f4ecba49976a5b5" name="af38516952a06a6258f4ecba49976a5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af38516952a06a6258f4ecba49976a5b5">&#9670;&#160;</a></span>_stop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PerfCheck::UdpController::_stop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00067">67</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00198">UdpController()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00274">Invoke()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00267">Stop()</a>.</p>
+
+</div>
+</div>
+<a id="a92f1a1d5872c5ab1ad28ed61df9ec1d2" name="a92f1a1d5872c5ab1ad28ed61df9ec1d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f1a1d5872c5ab1ad28ed61df9ec1d2">&#9670;&#160;</a></span>_thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a>* PerfCheck::UdpController::_thread</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a> の <a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html#l00070">70</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00198">UdpController()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00210">~UdpController()</a>, <a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html#l00231">Start()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/PerformanceCheck/<a class="el" href="../../de/d20/_u_d_p_performance_check_8h_source.html">UDPPerformanceCheck.h</a></li>
+<li>C:/Users/masah/source/repos/KumaKuma0421/Alternate/PerformanceCheck/<a class="el" href="../../d1/d11/_u_d_p_performance_check_8cpp_source.html">UDPPerformanceCheck.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d1/d3d/namespace_perf_check.html">PerfCheck</a></li><li class="navelem"><a class="el" href="../../dc/d1c/class_perf_check_1_1_udp_controller.html">UdpController</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

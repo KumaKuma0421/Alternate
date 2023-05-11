@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/Thread.h ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d8/d48/_thread_8h_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Thread.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/d48/_thread_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"></span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/df8/_function_pointers_8hpp.html">FunctionPointers.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d94/namespacealt.html">alt</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">   16</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">ThreadPriority</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd">Critical</a> = THREAD_PRIORITY_TIME_CRITICAL,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040a582996407922dab08d5cf2b3d2a7c1c9">Highest</a> = THREAD_PRIORITY_HIGHEST,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#a9cbcd03e9ded7728bd9bab08fd2b3deda930ee274ea2e4d208702d4695b3ec0f4">AboveNormal</a> = THREAD_PRIORITY_ABOVE_NORMAL,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#a9cbcd03e9ded7728bd9bab08fd2b3deda960b44c579bc2f6818d2daaf9e4c16f0">Normal</a> = THREAD_PRIORITY_NORMAL,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#a9cbcd03e9ded7728bd9bab08fd2b3dedab59972ff632793f205ffc303eba53481">BelowNormal</a> = THREAD_PRIORITY_BELOW_NORMAL,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040ab5b8e20937205384be7b9e0c29a28fdb">Lowest</a> = THREAD_PRIORITY_LOWEST,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_enumvalue" href="../../d6/d94/namespacealt.html#a9cbcd03e9ded7728bd9bab08fd2b3dedae599161956d626eda4cb0a5ffb85271c">Idle</a> = THREAD_PRIORITY_IDLE</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    };</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d0/df1/classalt_1_1_thread.html">   42</a></span>    <span class="keyword">class </span><a class="code hl_define" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code hl_class" href="../../d0/df1/classalt_1_1_thread.html">Thread</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d35/classalt_1_1_waitable_handle_library.html">WaitableHandleLibrary</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        APIENTRY <a class="code hl_class" href="../../d0/df1/classalt_1_1_thread.html">Thread</a> ();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        APIENTRY <a class="code hl_class" href="../../d0/df1/classalt_1_1_thread.html">Thread</a> (<a class="code hl_class" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">skeleton::ICallback</a>* callback);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        BOOL APIENTRY Create (</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            PTHREAD_START_ROUTINE function = NULL, LPVOID lpvParam = NULL,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            DWORD dwCreationFlag = 0);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        BOOL APIENTRY Suspend () <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        BOOL APIENTRY Resume () <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        BOOL APIENTRY SetPriority (<a class="code hl_enumeration" href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">ThreadPriority</a> priority) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../d0/df1/classalt_1_1_thread.html#ad784e9d9edbcc1222a09a6ea8430d778">   84</a></span>        <a class="code hl_class" href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">skeleton::ICallback</a>* <a class="code hl_variable" href="../../d0/df1/classalt_1_1_thread.html#ad784e9d9edbcc1222a09a6ea8430d778">_callback</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="../../d0/df1/classalt_1_1_thread.html#af536a0d84d1731f2b687a92ad87d35ef">   85</a></span>        DWORD                <a class="code hl_variable" href="../../d0/df1/classalt_1_1_thread.html#af536a0d84d1731f2b687a92ad87d35ef">_dwThreadID</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    };</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
+<div class="ttc" id="a_function_pointers_8hpp_html"><div class="ttname"><a href="../../d0/df8/_function_pointers_8hpp.html">FunctionPointers.hpp</a></div><div class="ttdoc">コールバック機能を集約したクラス</div></div>
+<div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約したプロジェクトファイル</div></div>
+<div class="ttc" id="aclassalt_1_1_thread_html"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html">alt::Thread</a></div><div class="ttdoc">スレッドに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00042">Thread.h:43</a></div></div>
+<div class="ttc" id="aclassalt_1_1_thread_html_ad784e9d9edbcc1222a09a6ea8430d778"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html#ad784e9d9edbcc1222a09a6ea8430d778">alt::Thread::_callback</a></div><div class="ttdeci">skeleton::ICallback * _callback</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00084">Thread.h:84</a></div></div>
+<div class="ttc" id="aclassalt_1_1_thread_html_af536a0d84d1731f2b687a92ad87d35ef"><div class="ttname"><a href="../../d0/df1/classalt_1_1_thread.html#af536a0d84d1731f2b687a92ad87d35ef">alt::Thread::_dwThreadID</a></div><div class="ttdeci">DWORD _dwThreadID</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00085">Thread.h:85</a></div></div>
+<div class="ttc" id="aclassalt_1_1_waitable_handle_library_html"><div class="ttname"><a href="../../d1/d35/classalt_1_1_waitable_handle_library.html">alt::WaitableHandleLibrary</a></div><div class="ttdoc">HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00102">WindowsLibrary.h:103</a></div></div>
+<div class="ttc" id="aclassalt_1_1skeleton_1_1_i_callback_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1skeleton_1_1_i_callback.html">alt::skeleton::ICallback</a></div><div class="ttdoc">Threadクラスのスレッド実行関数を設定します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00023">FunctionPointers.hpp:24</a></div></div>
+<div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
+<div class="ttc" id="anamespacealt_html_a763778ad8a7813155e2d0fea1e449040"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040">alt::ThreadPriority</a></div><div class="ttdeci">ThreadPriority</div><div class="ttdoc">スレッドの優先順位</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d48/_thread_8h_source.html#l00016">Thread.h:17</a></div></div>
+<div class="ttc" id="anamespacealt_html_a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040a278d01e5af56273bae1bb99a98b370cd">alt::ThreadPriority::Critical</a></div><div class="ttdeci">@ Critical</div><div class="ttdoc">クリティカル</div></div>
+<div class="ttc" id="anamespacealt_html_a763778ad8a7813155e2d0fea1e449040a582996407922dab08d5cf2b3d2a7c1c9"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040a582996407922dab08d5cf2b3d2a7c1c9">alt::ThreadPriority::Highest</a></div><div class="ttdeci">@ Highest</div><div class="ttdoc">優先度高</div></div>
+<div class="ttc" id="anamespacealt_html_a763778ad8a7813155e2d0fea1e449040ab5b8e20937205384be7b9e0c29a28fdb"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a763778ad8a7813155e2d0fea1e449040ab5b8e20937205384be7b9e0c29a28fdb">alt::ThreadPriority::Lowest</a></div><div class="ttdeci">@ Lowest</div><div class="ttdoc">優先度低</div></div>
+<div class="ttc" id="anamespacealt_html_a9cbcd03e9ded7728bd9bab08fd2b3deda930ee274ea2e4d208702d4695b3ec0f4"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a9cbcd03e9ded7728bd9bab08fd2b3deda930ee274ea2e4d208702d4695b3ec0f4">alt::Priority::AboveNormal</a></div><div class="ttdeci">@ AboveNormal</div><div class="ttdoc">通常より少し上</div></div>
+<div class="ttc" id="anamespacealt_html_a9cbcd03e9ded7728bd9bab08fd2b3deda960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a9cbcd03e9ded7728bd9bab08fd2b3deda960b44c579bc2f6818d2daaf9e4c16f0">alt::Priority::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdoc">通常：一般的なプロセス</div></div>
+<div class="ttc" id="anamespacealt_html_a9cbcd03e9ded7728bd9bab08fd2b3dedab59972ff632793f205ffc303eba53481"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a9cbcd03e9ded7728bd9bab08fd2b3dedab59972ff632793f205ffc303eba53481">alt::Priority::BelowNormal</a></div><div class="ttdeci">@ BelowNormal</div><div class="ttdoc">通常より少し下</div></div>
+<div class="ttc" id="anamespacealt_html_a9cbcd03e9ded7728bd9bab08fd2b3dedae599161956d626eda4cb0a5ffb85271c"><div class="ttname"><a href="../../d6/d94/namespacealt.html#a9cbcd03e9ded7728bd9bab08fd2b3dedae599161956d626eda4cb0a5ffb85271c">alt::Priority::Idle</a></div><div class="ttdeci">@ Idle</div><div class="ttdoc">アイドル：システムがアイドル状態の時に実行される。</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a23eecd3b4421913eed0c0eed82e230d.html">WindowsLibrary</a></li><li class="navelem"><a class="el" href="../../d8/d48/_thread_8h.html">Thread.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

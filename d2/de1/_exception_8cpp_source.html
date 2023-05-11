@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alternate: C:/Users/masah/source/repos/KumaKuma0421/Alternate/WindowsLibrary/Exception.cpp ソースファイル</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   </div>
+   <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d2/de1/_exception_8cpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Exception.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/de1/_exception_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"></span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d98/_exception_8h.html">Exception.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="../../d6/d32/namespacealt_1_1ex.html">alt::ex</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d9/d47/classalt_1_1ex_1_1_exception.html#a1b78336bb26edf8e784783cc150c5801">   13</a></span><a class="code hl_function" href="../../d9/d47/classalt_1_1ex_1_1_exception.html#a1b78336bb26edf8e784783cc150c5801">Exception::Exception</a> ()</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d9/d47/classalt_1_1ex_1_1_exception.html#a6b214cd8627d0968bdeebc1fbb9556b8">   16</a></span><a class="code hl_function" href="../../d9/d47/classalt_1_1ex_1_1_exception.html#a6b214cd8627d0968bdeebc1fbb9556b8">Exception::~Exception</a> ()</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d9/d47/classalt_1_1ex_1_1_exception.html#aff75642fe5ea260fa2fd99f1278c162e">   19</a></span>LPCTSTR <a class="code hl_function" href="../../d9/d47/classalt_1_1ex_1_1_exception.html#aff75642fe5ea260fa2fd99f1278c162e">Exception::GetReason</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="../../df/d98/_exception_8h.html#acd533fbfb7f58432d6b883e8310f6b84">ALT_REASON_EXCEPTION</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#a799a9258b47e7ce3316c4044085737b2">   25</a></span><a class="code hl_function" href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#a799a9258b47e7ce3316c4044085737b2">InvalidArgumentException::InvalidArgumentException</a> ()</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#aef9114d478766e6c542eb68a26beb1ec">   28</a></span><a class="code hl_function" href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#aef9114d478766e6c542eb68a26beb1ec">InvalidArgumentException::~InvalidArgumentException</a> ()</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#a8ecba1b9e3d731690f8ca97ea6dd2f29">   31</a></span>LPCTSTR <a class="code hl_function" href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#a8ecba1b9e3d731690f8ca97ea6dd2f29">InvalidArgumentException::GetReason</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="../../df/d98/_exception_8h.html#a7c069c4571d894dac0e7b901fc71aaff">ALT_REASON_INVALID_ARGUMENT</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#ae86e31b0c6d823e7097be268d502140e">   37</a></span><a class="code hl_function" href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#ae86e31b0c6d823e7097be268d502140e">RuntimeException::RuntimeException</a> ()</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#a992460a157ba386e39c7bb02d371129b">   40</a></span><a class="code hl_function" href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#a992460a157ba386e39c7bb02d371129b">RuntimeException::~RuntimeException</a> ()</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#ada0d50a616d059eff776650882bf457a">   43</a></span>LPCTSTR <a class="code hl_function" href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#ada0d50a616d059eff776650882bf457a">RuntimeException::GetReason</a> ()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="../../df/d98/_exception_8h.html#a448cd8537e09a8f3633a16758aa1b553">ALT_REASON_RUNTIME_ERROR</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="ttc" id="a_exception_8h_html"><div class="ttname"><a href="../../df/d98/_exception_8h.html">Exception.h</a></div><div class="ttdoc">例外に関するクラス</div></div>
+<div class="ttc" id="a_exception_8h_html_a448cd8537e09a8f3633a16758aa1b553"><div class="ttname"><a href="../../df/d98/_exception_8h.html#a448cd8537e09a8f3633a16758aa1b553">ALT_REASON_RUNTIME_ERROR</a></div><div class="ttdeci">#define ALT_REASON_RUNTIME_ERROR</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/_exception_8h_source.html#l00013">Exception.h:13</a></div></div>
+<div class="ttc" id="a_exception_8h_html_a7c069c4571d894dac0e7b901fc71aaff"><div class="ttname"><a href="../../df/d98/_exception_8h.html#a7c069c4571d894dac0e7b901fc71aaff">ALT_REASON_INVALID_ARGUMENT</a></div><div class="ttdeci">#define ALT_REASON_INVALID_ARGUMENT</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/_exception_8h_source.html#l00012">Exception.h:12</a></div></div>
+<div class="ttc" id="a_exception_8h_html_acd533fbfb7f58432d6b883e8310f6b84"><div class="ttname"><a href="../../df/d98/_exception_8h.html#acd533fbfb7f58432d6b883e8310f6b84">ALT_REASON_EXCEPTION</a></div><div class="ttdeci">#define ALT_REASON_EXCEPTION</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/_exception_8h_source.html#l00011">Exception.h:11</a></div></div>
+<div class="ttc" id="a_windows_library_test_2pch_8h_html"><div class="ttname"><a href="../../d3/dcd/_windows_library_test_2pch_8h.html">pch.h</a></div><div class="ttdoc">プリコンパイル済みヘッダー ファイルです。</div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_exception_html_a1b78336bb26edf8e784783cc150c5801"><div class="ttname"><a href="../../d9/d47/classalt_1_1ex_1_1_exception.html#a1b78336bb26edf8e784783cc150c5801">alt::ex::Exception::Exception</a></div><div class="ttdeci">APIENTRY Exception()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00013">Exception.cpp:13</a></div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_exception_html_a6b214cd8627d0968bdeebc1fbb9556b8"><div class="ttname"><a href="../../d9/d47/classalt_1_1ex_1_1_exception.html#a6b214cd8627d0968bdeebc1fbb9556b8">alt::ex::Exception::~Exception</a></div><div class="ttdeci">APIENTRY ~Exception()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00016">Exception.cpp:16</a></div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_exception_html_aff75642fe5ea260fa2fd99f1278c162e"><div class="ttname"><a href="../../d9/d47/classalt_1_1ex_1_1_exception.html#aff75642fe5ea260fa2fd99f1278c162e">alt::ex::Exception::GetReason</a></div><div class="ttdeci">LPCTSTR APIENTRY GetReason() const</div><div class="ttdoc">原因を取得</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00019">Exception.cpp:19</a></div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_invalid_argument_exception_html_a799a9258b47e7ce3316c4044085737b2"><div class="ttname"><a href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#a799a9258b47e7ce3316c4044085737b2">alt::ex::InvalidArgumentException::InvalidArgumentException</a></div><div class="ttdeci">APIENTRY InvalidArgumentException()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00025">Exception.cpp:25</a></div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_invalid_argument_exception_html_a8ecba1b9e3d731690f8ca97ea6dd2f29"><div class="ttname"><a href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#a8ecba1b9e3d731690f8ca97ea6dd2f29">alt::ex::InvalidArgumentException::GetReason</a></div><div class="ttdeci">LPCTSTR APIENTRY GetReason() const</div><div class="ttdoc">原因を取得</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00031">Exception.cpp:31</a></div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_invalid_argument_exception_html_aef9114d478766e6c542eb68a26beb1ec"><div class="ttname"><a href="../../da/d30/classalt_1_1ex_1_1_invalid_argument_exception.html#aef9114d478766e6c542eb68a26beb1ec">alt::ex::InvalidArgumentException::~InvalidArgumentException</a></div><div class="ttdeci">APIENTRY ~InvalidArgumentException()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00028">Exception.cpp:28</a></div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_runtime_exception_html_a992460a157ba386e39c7bb02d371129b"><div class="ttname"><a href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#a992460a157ba386e39c7bb02d371129b">alt::ex::RuntimeException::~RuntimeException</a></div><div class="ttdeci">APIENTRY ~RuntimeException()</div><div class="ttdoc">デストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00040">Exception.cpp:40</a></div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_runtime_exception_html_ada0d50a616d059eff776650882bf457a"><div class="ttname"><a href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#ada0d50a616d059eff776650882bf457a">alt::ex::RuntimeException::GetReason</a></div><div class="ttdeci">LPCTSTR APIENTRY GetReason() const</div><div class="ttdoc">原因を取得</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00043">Exception.cpp:43</a></div></div>
+<div class="ttc" id="aclassalt_1_1ex_1_1_runtime_exception_html_ae86e31b0c6d823e7097be268d502140e"><div class="ttname"><a href="../../df/da4/classalt_1_1ex_1_1_runtime_exception.html#ae86e31b0c6d823e7097be268d502140e">alt::ex::RuntimeException::RuntimeException</a></div><div class="ttdeci">APIENTRY RuntimeException()</div><div class="ttdoc">コンストラクタ</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de1/_exception_8cpp_source.html#l00037">Exception.cpp:37</a></div></div>
+<div class="ttc" id="anamespacealt_1_1ex_html"><div class="ttname"><a href="../../d6/d32/namespacealt_1_1ex.html">alt::ex</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d98/_exception_8h_source.html#l00017">Exception.h:18</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_a23eecd3b4421913eed0c0eed82e230d.html">WindowsLibrary</a></li><li class="navelem"><a class="el" href="../../d2/de1/_exception_8cpp.html">Exception.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>
