@@ -1,0 +1,17 @@
+/**
+
+@page MiddleLibraryPage MiddleLibraryプロジェクト
+
+@tableofcontents
+
+<strong>MiddleLibrary</strong>は、上記のライブラリを透過的、統合的に使用するために用意したミドルウェアです。前述のライブラリは、クラスの構成や内包する機能に注力して作成していますが、MiddleLibraryでは、それらのライブラリをFactoryMethod等を使用して、オブジェクトを構築し、機能させることに着目します。現時点では、各機能をパイプラインのようにつないでストリーム処理のように動かすFactoryMethodを構築しています。このプロジェクトにも<strong>MiddleLibraryTest</strong>で動作確認を行っています。
+
+@section MiddleLibrary_Constitute プロジェクトの構成
+
+T.B.D.
+
+@section MiddleLibrary_Policy プロジェクトの方針
+
+T.B.D.
+
+*/

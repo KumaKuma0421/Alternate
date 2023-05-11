@@ -1,0 +1,34 @@
+/**
+
+@mainpage Alternate C++ Windows API wrapping library
+
+@tableofcontents
+
+@section about_alternate Alternateとは
+
+Alternateソリューション配下のプロジェクトは以下の構成になっています。
+
+- @ref WindowsLibraryPage
+  - @ref WindowsLibraryTestPage
+  - @ref MemoryLeakCheckPage
+  - @ref PerformanceCheckPage
+- @ref DBLibraryPage
+  - @ref DBLibraryTestPage
+- @ref OSSLibraryPage
+  - @ref OSSLibraryTestPage
+- @ref MiddleLibraryPage
+  - @ref MiddleLibraryTestPage
+- @ref ConsoleDriverPage
+ 
+@section how_to_use_this Alternateの使い方
+
+このソリューションは、Visual Studio Community 2019版で、スクラッチから作成しています。スタートアッププロジェクトになれるのは、以下の３つです。
+
+- ConsoleDriver
+- MemoryLeakCheck
+- PerformanceCheck
+
+各プロジェクトには、環境設定ファイルがあります。動作の変更はこれらのファイルを使用します。
+
+
+*/

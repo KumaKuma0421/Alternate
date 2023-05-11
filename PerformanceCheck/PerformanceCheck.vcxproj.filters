@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Container">
+      <UniqueIdentifier>{81eb7a18-7302-46fa-a9f6-e02085525e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Container">
+      <UniqueIdentifier>{99c90379-d5bd-4b73-abf1-e12d89ad0f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Memory">
+      <UniqueIdentifier>{d2740d2e-6e3f-4691-8cce-8c112e20697c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Memory">
+      <UniqueIdentifier>{a4897651-546d-4a13-a7da-42812508bcac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\File">
+      <UniqueIdentifier>{e215859b-10a8-4082-8d82-19e1c81c5ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\File">
+      <UniqueIdentifier>{cee33520-46b7-4c40-8294-637052a30a09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SocketLibrary">
+      <UniqueIdentifier>{7e2e1f7c-c8da-4e69-b563-46a03c2cb2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SocketLibrary">
+      <UniqueIdentifier>{58c2a7e1-d0ef-4f22-912d-514fcb5a77ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PerformanceCheck.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="DequePerformanceCheck.cpp">
+      <Filter>ソース ファイル\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Container</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="NewPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="FilePerformanceCheck.cpp">
+      <Filter>ソース ファイル\File</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsolePerformanceCheck.cpp">
+      <Filter>ソース ファイル\File</Filter>
+    </ClCompile>
+    <ClCompile Include="StdFilePerformanceCheck.cpp">
+      <Filter>ソース ファイル\File</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPPerformanceCheck.cpp">
+      <Filter>ソース ファイル\SocketLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPPerformanceCheck.cpp">
+      <Filter>ソース ファイル\SocketLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchDocTimerPerformanceCheck.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringPerformanceCheck.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FreightPerformanceCheck.cpp">
+      <Filter>ソース ファイル\Container</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="PerformanceCheck.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="DequePerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="NewPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsolePerformanceCheck.h">
+      <Filter>ヘッダー ファイル\File</Filter>
+    </ClInclude>
+    <ClInclude Include="FilePerformanceCheck.h">
+      <Filter>ヘッダー ファイル\File</Filter>
+    </ClInclude>
+    <ClInclude Include="StdFilePerformanceCheck.h">
+      <Filter>ヘッダー ファイル\File</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\SocketLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\SocketLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringPerformanceCheck.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchDocTimerPerformanceCheck.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FreightPerformanceCheck.h">
+      <Filter>ヘッダー ファイル\Container</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zenkoku.csv">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="41saga.csv">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="PerformanceCheck.ini">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+</Project>

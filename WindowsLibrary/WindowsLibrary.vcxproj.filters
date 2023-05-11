@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\HandleLibrary">
+      <UniqueIdentifier>{527aab06-de31-4030-bbbc-b2c9445c4f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\HandleLibrary\WaitableHandleLibrary">
+      <UniqueIdentifier>{6fff96ca-75d1-4d5f-8c8a-158082c40564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SocketLibrary">
+      <UniqueIdentifier>{cbaf8e88-0357-48bf-bb3b-864eb12ba5c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\HandleLibrary">
+      <UniqueIdentifier>{3312fdeb-af90-4b3f-96d2-30a8a9357e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\HandleLibrary\WaitableHandleLibrary">
+      <UniqueIdentifier>{dcc03b68-8c22-4630-be67-5226c4e99d45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\HandleLibrary\ReadWriteHandleLibrary">
+      <UniqueIdentifier>{6bff5853-a6ee-42eb-9fa4-c2cd2018596a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\HandleLibrary\ReadWriteHandleLibrary">
+      <UniqueIdentifier>{52f9ed81-abc9-4e01-a38f-f06e209b0b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SocketLibrary">
+      <UniqueIdentifier>{28a1483a-a5b4-4414-9bbb-e0b8249e5d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Skeleton">
+      <UniqueIdentifier>{b46a3df5-f556-4164-b5fb-2a6e1f7cf10b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>ヘッダー ファイル\HandleLibrary\ReadWriteHandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="NamedPipe.h">
+      <Filter>ヘッダー ファイル\HandleLibrary\ReadWriteHandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>ヘッダー ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>ヘッダー ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchDogTimer.h">
+      <Filter>ヘッダー ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketBuilder.h">
+      <Filter>ヘッダー ファイル\SocketLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpConnector.h">
+      <Filter>ヘッダー ファイル\SocketLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="UdpConnector.h">
+      <Filter>ヘッダー ファイル\SocketLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="CriticalSection.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TString.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsLibrary.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtility.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>ヘッダー ファイル\HandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="HeapMemory.h">
+      <Filter>ヘッダー ファイル\HandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualMemory.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="TransactionFile.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutex.h">
+      <Filter>ヘッダー ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Process.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedMemory.h">
+      <Filter>ヘッダー ファイル\HandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="RingBuffer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Diagnostics.h">
+      <Filter>ヘッダー ファイル\HandleLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryPerformance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.hpp">
+      <Filter>ヘッダー ファイル\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Binder.hpp">
+      <Filter>ヘッダー ファイル\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Freight.hpp">
+      <Filter>ヘッダー ファイル\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionPointers.hpp">
+      <Filter>ヘッダー ファイル\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.hpp">
+      <Filter>ヘッダー ファイル\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>ヘッダー ファイル\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="PerformanceDataHelper.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.hpp">
+      <Filter>ヘッダー ファイル\Skeleton</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsLibrary.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtility.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CriticalSection.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TString.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>ソース ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>ソース ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchDogTimer.cpp">
+      <Filter>ソース ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>ソース ファイル\HandleLibrary\ReadWriteHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="NamedPipe.cpp">
+      <Filter>ソース ファイル\HandleLibrary\ReadWriteHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>ソース ファイル\HandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketBuilder.cpp">
+      <Filter>ソース ファイル\SocketLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpConnector.cpp">
+      <Filter>ソース ファイル\SocketLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="UdpConnector.cpp">
+      <Filter>ソース ファイル\SocketLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapMemory.cpp">
+      <Filter>ソース ファイル\HandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualMemory.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TransactionFile.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Mutex.cpp">
+      <Filter>ソース ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Process.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedMemory.cpp">
+      <Filter>ソース ファイル\HandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="RingBuffer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipe.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Diagnostics.cpp">
+      <Filter>ソース ファイル\HandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryPerformance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceDataHelper.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

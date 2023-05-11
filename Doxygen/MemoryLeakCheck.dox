@@ -1,0 +1,17 @@
+/**
+
+@page MemoryLeakCheckPage MemoryLeakCheckプロジェクト
+
+@tableofcontents
+
+WindowsLibraryプロジェクトのメモリーリークを確認するためのプロジェクトです。
+
+@section MemoryLeakCheck_Constitute プロジェクトの構成
+
+T.B.D.
+
+@section MemoryLeakCheck_Policy プロジェクトの方針
+
+T.B.D.
+
+*/

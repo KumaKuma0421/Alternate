@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Target">
+      <UniqueIdentifier>{8d9f573e-1854-4cf7-b15d-f36e071704cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Target">
+      <UniqueIdentifier>{ce038818-665a-4961-8cd2-9c25b9ae4cae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LeakCheck.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayMemoryLeakCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringMemoryLeakCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="BinderMemoryLeakCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="FreightMemoryLeakCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListMemoryLeakCheck.cpp">
+      <Filter>ソース ファイル\Target</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="LeakCheck.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayMemoryLeakCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="TStringMemoryLeakCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="BinderMemoryLeakCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="FreightMemoryLeakCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListMemoryLeakCheck.h">
+      <Filter>ヘッダー ファイル\Target</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MemoryLeakCheck.ini">
+      <Filter>リソース ファイル</Filter>
+    </None>
+  </ItemGroup>
+</Project>

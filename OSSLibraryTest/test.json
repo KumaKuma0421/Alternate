@@ -1,0 +1,14 @@
+{
+  "Numeric": 123,
+  "String": "value",
+  "Boolean": false,
+  "Object": {
+    "numeric": 234,
+    "string": "sample",
+    "boolean": true,
+    "Array1": [ 1, 2, 3, 4, 5 ],
+    "Array2": [ "ABC", "BCD", "CDE" ]
+  },
+  "Array1": [ 1, 2, 3, 4, 5 ],
+  "Array2": [ "ABC", "BCD", "CDE" ]
+}

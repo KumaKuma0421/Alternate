@@ -1,0 +1,65 @@
+{
+  "Element1": {
+    "id": "Clock",
+    "name": "Clock Generator",
+    "object": "ClockElement",
+    "product": "None",
+    "next": "Element2"
+  },
+  "Element2": {
+    "id": "Step2",
+    "name": "Dummy2",
+    "object": "QueueElement",
+    "product": "DummyProduct",
+    "next": "Element3"
+  },
+  "Element3": {
+    "id": "Step3",
+    "name": "Dummy3",
+    "object": "QueueElement",
+    "product": "DummyProduct",
+    "next": [ "Element4", "Element5", "Element6" ]
+  },
+  "Element4": {
+    "id": "Step4",
+    "name": "Dummy4",
+    "object": "QueueElement",
+    "product": "DummyProduct",
+    "next": "Terminate1"
+  },
+  "Element5": {
+    "id": "Step5",
+    "name": "Dummy5",
+    "object": "QueueElement",
+    "product": "DummyProduct",
+    "next": "Terminate2"
+  },
+  "Element6": {
+    "id": "Step6",
+    "name": "Dummy6",
+    "object": "QueueElement",
+    "product": "DummyProduct",
+    "next": "Terminate3"
+  },
+  "Terminate1": {
+    "id": "Terminate1",
+    "name": "Terminate1",
+    "object": "TerminateElement",
+    "product": "None",
+    "next": "None"
+  },
+  "Terminate2": {
+    "id": "Terminate2",
+    "name": "Terminate2",
+    "object": "TerminateElement",
+    "product": "None",
+    "next": "None"
+  },
+  "Terminate3": {
+    "id": "Terminate3",
+    "name": "Terminate3",
+    "object": "TerminateElement",
+    "product": "None",
+    "next": "None"
+  }
+}

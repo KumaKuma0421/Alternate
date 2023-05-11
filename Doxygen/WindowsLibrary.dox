@@ -1,0 +1,21 @@
+/**
+
+@page WindowsLibraryPage WindowsLibraryプロジェクト
+
+@tableofcontents
+
+<strong>WindowsLibrary</strong>は、WindowsAPIを中心に各機能を分類してプロジェクトやクラスに統合したライブラリです。
+
+単体テスト環境の<strong>@ref WindowsLibraryTestPage</strong>とメモリリーク検出用の<strong>@ref MemoryLeakCheckPage</strong>、パフォーマンスの確認用として<strong>@ref PerformanceCheckPage</strong>があります。
+
+@section WindowsLibrary_Constitute プロジェクトの構成
+
+このプロジェクトはWindowsのDLL作成用プロジェクトとして構成されています。作成されるオブジェクトは、WindowsLibrary.dllです。
+
+@section WindowsLibrary_Policy プロジェクトの方針
+
+WindowsLibraryプロジェクトは、WindowsAPIを中心に実装しています。できる限り、ランタイムライブラリを使用せず、カーネルコールで処理をするようにしています。
+
+また、STL(Standard Template Library)も使用しません。STLにしかないような部品もここで自作してライブラリ依存をWindowsAPIだけにする方針で作っています。
+
+*/

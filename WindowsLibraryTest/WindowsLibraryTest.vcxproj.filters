@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\HandleLibrary">
+      <UniqueIdentifier>{6c96e0ff-049a-4c11-988f-28684770055a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SocketLibrary">
+      <UniqueIdentifier>{a8f83707-932f-4a42-926e-802b315220d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\HandleLibrary\ReadWriteHandleLibrary">
+      <UniqueIdentifier>{10f09fb3-341f-4e3b-a45a-454a91482e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\HandleLibrary\WaitableHandleLibrary">
+      <UniqueIdentifier>{98cb2d8f-1456-49c5-a748-9bff7789a57c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Skeleton">
+      <UniqueIdentifier>{050e4ca4-0f88-4793-910c-1c5ca481b3f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="FileTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary\ReadWriteHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="NamedPipeTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary\ReadWriteHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MutexTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchDogTimerTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary\WaitableHandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpConnectorTest.cpp">
+      <Filter>ソース ファイル\SocketLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="UdpConnectorTest.cpp">
+      <Filter>ソース ファイル\SocketLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayTest.cpp">
+      <Filter>ソース ファイル\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="BinderTest.cpp">
+      <Filter>ソース ファイル\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="FreightTest.cpp">
+      <Filter>ソース ファイル\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListTest.cpp">
+      <Filter>ソース ファイル\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtilityTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="LogTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceDataHelperTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryPerformanceTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="RingBufferTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TransactionFileTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="TStringTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilityTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualMemoryTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsLibraryTest.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="DiagnosticsTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapMemoryTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedMemoryTest.cpp">
+      <Filter>ソース ファイル\HandleLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="MapTest.cpp">
+      <Filter>ソース ファイル\Skeleton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

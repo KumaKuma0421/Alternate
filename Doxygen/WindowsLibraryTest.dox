@@ -1,0 +1,17 @@
+/**
+
+@page WindowsLibraryTestPage WindowsLibraryTestプロジェクト
+
+@tableofcontents
+
+WindowsLibraryプロジェクトのメモリーリークを確認するためのプロジェクトです。
+
+@section WindowsLibraryTest_Constitute プロジェクトの構成
+
+T.B.D.
+
+@section WindowsLibraryTest_Policy プロジェクトの方針
+
+T.B.D.
+
+*/

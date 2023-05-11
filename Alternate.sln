@@ -1,0 +1,112 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleDriver", "ConsoleDriver\ConsoleDriver.vcxproj", "{CBFB3B6C-9D23-4F21-BAFE-04C7BD9E34EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiddleLibrary", "MiddleLibrary\MiddleLibrary.vcxproj", "{75670F40-8937-4A8E-8476-6E068B42A901}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsLibrary", "WindowsLibrary\WindowsLibrary.vcxproj", "{99D12A4E-B164-441F-834B-8B38B72B9A7B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowsLibraryTest", "WindowsLibraryTest\WindowsLibraryTest.vcxproj", "{EB6B63AC-8775-4797-8796-25F96F79747F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiddleLibraryTest", "MiddleLibraryTest\MiddleLibraryTest.vcxproj", "{D31BD78E-1B8B-4CF9-AEB6-4FF50D8F552A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{B68C93EE-658D-4AD3-B19B-516A30350650}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Doxygen.md = Doxygen.md
+		MyRule.md = MyRule.md
+		MyRule1.md = MyRule1.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MemoryLeakCheck", "MemoryLeakCheck\MemoryLeakCheck.vcxproj", "{82124B86-B9A9-442D-9C6D-7294A1907A0A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PerformanceCheck", "PerformanceCheck\PerformanceCheck.vcxproj", "{DEABCB2B-596E-45BC-A545-C90ABE7B7428}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBLibrary", "DBLibrary\DBLibrary.vcxproj", "{25588968-7DE0-41BB-A48B-B424E312E11F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBLibraryTest", "DBLibraryTest\DBLibraryTest.vcxproj", "{5CE8A36E-A225-4F25-BFAF-DA7CA2BE3D3B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSSLibrary", "OSSLibrary\OSSLibrary.vcxproj", "{854EBC8A-A1F5-4558-AE8C-467B1E7F8D64}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OSSLibraryTest", "OSSLibraryTest\OSSLibraryTest.vcxproj", "{2E380B50-D08A-4B50-B9F0-55DD5D68742F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doxygen", "Doxygen", "{2EE8C41B-B7C4-42CC-BB5F-655E8ED354C7}"
+	ProjectSection(SolutionItems) = preProject
+		Doxygen\ConsoleDriver.dox = Doxygen\ConsoleDriver.dox
+		Doxygen\DBLibrary.dox = Doxygen\DBLibrary.dox
+		Doxygen\DBLibraryTest.dox = Doxygen\DBLibraryTest.dox
+		Doxygen\Doxyfile = Doxygen\Doxyfile
+		Doxygen\MainPage.dox = Doxygen\MainPage.dox
+		Doxygen\MemoryLeakCheck.dox = Doxygen\MemoryLeakCheck.dox
+		Doxygen\MiddleLibrary.dox = Doxygen\MiddleLibrary.dox
+		Doxygen\MiddleLibraryTest.dox = Doxygen\MiddleLibraryTest.dox
+		Doxygen\OSSLibrary.dox = Doxygen\OSSLibrary.dox
+		Doxygen\OSSLibraryTest.dox = Doxygen\OSSLibraryTest.dox
+		Doxygen\PerformanceCheck.dox = Doxygen\PerformanceCheck.dox
+		Sample.dox = Sample.dox
+		Doxygen\WindowsLibrary.dox = Doxygen\WindowsLibrary.dox
+		Doxygen\WindowsLibraryTest.dox = Doxygen\WindowsLibraryTest.dox
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBFB3B6C-9D23-4F21-BAFE-04C7BD9E34EC}.Debug|x64.ActiveCfg = Debug|x64
+		{CBFB3B6C-9D23-4F21-BAFE-04C7BD9E34EC}.Debug|x64.Build.0 = Debug|x64
+		{CBFB3B6C-9D23-4F21-BAFE-04C7BD9E34EC}.Release|x64.ActiveCfg = Release|x64
+		{CBFB3B6C-9D23-4F21-BAFE-04C7BD9E34EC}.Release|x64.Build.0 = Release|x64
+		{75670F40-8937-4A8E-8476-6E068B42A901}.Debug|x64.ActiveCfg = Debug|x64
+		{75670F40-8937-4A8E-8476-6E068B42A901}.Debug|x64.Build.0 = Debug|x64
+		{75670F40-8937-4A8E-8476-6E068B42A901}.Release|x64.ActiveCfg = Release|x64
+		{75670F40-8937-4A8E-8476-6E068B42A901}.Release|x64.Build.0 = Release|x64
+		{99D12A4E-B164-441F-834B-8B38B72B9A7B}.Debug|x64.ActiveCfg = Debug|x64
+		{99D12A4E-B164-441F-834B-8B38B72B9A7B}.Debug|x64.Build.0 = Debug|x64
+		{99D12A4E-B164-441F-834B-8B38B72B9A7B}.Release|x64.ActiveCfg = Release|x64
+		{99D12A4E-B164-441F-834B-8B38B72B9A7B}.Release|x64.Build.0 = Release|x64
+		{EB6B63AC-8775-4797-8796-25F96F79747F}.Debug|x64.ActiveCfg = Debug|x64
+		{EB6B63AC-8775-4797-8796-25F96F79747F}.Debug|x64.Build.0 = Debug|x64
+		{EB6B63AC-8775-4797-8796-25F96F79747F}.Release|x64.ActiveCfg = Release|x64
+		{EB6B63AC-8775-4797-8796-25F96F79747F}.Release|x64.Build.0 = Release|x64
+		{D31BD78E-1B8B-4CF9-AEB6-4FF50D8F552A}.Debug|x64.ActiveCfg = Debug|x64
+		{D31BD78E-1B8B-4CF9-AEB6-4FF50D8F552A}.Debug|x64.Build.0 = Debug|x64
+		{D31BD78E-1B8B-4CF9-AEB6-4FF50D8F552A}.Release|x64.ActiveCfg = Release|x64
+		{D31BD78E-1B8B-4CF9-AEB6-4FF50D8F552A}.Release|x64.Build.0 = Release|x64
+		{82124B86-B9A9-442D-9C6D-7294A1907A0A}.Debug|x64.ActiveCfg = Debug|x64
+		{82124B86-B9A9-442D-9C6D-7294A1907A0A}.Debug|x64.Build.0 = Debug|x64
+		{82124B86-B9A9-442D-9C6D-7294A1907A0A}.Release|x64.ActiveCfg = Release|x64
+		{82124B86-B9A9-442D-9C6D-7294A1907A0A}.Release|x64.Build.0 = Release|x64
+		{DEABCB2B-596E-45BC-A545-C90ABE7B7428}.Debug|x64.ActiveCfg = Debug|x64
+		{DEABCB2B-596E-45BC-A545-C90ABE7B7428}.Debug|x64.Build.0 = Debug|x64
+		{DEABCB2B-596E-45BC-A545-C90ABE7B7428}.Release|x64.ActiveCfg = Release|x64
+		{DEABCB2B-596E-45BC-A545-C90ABE7B7428}.Release|x64.Build.0 = Release|x64
+		{25588968-7DE0-41BB-A48B-B424E312E11F}.Debug|x64.ActiveCfg = Debug|x64
+		{25588968-7DE0-41BB-A48B-B424E312E11F}.Debug|x64.Build.0 = Debug|x64
+		{25588968-7DE0-41BB-A48B-B424E312E11F}.Release|x64.ActiveCfg = Release|x64
+		{25588968-7DE0-41BB-A48B-B424E312E11F}.Release|x64.Build.0 = Release|x64
+		{5CE8A36E-A225-4F25-BFAF-DA7CA2BE3D3B}.Debug|x64.ActiveCfg = Debug|x64
+		{5CE8A36E-A225-4F25-BFAF-DA7CA2BE3D3B}.Debug|x64.Build.0 = Debug|x64
+		{5CE8A36E-A225-4F25-BFAF-DA7CA2BE3D3B}.Release|x64.ActiveCfg = Release|x64
+		{5CE8A36E-A225-4F25-BFAF-DA7CA2BE3D3B}.Release|x64.Build.0 = Release|x64
+		{854EBC8A-A1F5-4558-AE8C-467B1E7F8D64}.Debug|x64.ActiveCfg = Debug|x64
+		{854EBC8A-A1F5-4558-AE8C-467B1E7F8D64}.Debug|x64.Build.0 = Debug|x64
+		{854EBC8A-A1F5-4558-AE8C-467B1E7F8D64}.Release|x64.ActiveCfg = Release|x64
+		{854EBC8A-A1F5-4558-AE8C-467B1E7F8D64}.Release|x64.Build.0 = Release|x64
+		{2E380B50-D08A-4B50-B9F0-55DD5D68742F}.Debug|x64.ActiveCfg = Debug|x64
+		{2E380B50-D08A-4B50-B9F0-55DD5D68742F}.Debug|x64.Build.0 = Debug|x64
+		{2E380B50-D08A-4B50-B9F0-55DD5D68742F}.Release|x64.ActiveCfg = Release|x64
+		{2E380B50-D08A-4B50-B9F0-55DD5D68742F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28111220-271D-457E-B31A-5CF5164BC9C9}
+	EndGlobalSection
+EndGlobal

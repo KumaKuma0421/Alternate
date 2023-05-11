@@ -1,0 +1,17 @@
+/**
+
+@page OSSLibraryPage OSSLibraryプロジェクト
+
+@tableofcontents
+
+JSONなどの階層化構造ファイルは、Boostライブラリにもありますが、picojsonライブラリの方が使い勝手がよいと思われます。オープンソースはすべてこの<strong>OSSLibrary</strong>に集約するようにします。使用感や動作確認用に<strong>OSSLibraryTest</strong>プロジェクトを用意しています。
+
+@section OSSLibrary_Constitute プロジェクトの構成
+
+T.B.D.
+
+@section OSSLibrary_Policy プロジェクトの方針
+
+T.B.D.
+
+*/
