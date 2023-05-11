@@ -84,7 +84,6 @@ namespace alt
 		//! @brief ハードリンクの作成
 		//! @param lpctszSrcFileName リンク作成元ファイル名
 		//! @param lpctszLinkFileName リンクファイル名
-		//! @param isFile 対象がファイルか否か
 		//! @return BOOL
 		//! @retval TRUE(成功)
 		//! @retval FALSE(失敗)

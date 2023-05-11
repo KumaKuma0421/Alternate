@@ -15,7 +15,7 @@ namespace alt
 {
 	class FileUtility;
 
-	//! @enum SHFileOperationのオペレーションの種類
+	//! @enum ShellOperation
 	//! @brief SHFILEOPSTRUCT.wFuncに渡す、値の列挙
 	enum class ShellOperation : WORD
 	{

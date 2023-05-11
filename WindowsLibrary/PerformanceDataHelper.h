@@ -6,6 +6,7 @@
 
 #pragma once
 
+#include <Pdh.h>
 #include "WindowsLibrary.h"
 #include "TString.h"
 #include "Array.hpp"

@@ -6,6 +6,9 @@
 
 #pragma once
 
+#include <Windows.h>
+#include <Psapi.h>
+#include <ipmib.h>
 #include "WindowsLibrary.h"
 
 namespace alt

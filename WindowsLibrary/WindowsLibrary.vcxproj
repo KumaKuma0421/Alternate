@@ -125,6 +125,7 @@
     <ClInclude Include="RingBuffer.h" />
     <ClInclude Include="SharedMemory.h" />
     <ClInclude Include="SocketBuilder.h" />
+    <ClInclude Include="SocketLibrary.h" />
     <ClInclude Include="TcpConnector.h" />
     <ClInclude Include="Thread.h" />
     <ClInclude Include="TransactionFile.h" />
@@ -154,6 +155,7 @@
     <ClCompile Include="RingBuffer.cpp" />
     <ClCompile Include="SharedMemory.cpp" />
     <ClCompile Include="SocketBuilder.cpp" />
+    <ClCompile Include="SocketLibrary.cpp" />
     <ClCompile Include="TransactionFile.cpp" />
     <ClCompile Include="TString.cpp" />
     <ClCompile Include="TcpConnector.cpp" />

@@ -152,7 +152,7 @@ namespace alt
 		//! @brief データからMD5を計算
 		//! @param[in] lpbyData MD5を計算するデータ
 		//! @param[in] dwSize MD5を計算するデータのサイズ
-		//! @param[out lpbyMD5 MD5の計算結果
+		//! @param[out] lpbyMD5 MD5の計算結果
 		//! @return BOOL
 		//! @retval TRUE(成功)
 		//! @retval FALSE(失敗)

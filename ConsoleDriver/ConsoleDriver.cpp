@@ -89,7 +89,6 @@ int _tmain (int argc, TCHAR* argv[])
 
 //! @brief		ストラテジーの初期化を行います。
 //! @details	INIファイルのセクション名で関数起動を切り替えます。
-//! @return		void
 void Init ()
 {
 	_tprintf (_T ("Init() IN.\n"));

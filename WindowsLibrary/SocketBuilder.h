@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "WindowsLibrary.h"
+#include "SocketLibrary.h"
 #include "TcpConnector.h"
 #include "UdpConnector.h"
 
@@ -39,6 +39,8 @@ namespace alt
 		//! @brief TcpConnectorの作成
 		//! @param lpctszIpAddr 設定する自身のIPアドレス
 		//! @param portNo 設定する自身のポート番号
+		//! @param retryInterval リトライ間隔(ms)
+		//! @param retryCount リトライ回数
 		//! @return TcpConnector*
 		TcpConnector* APIENTRY CreateTcpConnector (
 			LPCTSTR lpctszIpAddr, u_short portNo, int retryInterval,

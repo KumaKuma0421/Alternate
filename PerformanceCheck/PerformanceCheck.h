@@ -5,6 +5,8 @@
 
 #pragma once
 
+#define _WINSOCKAPI_ // Windows.h -> WinSock2.hの順にインクルードする際の呪文
+
 #include "TString.h"
 #include "Console.h"
 #include "Utility.h"

@@ -10,8 +10,6 @@
 #pragma once
 
 // プリコンパイルするヘッダーをここに追加します
-#include "framework.h"
-#include <Windows.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>

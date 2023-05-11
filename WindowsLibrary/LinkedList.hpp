@@ -6,6 +6,8 @@
 
 #pragma once
 
+#include "WindowsLibrary.h"
+
 namespace alt
 {
 	namespace skeleton

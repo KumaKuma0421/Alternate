@@ -61,8 +61,6 @@ namespace WindowsLibraryTest
 			const int count = 30;
 			const DWORD cdwTime = 20;
 
-			timeBeginPeriod (1);
-
 			alt::skeleton::Binder<TimeupFunction> function;
 			alt::skeleton::Binder<alt::WatchDogTimer, TimeupFunction*> T;
 			function.New ();
@@ -97,7 +95,6 @@ namespace WindowsLibraryTest
 			}
 
 			T->StopTimer ();
-			timeEndPeriod (1);
 
 			double minValue = cdwTime;
 			double maxValue = cdwTime;
@@ -143,8 +140,6 @@ namespace WindowsLibraryTest
 			const int count = 30;
 			const DWORD cdwTime = 20;
 
-			timeBeginPeriod (1);
-
 			alt::skeleton::Binder<alt::WatchDogTimer> T;
 			T.New ();
 
@@ -175,7 +170,6 @@ namespace WindowsLibraryTest
 			}
 
 			T->StopTimer ();
-			timeEndPeriod (1);
 
 			double minValue = cdwTime;
 			double maxValue = cdwTime;

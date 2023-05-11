@@ -16,10 +16,12 @@ UdpController* __udpController2 = nullptr;
 UDPPerformanceCheck::UDPPerformanceCheck (alt::Console& console)
 	:PerformanceCheck (console)
 {
+
 }
 
 UDPPerformanceCheck::~UDPPerformanceCheck ()
 {
+
 }
 
 BOOL UDPPerformanceCheck::DoAction ()
@@ -285,7 +287,7 @@ DWORD UdpController::Invoke (LPVOID lpvParam)
 		{
 			_tprintf (_T ("UdpController::Invoke(LPVOID)\n"));
 			_tprintf (_T (" recvSize=%d Socket disconnected. reason:%d\n"),
-					 recvSize, WSAGetLastError ());
+					 recvSize, _connector->GetErrNo ());
 			return -1;
 		}
 #ifdef _DUMP_DATA
@@ -300,11 +302,11 @@ DWORD UdpController::Invoke (LPVOID lpvParam)
 		{
 			_tprintf (_T ("UdpController::Invoke(LPVOID)\n"));
 			_tprintf (_T (" send=%d sended=%d Invalid send size. reason:%d\n"),
-					 dataLen, sendSize, WSAGetLastError ());
+					 dataLen, sendSize, _connector->GetErrNo ());
 			return -2;
 		}
-	}
+		}
 
 	_tprintf (_T ("UdpController::Invoke(LPVOID) OUT.\n"));
 	return 0;
-}
+	}

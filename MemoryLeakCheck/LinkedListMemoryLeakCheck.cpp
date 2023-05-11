@@ -1,4 +1,4 @@
-//! @file	LinkedListMemoryLeakCheck.h
+//! @file	LinkedListMemoryLeakCheck.cpp
 //! @brief	LinkedListのメモリーリークを確認します。
 //! @author	kumakuma0421@gmail.com
 //! @date	2022.06.28

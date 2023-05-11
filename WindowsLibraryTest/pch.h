@@ -10,7 +10,6 @@
 #pragma once
 
 // プリコンパイルするヘッダーをここに追加します
-#include "framework.h"
 #include "CppUnitTest.h"
 #include <vector>
 #include <memory>

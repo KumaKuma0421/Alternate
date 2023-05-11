@@ -19,11 +19,14 @@ namespace alt
 	public:
 		//! @brief コンストラクタ
 		//! @note  時間になると、イベントで通知します。
-		APIENTRY WatchDogTimer ();
+		APIENTRY WatchDogTimer (UINT uPeriod = 1);
 
 		//! @brief コンストラクタ
 		//! @param[in] timeup 時間になると、timeupコールバックで通知します。
-		APIENTRY WatchDogTimer (skeleton::ITimeup* timeup);
+		APIENTRY WatchDogTimer (skeleton::ITimeup* timeup, UINT uPeriod = 1);
+
+		//! @brief  デストラクタ
+		APIENTRY ~WatchDogTimer ();
 
 		//! @brief 初期化
 		//! @param lpctszName タイマーの名称
@@ -53,5 +56,6 @@ namespace alt
 	private:
 		//! @brief コールバック関数を定義したクラス
 		skeleton::ITimeup* _timeup;
+		UINT _uPeriod;
 	};
 }

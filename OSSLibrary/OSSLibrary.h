@@ -6,6 +6,22 @@
 
 #pragma once
 
+#include <Windows.h>
+#include <tchar.h>
+
+#ifdef OSSLIBRARY_EXPORTS
+#pragma message("DLL EXPORTING...")
+#ifndef DLL_DECLSPEC
+#define DLL_DECLSPEC __declspec(dllexport)
+#endif
+#else
+#ifndef DLL_DECLSPEC
+#define DLL_DECLSPEC __declspec(dllimport)
+#endif
+#pragma comment(lib, "OSSLibrary")
+#pragma message("OSSLibrary is now importing...")
+#endif
+
 BOOL APIENTRY DllMain (HMODULE hModule, DWORD dwReasonForCall, LPVOID lpvReserved);
 
 namespace oss

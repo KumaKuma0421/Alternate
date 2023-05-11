@@ -17,10 +17,12 @@ TcpClient* __tcpClient = nullptr;
 TCPPerformanceCheck::TCPPerformanceCheck (alt::Console& console)
 	:PerformanceCheck (console)
 {
+
 }
 
 TCPPerformanceCheck::~TCPPerformanceCheck ()
 {
+
 }
 
 BOOL TCPPerformanceCheck::DoAction ()
@@ -339,7 +341,7 @@ DWORD ServerWorker::Invoke (LPVOID lpvParam)
 		{
 			_tprintf (_T ("ServerWorker::Invoke()\n"));
 			_tprintf (_T ("recvSize=%d recv() failed. reason:%d\n"),
-					 recvSize, WSAGetLastError ());
+					 recvSize, _connector->GetErrNo ());
 			break;
 		}
 
@@ -354,7 +356,7 @@ DWORD ServerWorker::Invoke (LPVOID lpvParam)
 		{
 			_tprintf (_T ("ServerWorker::Invoke()\n"));
 			_tprintf (_T ("send=%d sended=%d send failed. reason:%d\n"),
-					 recvSize, sendSize, WSAGetLastError ());
+					 recvSize, sendSize, _connector->GetErrNo ());
 			break;
 		}
 	}
@@ -450,7 +452,7 @@ DWORD TcpServer::Invoke (LPVOID lpvParam)
 		else
 		{
 			_tprintf (_T ("TcpServer::Invoke(LPVOID).\n"));
-			_tprintf (_T (" _builder->Wait() failed. reason=%d\n"), WSAGetLastError ());
+			_tprintf (_T (" _builder->Wait() failed. reason=%d\n"), _builder->GetErrNo ());
 
 		}
 	}
@@ -564,7 +566,7 @@ DWORD TcpClient::Invoke (LPVOID lpvParam)
 		{
 			_tprintf (_T ("TcpClient::Invoke(LPVOID)\n"));
 			_tprintf (_T (" recvSize=%d Socket disconnected. reason:%d\n"),
-					 recvSize, WSAGetLastError ());
+					 recvSize, _connector->GetErrNo ());
 			return -1;
 		}
 #ifdef _DUMP_DATA
@@ -579,7 +581,7 @@ DWORD TcpClient::Invoke (LPVOID lpvParam)
 		{
 			_tprintf (_T ("TcpClient::Invoke(LPVOID)\n"));
 			_tprintf (_T (" send=%d sended=%d Invalid send size. reason:%d\n"),
-					 dataLen, sendSize, WSAGetLastError ());
+					 dataLen, sendSize, _connector->GetErrNo ());
 			return -2;
 		}
 	}
@@ -666,7 +668,7 @@ DWORD UpstreamDriver::Invoke (LPVOID lpvParam)
 		if (recvSize <= 0)
 		{
 			_tprintf (_T ("Down:recvSize=%d Socket disconnected. reason:%d\n"),
-					 recvSize, WSAGetLastError ());
+					 recvSize, _connectorClient->GetErrNo ());
 			return -1;
 		}
 
@@ -680,7 +682,7 @@ DWORD UpstreamDriver::Invoke (LPVOID lpvParam)
 		if (sendSize != recvSize)
 		{
 			_tprintf (_T ("Down:send=%d sended=%d Invalid send size. reason:%d\n"),
-					 recvSize, sendSize, WSAGetLastError ());
+					 recvSize, sendSize, _connectorServer->GetErrNo ());
 			return -2;
 		}
 	}
@@ -699,7 +701,7 @@ DWORD DownstreamDriver::Invoke (LPVOID lpvParam)
 		if (recvSize <= 0)
 		{
 			_tprintf (_T ("Up  :recvSize=%d Socket disconnected. reason:%d\n"),
-					 recvSize, WSAGetLastError ());
+					 recvSize, _connectorServer->GetErrNo ());
 			return -1;
 		}
 
@@ -713,7 +715,7 @@ DWORD DownstreamDriver::Invoke (LPVOID lpvParam)
 		if (sendSize != recvSize)
 		{
 			_tprintf (_T ("Up  :send=%d sended=%d Invalid send size. reason:%d\n"),
-					 recvSize, sendSize, WSAGetLastError ());
+					 recvSize, sendSize, _connectorClient->GetErrNo ());
 			return -2;
 		}
 	}

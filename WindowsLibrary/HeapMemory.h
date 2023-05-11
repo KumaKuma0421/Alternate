@@ -55,8 +55,8 @@ namespace alt
 		APIENTRY ~HeapMemory ();
 
 		//! @brief ヒープ領域の取得
-		//! @param dwInitialSize 初期サイズ
-		//! @param dwMaximumSize 最大サイズ
+		//! @param initialSize 初期サイズ
+		//! @param maximumSize 最大サイズ
 		//! @param dwOptions オプション
 		//! @return BOOL
 		//! @retval TRUE(成功)

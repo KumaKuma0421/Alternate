@@ -26,7 +26,7 @@ namespace alt
 			};
 
 			//! @brief コンストラクタ
-			//! @param manager IMemoryオブジェクト
+			//! @param memory IMemoryオブジェクト
 			Freight<T> (IMemory* memory)
 			{
 				if (memory == NULL)
@@ -40,7 +40,7 @@ namespace alt
 			//! @brief コンストラクタ
 			//! @param lpData 格納データ
 			//! @param size 格納データサイズ（T単位の個数）
-			//! @param manager HeapMemoryManager
+			//! @param memory HeapMemoryManager
 			Freight<T> (T* lpData, size_t size, IMemory* memory = NULL)
 				:Freight (memory)
 			{
@@ -115,7 +115,7 @@ namespace alt
 			};
 
 			//! @brief 安全なオブジェクトのコピー
-			//! @param freight コピー元オブジェクト
+			//! @param base コピー元オブジェクト
 			VOID APIENTRY operator = (const Freight<T>& base)
 			{
 				if (dynamic_cast<alt::BasicMemory*>(base._memory))

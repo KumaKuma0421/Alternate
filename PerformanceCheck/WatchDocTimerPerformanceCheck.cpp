@@ -11,12 +11,12 @@ using namespace PerfCheck;
 WatchDocTimerPerformanceCheck::WatchDocTimerPerformanceCheck (alt::Console& console)
 	:PerformanceCheck (console)
 {
-	timeBeginPeriod (1);
+
 }
 
 WatchDocTimerPerformanceCheck::~WatchDocTimerPerformanceCheck ()
 {
-	timeEndPeriod (1);
+
 }
 
 BOOL WatchDocTimerPerformanceCheck::DoAction ()

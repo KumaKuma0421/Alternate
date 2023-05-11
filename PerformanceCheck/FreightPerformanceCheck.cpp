@@ -1,4 +1,4 @@
-//! @file	FreightPerformanceCheck.h
+//! @file	FreightPerformanceCheck.cpp
 //! @brief	Freightクラス性能測定用
 //! @author	kumakuma0421@gmail.com
 //! @date	2022.7.23

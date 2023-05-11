@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------
-//! @file	QueryPerformance.h
+//! @file	QueryPerformance.cpp
 //! @brief	高分解能時間計測に関するWindowsAPIを集約したクラス
 //! @author	kumakuma0421@gmail.com
 //! @date	2022.5.06

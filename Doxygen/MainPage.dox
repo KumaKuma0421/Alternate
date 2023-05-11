@@ -22,7 +22,7 @@ Alternateソリューション配下のプロジェクトは以下の構成になっています。
  
 @section how_to_use_this Alternateの使い方
 
-このソリューションは、Visual Studio Community 2019版で、スクラッチから作成しています。スタートアッププロジェクトになれるのは、以下の３つです。
+このソリューションは、Visual Studio Community 2022版で、スクラッチから作成しています。スタートアッププロジェクトになれるのは、以下の３つです。
 
 - ConsoleDriver
 - MemoryLeakCheck

@@ -9,19 +9,28 @@
 
 using namespace alt;
 
-WatchDogTimer::WatchDogTimer ()
+WatchDogTimer::WatchDogTimer (UINT uPeriod)
 {
 	_timeup = NULL;
+	_uPeriod = uPeriod;
 }
 
-WatchDogTimer::WatchDogTimer (skeleton::ITimeup* timeup)
+WatchDogTimer::WatchDogTimer (skeleton::ITimeup* timeup, UINT uPeriod)
 {
 	_timeup = timeup;
+	_uPeriod = uPeriod;
+}
+
+WatchDogTimer::~WatchDogTimer ()
+{
+	::timeEndPeriod (_uPeriod);
 }
 
 BOOL WatchDogTimer::InitTimer (LPCTSTR lpctszName)
 {
 	BOOL ret = TRUE;
+
+	::timeBeginPeriod (_uPeriod);
 
 	_hObject = ::CreateWaitableTimer (NULL, 0, lpctszName);
 	if (_hObject == INVALID_HANDLE_VALUE)
