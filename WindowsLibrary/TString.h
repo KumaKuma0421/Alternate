@@ -183,12 +183,15 @@ namespace alt
 		//! @return フォーマットに従って書式化した自分自身
 		TString& APIENTRY Format (LPCTSTR format, ...);
 
-		//! @brief SJIS文字列を取り込みます。
+		//! @brief マルチバイト文字列を取り込みます。
 		//! @param[in] lpcszSJIS ヌルターミネートされた文字列
+		//! @param[in] codePage マルチバイトの文字コード
 		//! @return BOOL 変換に成功か否か
 		//! @retval true 成功
 		//! @retval false 失敗
-		BOOL APIENTRY FromSJIS (LPCSTR lpcszSJIS);
+		//! @description SJIS -> CP_ACP (既定値)
+		//!              UTF-8 -> CP_UTF8
+		BOOL APIENTRY FromMultiByte (LPCSTR lpcszSJIS, UINT codePage = CP_ACP);
 
 		//! @brief SJIS文字列を出力します。
 		//! @param[out] lpszSJIS SJIS文字列

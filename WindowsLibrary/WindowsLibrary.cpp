@@ -43,7 +43,7 @@ BOOL DllMain (
 			wsprintf (tszMessage, _T ("WindowsLibrary.dll DLL_PROCESS_DETACH.\n"));
 			break;
 	}
-	OutputDebugString (tszMessage);
+	OutputDebugString (tszMessage); // このデバッグ方法があるという意味で残しておきます。
 
 	return TRUE;
 }

@@ -85,6 +85,12 @@ namespace WindowsLibraryTest
 		{
 			alt::TString output;
 
+			if (item.GetAction () == (DWORD)-1)
+			{
+				Logger::WriteMessage ("FileUtility::DirectoryWatch() returns error.\n");
+				return;
+			}
+
 			output.Format (_T ("%s %lld\n"),
 						   item.GetFileName ().Ctr (),
 						   item.GetFileSize ());
@@ -364,7 +370,7 @@ namespace WindowsLibraryTest
 			alt::Thread eventThread;
 			Assert::IsTrue (eventThread.Create (eventFunction));
 
-			Assert::AreEqual<DWORD> (WAIT_OBJECT_0, eventThread.Wait (), _T ("watchThread.Wait() failed."));
+			Assert::AreEqual<DWORD> (WAIT_OBJECT_0, eventThread.Wait (), _T ("eventThread.Wait() failed."));
 			Logger::WriteMessage (_T ("[eventThread] finished.\n"));
 
 			Assert::AreEqual<DWORD> (WAIT_OBJECT_0, watchThread.Wait (), _T ("watchThread.Wait() failed."));

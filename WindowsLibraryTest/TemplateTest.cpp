@@ -17,7 +17,8 @@ namespace WindowsLibraryTest
 		BEGIN_TEST_CLASS_ATTRIBUTE()
 			TEST_CLASS_ATTRIBUTE(L"Category", L"Template")
 		//	TEST_CLASS_ATTRIBUTE(L"Date", L"2019.12.21")
-			TEST_CLASS_ATTRIBUTE(L"Ignore", L"true")
+		//	TEST_CLASS_ATTRIBUTE(L"Ignore", L"true")
+			TEST_CLASS_ATTRIBUTE(L"Description", L"テンプレートなのでこれは実行されません。")
 		END_TEST_CLASS_ATTRIBUTE()
 
 		TEST_CLASS_INITIALIZE (ClassInitialize)
@@ -32,18 +33,18 @@ namespace WindowsLibraryTest
 
 		TEST_METHOD_INITIALIZE (MethodInitialize)
 		{
-			Logger::WriteMessage ("-->>method initialize.\n");
+			Logger::WriteMessage ("method initialize.\n");
 		}
 
 		TEST_METHOD_CLEANUP (MethodCleanup)
 		{
-			Logger::WriteMessage ("<<--method cleanup.\n");
+			Logger::WriteMessage ("method cleanup.\n");
 		}
 
 		BEGIN_TEST_METHOD_ATTRIBUTE(TemplateSampleTest1)
 		//	TEST_OWNER(L"kumakuma0421")
-			TEST_DESCRIPTION(L"これはすべてのテストのテンプレートとなります。")
-		//	TEST_PRIORITY(9)
+			TEST_DESCRIPTION(L"これは'TemplateSampleTest1'のテンプレートとなります。")
+			TEST_PRIORITY(8)
 		//	TEST_IGNORE()
 			TEST_METHOD_ATTRIBUTE(L"Category", L"Template")
 		END_TEST_METHOD_ATTRIBUTE()
@@ -51,21 +52,21 @@ namespace WindowsLibraryTest
 		TEST_METHOD (TemplateSampleTest1)
 		{
 			Assert::AreEqual<int> (123, 123, _T ("This test is failed.\n"));
-			OutputDebugString (_T ("Output TemplateSampleTest.\n"));
+			Logger::WriteMessage("Output TemplateSampleTest1.\n");
 		}
 
 		BEGIN_TEST_METHOD_ATTRIBUTE(TemplateSampleTest2)
 		//	TEST_OWNER(L"kumakuma0421")
-			TEST_DESCRIPTION(L"これはすべてのテストのテンプレートとなります。")
-		//	TEST_PRIORITY(9)
-			TEST_IGNORE()
+			TEST_DESCRIPTION(L"これは'TemplateSampleTest2'のテンプレートとなります。")
+			TEST_PRIORITY(1)
+		//	TEST_IGNORE()
 			TEST_METHOD_ATTRIBUTE(L"Category", L"Template")
 		END_TEST_METHOD_ATTRIBUTE()
 
 		TEST_METHOD (TemplateSampleTest2)
 		{
 			Assert::AreEqual<int> (123, 123, _T ("This test is failed.\n"));
-			OutputDebugString (_T ("Output TemplateSampleTest.\n"));
+			Logger::WriteMessage("Output TemplateSampleTest2.\n");
 		}
 	};
 }

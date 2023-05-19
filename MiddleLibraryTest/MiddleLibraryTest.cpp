@@ -38,12 +38,12 @@ namespace MiddleLibraryTest
 
 		TEST_METHOD_INITIALIZE (MethodInitialize)
 		{
-			Logger::WriteMessage ("-->>method initialize.\n");
+			Logger::WriteMessage ("method initialize.\n");
 		}
 
 		TEST_METHOD_CLEANUP (MethodCleanup)
 		{
-			Logger::WriteMessage ("<<--method cleanup.\n");
+			Logger::WriteMessage ("method cleanup.\n");
 		}
 
 		TEST_METHOD (dllmainTest)

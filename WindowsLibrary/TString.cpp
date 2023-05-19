@@ -347,15 +347,15 @@ TString& TString::Format (LPCTSTR format, ...)
 	return *this;
 }
 
-BOOL TString::FromSJIS (LPCSTR lpcszSJIS)
+BOOL TString::FromMultiByte (LPCSTR lpcszSJIS, UINT codePage)
 {
 	// 必要サイズを取得
 	DWORD dwWideSize = ::MultiByteToWideChar (
-		CP_ACP, MB_PRECOMPOSED, lpcszSJIS, -1, _lptszString, 0);
+		codePage, MB_PRECOMPOSED, lpcszSJIS, -1, nullptr, 0);
 	TString response (dwWideSize);
 
 	DWORD dwResponse = ::MultiByteToWideChar (
-		CP_ACP, MB_PRECOMPOSED, lpcszSJIS, -1, response.Ptr (), dwWideSize);
+		codePage, MB_PRECOMPOSED, lpcszSJIS, -1, response.Ptr (), dwWideSize);
 	*this = response;
 
 	return dwResponse > 0 ? TRUE : FALSE;

@@ -13,6 +13,7 @@
 #include <tchar.h>
 #include <WinSock2.h>
 #include <WS2tcpip.h>
+#include <ws2ipdef.h>
 #include <mstcpip.h>
 #include <timeapi.h>
 #include <psapi.h>

@@ -163,6 +163,7 @@ namespace alt
 		//!   FILE_ACTION_MODIFIED,
 		//!   FILE_ACTION_RENAMED_OLD_NAME,
 		//!   FILE_ACTION_RENAMED NEW_NAME
+		//! @note (DWORD)-1の場合は、バッファのずれによるエラーが発生
 		const DWORD APIENTRY GetAction () const { return _dwAction; };
 
 		//! @brief ファイルIDの取得

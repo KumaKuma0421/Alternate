@@ -9,6 +9,17 @@
 
 using namespace alt;
 
+TcpConnector::TcpConnector (
+	SOCKET socket, LPCTSTR lpctszAcceptIPAddress, USHORT wAcceptPort)
+{
+	_socket = socket;
+	ZeroMemory (_tszAcceptedIPAddress, INET_ADDRSTRLEN);
+	CopyMemory (_tszAcceptedIPAddress, lpctszAcceptIPAddress,
+				_tcslen (lpctszAcceptIPAddress) * sizeof (TCHAR));
+	_wAcceptedPort = wAcceptPort;
+	SecureZeroMemory ((PVOID)&_RecvOverlapped, sizeof (_RecvOverlapped));
+}
+
 INT TcpConnector::Send (LPVOID lpvBuf, DWORD dwSize) const
 {
 	int ret = ::send (_socket, (PCHAR)lpvBuf, (int)dwSize, 0);
@@ -16,32 +27,85 @@ INT TcpConnector::Send (LPVOID lpvBuf, DWORD dwSize) const
 	return ret;
 }
 
-INT TcpConnector::Recv (LPVOID lpvBuf, DWORD dwSize, BOOL isBlocking) const
+INT TcpConnector::Recv (LPVOID lpvBuf, DWORD dwSize, BOOL isBlocking)
 {
-	INT ret = 0;
+	INT ret = INT_MIN;
+	WSABUF DataBuf;
+	DWORD dwRecvBytes;
+	DWORD dwFlags = 0;
+	DWORD dwRemain = dwSize;
 
-	if (isBlocking)
+	_RecvOverlapped.hEvent = ::WSACreateEvent ();
+	if (_RecvOverlapped.hEvent == nullptr)
 	{
-		DWORD dwRemain = dwSize;
-		PCHAR currentPos;
-		while (dwRemain != 0)
+		ret = -1;
+		return ret;
+	}
+
+	while (dwRemain!= 0)
+	{
+		int rc;
+		PCHAR currentPos = (PCHAR)lpvBuf + (dwSize - dwRemain);
+		DataBuf.len = dwRemain;
+		DataBuf.buf = currentPos;
+
+		rc = WSARecv (_socket, &DataBuf, 1, &dwRecvBytes, &dwFlags,
+					  &_RecvOverlapped, nullptr);
+		if ((rc == SOCKET_ERROR) && (WSA_IO_PENDING != GetErrNo ()))
 		{
-			currentPos = (PCHAR)lpvBuf + (dwSize - dwRemain);
-			int ret = ::recv (_socket, currentPos, (int)(dwRemain), 0);
-			if (ret <= 0)
-			{
-				dwSize = 0;
-				break;
-			}
-			dwRemain -= ret;
+			ret = -2;
+			break;
 		}
 
-		ret = dwSize;
+		rc = WSAWaitForMultipleEvents (1, &_RecvOverlapped.hEvent, TRUE,
+									   INFINITE, TRUE);
+		if (rc == WSA_WAIT_FAILED)
+		{
+			ret = -3;
+			break;
+		}
+
+		rc = WSAGetOverlappedResult (_socket, &_RecvOverlapped, &dwRecvBytes,
+									 FALSE, &dwFlags);
+		if (rc == FALSE)
+		{
+			ret = -4;
+			break;
+		}
+
+		rc = WSAResetEvent (_RecvOverlapped.hEvent);
+		if (rc == FALSE)
+		{
+			ret = -5;
+			break;
+		}
+
+		if (isBlocking)
+		{
+			dwRemain -= dwRecvBytes;
+			ret = dwSize - dwRemain;
+			if (dwRecvBytes == 0)
+			{
+				ret = 0;
+				break;
+			}
+		}
+		else
+		{
+			ret = (INT)dwRecvBytes;
+			break;
+		}
 	}
-	else
+
+	if (WSACloseEvent (_RecvOverlapped.hEvent) == FALSE)
 	{
-		ret = ::recv (_socket, (PCHAR)lpvBuf, (int)dwSize, 0);
+		ret = -6;
 	}
 
 	return ret;
+}
+
+BOOL TcpConnector::CancelRecv ()
+{
+	return ::WSASetEvent (_RecvOverlapped.hEvent);
 }

@@ -227,7 +227,7 @@ bool UdpController::Init ()
 {
 	_tprintf (_T ("UdpController::Init() CALL.\n"));
 
-	return _builder->Startup ();
+	return _builder->Startup () == 0 ? true : false;
 }
 
 bool UdpController::Start (LPCTSTR lpctszIP, USHORT wPort, LPCTSTR lpctszTargetIP, USHORT wTargetPort, bool kickOff)
@@ -247,7 +247,7 @@ bool UdpController::Start (LPCTSTR lpctszIP, USHORT wPort, LPCTSTR lpctszTargetI
 			INT ret = _connector->Send (byData, dwDataLen);
 			if ((DWORD)ret != dwDataLen)
 			{
-				_tprintf (_T (" Send() invalid send size (%d). reason=%d \n"), ret, _connector->GetErrNo ());
+				_tprintf (_T ("UdpController::Start() Send() invalid send size (%d). reason=%d \n"), ret, _connector->GetErrNo ());
 			}
 		}
 
@@ -277,7 +277,7 @@ DWORD UdpController::Invoke (LPVOID lpvParam)
 {
 	_tprintf (_T ("UdpController::Invoke(LPVOID) IN.\n"));
 
-	BYTE byData[DATA_SIZE];
+	BYTE byData[DATA_SIZE]{ 0 };
 
 	int count = 0;
 	while (_stop == false)
@@ -285,8 +285,7 @@ DWORD UdpController::Invoke (LPVOID lpvParam)
 		INT recvSize = _connector->Recv (byData, sizeof (byData));
 		if (recvSize <= 0)
 		{
-			_tprintf (_T ("UdpController::Invoke(LPVOID)\n"));
-			_tprintf (_T (" recvSize=%d Socket disconnected. reason:%d\n"),
+			_tprintf (_T ("UdpController::Invoke() recvSize=%d Socket disconnected. reason:%d\n"),
 					 recvSize, _connector->GetErrNo ());
 			return -1;
 		}
@@ -300,8 +299,7 @@ DWORD UdpController::Invoke (LPVOID lpvParam)
 		INT sendSize = _connector->Send (byData, dataLen);
 		if (sendSize != dataLen)
 		{
-			_tprintf (_T ("UdpController::Invoke(LPVOID)\n"));
-			_tprintf (_T (" send=%d sended=%d Invalid send size. reason:%d\n"),
+			_tprintf (_T ("UdpController::Invoke() send=%d sended=%d Invalid send size. reason:%d\n"),
 					 dataLen, sendSize, _connector->GetErrNo ());
 			return -2;
 		}

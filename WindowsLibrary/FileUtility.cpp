@@ -354,12 +354,14 @@ skeleton::Array<FileInfo2> FileUtility::DirectoryWatch (LPCTSTR lpctszWatchDirec
 		}
 
 		PFILE_NOTIFY_EXTENDED_INFORMATION currentPFNI = (PFILE_NOTIFY_EXTENDED_INFORMATION)buffer;
-
+		
 		for (INT i = 0; ;)
 		{
 			if (currentPFNI->Action > 5)
 			{
-				OutputDebugString (_T ("Invalid parameter 'Action'.\n"));
+				FileInfo2 errorInfo;
+				errorInfo._dwAction = (DWORD)-1;
+				response.Add (errorInfo);
 				bContinue = FALSE;
 				break;
 			}
@@ -372,6 +374,7 @@ skeleton::Array<FileInfo2> FileUtility::DirectoryWatch (LPCTSTR lpctszWatchDirec
 				CopyMemory (fileName.Ptr (), currentPFNI->FileName, currentPFNI->FileNameLength);
 				info2._dwAction = currentPFNI->Action;
 				info2._FileName = fileName;
+				info2._FileSize.QuadPart = currentPFNI->FileSize.QuadPart;
 				// GetSystemTime()ベースの時刻になります。
 				info2._CreateTime.dwLowDateTime = currentPFNI->CreationTime.LowPart;
 				info2._CreateTime.dwHighDateTime = currentPFNI->CreationTime.HighPart;

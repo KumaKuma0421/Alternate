@@ -11,8 +11,9 @@ using namespace alt;
 
 SocketBuilder::SocketBuilder ()
 {
-	ZeroMemory (&_wsaData, sizeof (_wsaData));
 	ZeroMemory (&_SockAddrIn, sizeof (_SockAddrIn));
+	ZeroMemory (&_wsaData, sizeof (_wsaData));
+	_wsaEvent = WSA_INVALID_EVENT;
 }
 
 SocketBuilder::~SocketBuilder ()
@@ -22,49 +23,15 @@ SocketBuilder::~SocketBuilder ()
 	::WSACleanup (); //! @todo TCPConnectorだけ存続させる場合を考慮できていない
 }
 
-BOOL SocketBuilder::Startup ()
+int SocketBuilder::Startup ()
 {
-	TCHAR tszMessage[80];
 	int ret = ::WSAStartup (MAKEWORD (2, 0), &_wsaData);
-
-	switch (ret)
-	{
-		case 0:
-			wsprintf (tszMessage, _T ("WSAStartup() 成功"));
-			break;
-
-		case WSASYSNOTREADY:
-			wsprintf (tszMessage, _T ("基礎となるネットワーク・サブシステムが、ネットワーク通信の準備ができていません。"));
-			break;
-
-		case WSAVERNOTSUPPORTED:
-			wsprintf (tszMessage, _T ("要求された Windows ソケット サポートのバージョンは、この特定の Windows ソケット実装では提供されません。"));
-			break;
-
-		case WSAEINPROGRESS:
-			wsprintf (tszMessage, _T ("ブロッキング Windows ソケット 1.1 操作が進行中です。"));
-			break;
-
-		case WSAEPROCLIM:
-			wsprintf (tszMessage, _T ("Windows ソケットの実装でサポートされているタスクの数の制限に達しました。"));
-			break;
-
-		case WSAEFAULT:
-			wsprintf (tszMessage, _T ("lpWSAData パラメーターが有効なポインターではありません。"));
-			break;
-
-		default:
-			wsprintf (tszMessage, _T ("Unknown error. [%d]"), ret);
-			break;
-	}
-	OutputDebugString (tszMessage);
-
 	if (ret != 0)
 	{
 		::WSACleanup ();
 	}
 
-	return ret == 0 ? TRUE : FALSE;
+	return ret;
 }
 
 BOOL SocketBuilder::Socket (int af, int type, int protocol)
@@ -239,16 +206,18 @@ TcpConnector* SocketBuilder::CreateTcpConnector (
 				ret = this->Ioctl (FIONBIO, 0);
 				if (ret == TRUE)
 				{
-					response = new TcpConnector (_socket);
+					response = new TcpConnector (_socket, lpctszIpAddr, portNo);
 					_socket = INVALID_SOCKET;
 					return response;
 				}
 			}
 			else
 			{
+#ifdef _DEBUG
 				TCHAR tszMessage[80];
-				wsprintf (tszMessage, _T ("connect() error. reason=%d"), this->GetErrNo ());
+				wsprintf (tszMessage, _T ("[FAILED]connect() error. reason=%d\n"), this->GetErrNo ());
 				OutputDebugString (tszMessage);
+#endif
 				Sleep (retryInterval);
 			}
 		}
@@ -317,34 +286,86 @@ BOOL SocketBuilder::Prepare (u_short portNo, LPCTSTR lpctszIpAddr)
 
 TcpConnector* SocketBuilder::Wait ()
 {
-	TcpConnector* response = NULL;
 	BOOL ret = FALSE;
-
-	SOCKADDR_IN mySockAddrIn;
-	ZeroMemory (&mySockAddrIn, sizeof (mySockAddrIn));
-	int length = sizeof (mySockAddrIn);
-	SOCKET mySocket = ::accept (_socket, (PSOCKADDR)&mySockAddrIn, &length);
-	if (mySocket != INVALID_SOCKET)
+	TcpConnector* response = NULL;
+	
+	do
 	{
-		TCHAR tszAcceptIPAddress[INET_ADDRSTRLEN];
-		PCWSTR ret = ::InetNtop (
-			AF_INET, &mySockAddrIn.sin_addr, tszAcceptIPAddress,
-			INET_ADDRSTRLEN);
-		if (ret != NULL)
+		_wsaEvent = ::WSACreateEvent ();
+		if (_wsaEvent == nullptr)
 		{
-			int iAcceptPort = ::ntohs (mySockAddrIn.sin_port);
-
-			TCHAR tszMessage[80];
-			wsprintf (
-				tszMessage, _T ("Accepted (%s,%d)\n"), tszAcceptIPAddress,
-				iAcceptPort);
-			OutputDebugString (tszMessage);
-
-			response = new TcpConnector (mySocket);
+			break;
 		}
+
+		SOCKET socketArray[WSA_MAXIMUM_WAIT_EVENTS]{ _socket };
+		WSAEVENT eventArray[WSA_MAXIMUM_WAIT_EVENTS]{ _wsaEvent };
+		int arrayIndex = 0;
+
+		int iRet = ::WSAEventSelect (_socket, eventArray[arrayIndex],
+									 FD_ACCEPT | FD_CLOSE);
+		if (iRet != 0)
+		{
+			break;
+		}
+
+		DWORD dwEvent = ::WSAWaitForMultipleEvents (++arrayIndex, eventArray,
+													FALSE, WSA_INFINITE, FALSE);
+		if (dwEvent == WSA_WAIT_FAILED)
+		{
+			break;
+		}
+		dwEvent -= WSA_WAIT_EVENT_0;
+
+		WSANETWORKEVENTS events{ 0 };
+		int iEvent = ::WSAEnumNetworkEvents (socketArray[dwEvent],
+											 eventArray[dwEvent], &events);
+		if (iEvent != 0)
+		{
+			break;
+		}
+		else
+		{
+			if (events.lNetworkEvents & FD_ACCEPT)
+			{
+				// go ahead.
+			}
+			else
+			{
+				break;
+			}
+		}
+
+		SOCKADDR_IN mySockAddrIn;
+		ZeroMemory (&mySockAddrIn, sizeof (mySockAddrIn));
+		int length = sizeof (mySockAddrIn);
+		SOCKET mySocket = ::accept (socketArray[dwEvent],
+									(PSOCKADDR)&mySockAddrIn, &length);
+		if (mySocket != INVALID_SOCKET)
+		{
+			TCHAR tszAcceptIPAddress[INET_ADDRSTRLEN];
+			PCWSTR ret = ::InetNtop (
+				AF_INET, &mySockAddrIn.sin_addr, tszAcceptIPAddress,
+				INET_ADDRSTRLEN);
+			if (ret != NULL)
+			{
+				USHORT wAcceptPort = ::ntohs (mySockAddrIn.sin_port);
+				response = new TcpConnector (
+					mySocket, tszAcceptIPAddress, wAcceptPort);
+			}
+		}
+	} while (false);
+
+	if (_wsaEvent != WSA_INVALID_EVENT)
+	{
+		::WSACloseEvent (_wsaEvent);
 	}
 
 	return response;
+}
+
+BOOL SocketBuilder::CancelWait ()
+{
+	return ::WSASetEvent (_wsaEvent);
 }
 
 BOOL SocketBuilder::GetHostByName (

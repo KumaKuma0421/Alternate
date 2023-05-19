@@ -75,8 +75,9 @@ namespace WindowsLibraryTest
 					}
 					else
 					{
-						BYTE byBuffer[80];
-						INT iRecv =_connector->Recv (byBuffer, 80);
+						BYTE byBuffer[80]{ 0 };
+						ZeroMemory (byBuffer, sizeof(byBuffer));
+						INT iRecv =_connector->Recv (byBuffer, sizeof(byBuffer));
 						byBuffer[iRecv] = '\0';
 						Logger::WriteMessage ((LPCTSTR)byBuffer);
 
@@ -100,7 +101,7 @@ namespace WindowsLibraryTest
 			alt::SocketBuilder builder;
 			alt::skeleton::Binder<WorkerThread, alt::UdpConnector*, int> connector1;
 			alt::skeleton::Binder<WorkerThread, alt::UdpConnector*, int> connector2;
-			builder.Startup ();
+			Assert::AreEqual(0, builder.Startup (), _T("SocketBuilder::Startup() failed.\n"));
 
 			connector1.New (builder.CreateUdpConnector (_T ("127.0.0.1"), 9001), 1);
 			Assert::IsTrue(connector1->SetTarget (_T ("127.0.0.1"), 9002), _T("Connector::SetTarget(1) failed.\n"));

@@ -25,12 +25,12 @@ namespace OSSLibraryTest
 
 		TEST_METHOD_INITIALIZE (MethodInitialize)
 		{
-			Logger::WriteMessage ("-->>method initialize.\n");
+			Logger::WriteMessage ("method initialize.\n");
 		}
 
 		TEST_METHOD_CLEANUP (MethodCleanup)
 		{
-			Logger::WriteMessage ("<<--method cleanup.\n");
+			Logger::WriteMessage ("method cleanup.\n");
 		}
 
 		void ShowValue (std::string key, std::string value)

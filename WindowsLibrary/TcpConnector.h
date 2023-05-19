@@ -7,6 +7,7 @@
 #pragma once
 
 #include "SocketLibrary.h"
+#include <ws2ipdef.h>
 
 namespace alt
 {
@@ -16,8 +17,19 @@ namespace alt
 	{
 	public:
 		//! @brief コンストラクタ
-		//! @param socket 使用するソケット
-		APIENTRY TcpConnector (SOCKET socket) { _socket = socket; };
+		//! @param socket ソケット識別子
+		//! @param lpctszAcceptIPAddress 対向のIPアドレス
+		//! @param wAcceptPort 対向のポート番号
+		APIENTRY TcpConnector(
+			SOCKET socket, LPCTSTR lpctszAcceptIPAddress, u_short wAcceptPort);
+
+		//! @brief 受け入れ先のIPアドレスを取得
+		//! @return LPCTSTR 受入先IPアドレス
+		LPCTSTR GetAcceptedAddress () { return _tszAcceptedIPAddress; };
+
+		//! @brief 受入先のポート番号を取得
+		//! @return USHORT 受入先ポート番号
+		USHORT GetAcceptedPortNo () { return _wAcceptedPort; };
 
 		//! @brief TCP送信処理
 		//! @param lpvBuf 送信データ
@@ -31,9 +43,19 @@ namespace alt
 		//! @param isBlocking ブロッキング待機するか否か
 		//! @return INT 受信データサイズ
 		INT APIENTRY Recv (
-			LPVOID lpvBuf, DWORD dwSize, BOOL isBlocking = TRUE) const;
+			LPVOID lpvBuf, DWORD dwSize, BOOL isBlocking = TRUE);
+
+		//! @brief Recv()待機中のキャンセル処理
+		//! @return BOOL
+		//! @retval TRUE(成功)
+		//! @retval FALSE(失敗)
+		BOOL CancelRecv ();
 
 	protected:
-		APIENTRY TcpConnector () { _socket = INVALID_SOCKET; };
+		APIENTRY TcpConnector () = delete;
+		
+		TCHAR _tszAcceptedIPAddress[INET_ADDRSTRLEN];
+		USHORT _wAcceptedPort;
+		WSAOVERLAPPED _RecvOverlapped;
 	};
 }

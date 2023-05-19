@@ -339,8 +339,7 @@ DWORD ServerWorker::Invoke (LPVOID lpvParam)
 		INT recvSize = _connector->Recv (byData, sizeof (byData), 0);
 		if (recvSize <= 0)
 		{
-			_tprintf (_T ("ServerWorker::Invoke()\n"));
-			_tprintf (_T ("recvSize=%d recv() failed. reason:%d\n"),
+			_tprintf (_T ("ServerWorker::Invoke() recvSize=%d recv() failed. reason:%d\n"),
 					 recvSize, _connector->GetErrNo ());
 			break;
 		}
@@ -354,7 +353,6 @@ DWORD ServerWorker::Invoke (LPVOID lpvParam)
 		INT sendSize = _connector->Send (byData, recvSize);
 		if (sendSize != recvSize)
 		{
-			_tprintf (_T ("ServerWorker::Invoke()\n"));
 			_tprintf (_T ("send=%d sended=%d send failed. reason:%d\n"),
 					 recvSize, sendSize, _connector->GetErrNo ());
 			break;
@@ -440,7 +438,6 @@ DWORD TcpServer::Invoke (LPVOID lpvParam)
 		alt::TcpConnector* connector = _builder->Wait ();
 		if (connector)
 		{
-			_tprintf (_T ("TcpServer::Invoke(LPVOID).\n"));
 			_tprintf (_T (" _build->Wait() success.\n"));
 
 			connector->SetKeepAliveValue (1, 500, 300);
@@ -451,7 +448,6 @@ DWORD TcpServer::Invoke (LPVOID lpvParam)
 		}
 		else
 		{
-			_tprintf (_T ("TcpServer::Invoke(LPVOID).\n"));
 			_tprintf (_T (" _builder->Wait() failed. reason=%d\n"), _builder->GetErrNo ());
 
 		}
@@ -510,7 +506,7 @@ bool TcpClient::Init ()
 {
 	_tprintf (_T ("TcpClient::Init() CALL.\n"));
 
-	return _builder->Startup ();
+	return _builder->Startup () == 0 ? true : false;
 }
 
 bool TcpClient::Start (LPCTSTR lpctszIP, USHORT wPort, int retryInterval, int retryCount, bool kickOff)
@@ -532,7 +528,7 @@ bool TcpClient::Start (LPCTSTR lpctszIP, USHORT wPort, int retryInterval, int re
 			INT ret = _connector->Send (byData, dwDataLen);
 			if ((DWORD)ret != dwDataLen)
 			{
-				_tprintf (_T (" Send() invalid send size (%d). reason=%d \n"), ret, _connector->GetErrNo ());
+				_tprintf (_T ("TcpClient::Start() Send() invalid send size (%d). reason=%d \n"), ret, _connector->GetErrNo ());
 			}
 		}
 
@@ -564,8 +560,7 @@ DWORD TcpClient::Invoke (LPVOID lpvParam)
 		INT recvSize = _connector->Recv (byData, sizeof (byData), 0);
 		if (recvSize <= 0)
 		{
-			_tprintf (_T ("TcpClient::Invoke(LPVOID)\n"));
-			_tprintf (_T (" recvSize=%d Socket disconnected. reason:%d\n"),
+			_tprintf (_T ("TcpClient::Invoke(LPVOID) recvSize=%d Socket disconnected. reason:%d\n"),
 					 recvSize, _connector->GetErrNo ());
 			return -1;
 		}
@@ -579,8 +574,7 @@ DWORD TcpClient::Invoke (LPVOID lpvParam)
 		INT sendSize = _connector->Send (byData, dataLen);
 		if (sendSize != dataLen)
 		{
-			_tprintf (_T ("TcpClient::Invoke(LPVOID)\n"));
-			_tprintf (_T (" send=%d sended=%d Invalid send size. reason:%d\n"),
+			_tprintf (_T ("TcpClient::Invoke(LPVOID) send=%d sended=%d Invalid send size. reason:%d\n"),
 					 dataLen, sendSize, _connector->GetErrNo ());
 			return -2;
 		}
@@ -673,9 +667,9 @@ DWORD UpstreamDriver::Invoke (LPVOID lpvParam)
 		}
 
 #ifdef _DUMP_DATA
-		DumpData (_T ("PXR"), 1, byData, recvSize);
+		DumpData (_T ("PXY"), 1, byData, recvSize);
 #else
-		_tprintf (_T ("%s %d\r"), _T ("PXR"), count++);
+		_tprintf (_T ("%s %d\r"), _T ("PXY"), count++);
 #endif
 
 		int sendSize = _connectorServer->Send (&byData, recvSize);
@@ -706,9 +700,9 @@ DWORD DownstreamDriver::Invoke (LPVOID lpvParam)
 		}
 
 #ifdef _DUMP_DATA
-		DumpData (_T ("PXR"), 0, byData, recvSize);
+		DumpData (_T ("PXY"), 0, byData, recvSize);
 #else
-		_tprintf (_T ("%s %d\r"), _T ("PXR"), count++);
+		_tprintf (_T ("%s %d\r"), _T ("PXY"), count++);
 #endif
 
 		INT sendSize = _connectorClient->Send (byData, recvSize);

@@ -36,6 +36,7 @@ namespace alt
 		//! @return		WinSock APIのエラー時のエラー番号
 		//! @retval		DWORD 詳細はネットで。
 		//! @sa			http://chokuto.ifdef.jp/advanced/prm/winsock_error_code.html
+		//! @sa         https://learn.microsoft.com/ja-jp/windows/win32/winsock/windows-sockets-error-codes-2
 		//! @details	WSAGetLastError()を使用します。
 		DWORD APIENTRY GetErrNo () const;
 

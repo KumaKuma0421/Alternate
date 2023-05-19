@@ -500,18 +500,27 @@ namespace WindowsLibraryTest
 			Assert::AreEqual (_T ("x 0x0 1xD1 2x"), replaced.Ctr ());
 		}
 
-		TEST_METHOD (FromSJISTest)
+		TEST_METHOD (ConvertFromSJISTest)
 		{
 			LPCSTR lpcszSJIS = "これはSJISで作成された文字列です。\n壱弐参四五六七八九零\n";
 
 			alt::TString convert;
-			Assert::IsTrue (convert.FromSJIS (lpcszSJIS));
+			Assert::IsTrue (convert.FromMultiByte (lpcszSJIS));
 			Assert::AreEqual<INT> (31, convert.Len (), _T ("Len() mismatched.\n"));
 			Assert::AreEqual<INT> (62, convert.Byte (), _T ("Byte() mismatched.\n"));
 			Logger::WriteMessage (convert.Ctr ());
 		}
 
-		TEST_METHOD (ToSJISTest)
+		TEST_METHOD (ConvertFromUTF8Test)
+		{
+			LPCSTR lpcszSJIS = "これはUTF-8で作成された文字列です。\n壱弐参四五六七八九零\n";
+
+			alt::TString convert;
+			Assert::IsTrue (convert.FromMultiByte (lpcszSJIS, CP_UTF8));
+			Logger::WriteMessage (convert.Ctr ());
+		}
+
+		TEST_METHOD (ConvertToSJISTest)
 		{
 			LPCWSTR lpcwszUnicode = L"これはUnicodeで作成された文字列です。\n壱弐参四五六七八九零\n";
 
