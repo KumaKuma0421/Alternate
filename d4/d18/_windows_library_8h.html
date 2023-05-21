@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   <div id="projectname">Alternate<span id="projectnumber">&#160;e697dbe9c5997e35395fe158628dd8c5209481da</span>
    </div>
    <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
   </td>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('d4/d18/_windows_library_8h.html','../.
   <div class="summary">
 <a href="#nested-classes">クラス</a> &#124;
 <a href="#namespaces">名前空間</a> &#124;
+<a href="#define-members">マクロ定義</a> &#124;
 <a href="#func-members">関数</a>  </div>
   <div class="headertitle"><div class="title">WindowsLibrary.h ファイル</div></div>
 </div><!--header-->
@@ -100,7 +101,9 @@ $(document).ready(function(){initNavTree('d4/d18/_windows_library_8h.html','../.
 
 <p>WindowsAPIを集約したプロジェクトファイル  
 <a href="#details">[詳解]</a></p>
-
+<div class="textblock"><code>#include &lt;Windows.h&gt;</code><br />
+<code>#include &lt;tchar.h&gt;</code><br />
+</div>
 <p><a href="../../d4/d18/_windows_library_8h_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -110,9 +113,6 @@ $(document).ready(function(){initNavTree('d4/d18/_windows_library_8h.html','../.
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d8c/classalt_1_1_read_write_handle_library.html">alt::ReadWriteHandleLibrary</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HANDLEでReadやWriteを行うWindowsAPIを集約した基底クラス  <a href="../../d2/d8c/classalt_1_1_read_write_handle_library.html#details">[詳解]</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d51/classalt_1_1_socket_library.html">alt::SocketLibrary</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">WinSockを使用するAPIを集約したクラス  <a href="../../d8/d51/classalt_1_1_socket_library.html#details">[詳解]</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/classalt_1_1_waitable_handle_library.html">alt::WaitableHandleLibrary</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス  <a href="../../d1/d35/classalt_1_1_waitable_handle_library.html#details">[詳解]</a><br /></td></tr>
@@ -126,6 +126,11 @@ $(document).ready(function(){initNavTree('d4/d18/_windows_library_8h.html','../.
 <tr class="memitem:d6/d94/namespacealt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d94/namespacealt.html">alt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ad2d0f8f6576a9e97489435da43b2682c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d18/_windows_library_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a>&#160;&#160;&#160;__declspec(dllimport)</td></tr>
+<tr class="separator:ad2d0f8f6576a9e97489435da43b2682c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
 <tr class="memitem:a2436927ae88e3bb4317ec91ae1c36695"><td class="memItemLeft" align="right" valign="top">BOOL APIENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d18/_windows_library_8h.html#a2436927ae88e3bb4317ec91ae1c36695">DllMain</a> (HMODULE hModule, DWORD dwReasonForCall, LPVOID lpvReserved)</td></tr>
@@ -138,7 +143,24 @@ $(document).ready(function(){initNavTree('d4/d18/_windows_library_8h.html','../.
 <dl class="section date"><dt>日付</dt><dd>2022.4.25 </dd></dl>
 
 <p class="definition"> <a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a> に定義があります。</p>
-</div><h2 class="groupheader">関数詳解</h2>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="ad2d0f8f6576a9e97489435da43b2682c" name="ad2d0f8f6576a9e97489435da43b2682c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d0f8f6576a9e97489435da43b2682c">&#9670;&#160;</a></span>DLL_DECLSPEC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DLL_DECLSPEC&#160;&#160;&#160;__declspec(dllimport)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="../../d4/d18/_windows_library_8h_source.html">WindowsLibrary.h</a> の <a class="el" href="../../d4/d18/_windows_library_8h_source.html#l00020">20</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
 <a id="a2436927ae88e3bb4317ec91ae1c36695" name="a2436927ae88e3bb4317ec91ae1c36695"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2436927ae88e3bb4317ec91ae1c36695">&#9670;&#160;</a></span>DllMain()</h2>
 

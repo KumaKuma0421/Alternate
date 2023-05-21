@@ -83,7 +83,8 @@ var searchData=
   ['_7evalue_80',['~value',['../de/d41/classpicojson_1_1value.html#aa75329d73af82b8a7daab1905f8609d0',1,'picojson::value']]],
   ['_7evectorperformancecheck_81',['~VectorPerformanceCheck',['../da/de7/class_perf_check_1_1_vector_performance_check.html#a7469a5687047fdebf91035f4ca1da4c1',1,'PerfCheck::VectorPerformanceCheck']]],
   ['_7ewatchdoctimerperformancecheck_82',['~WatchDocTimerPerformanceCheck',['../d6/d59/class_perf_check_1_1_watch_doc_timer_performance_check.html#a9622f6150a7a97861089dae55020d87d',1,'PerfCheck::WatchDocTimerPerformanceCheck']]],
-  ['_7ewindowslibrary_83',['~WindowsLibrary',['../de/dcb/classalt_1_1_windows_library.html#ae3c80cf8ddfd3783354b4673c224d085',1,'alt::WindowsLibrary']]],
-  ['_7eworkerfunction_84',['~WorkerFunction',['../db/d8c/classalt_1_1_worker_function.html#af5a0a78c63e87d8c8a607895eaf6f77e',1,'alt::WorkerFunction']]],
-  ['_7eworkertemplate_85',['~WorkerTemplate',['../d6/d9a/classalt_1_1_worker_template.html#a78e208ba4c1f0988722c9bf899ba8193',1,'alt::WorkerTemplate']]]
+  ['_7ewatchdogtimer_83',['~WatchDogTimer',['../d5/db9/classalt_1_1_watch_dog_timer.html#adef6ffaeae2cca046839fd00ef396a5b',1,'alt::WatchDogTimer']]],
+  ['_7ewindowslibrary_84',['~WindowsLibrary',['../de/dcb/classalt_1_1_windows_library.html#ae3c80cf8ddfd3783354b4673c224d085',1,'alt::WindowsLibrary']]],
+  ['_7eworkerfunction_85',['~WorkerFunction',['../db/d8c/classalt_1_1_worker_function.html#af5a0a78c63e87d8c8a607895eaf6f77e',1,'alt::WorkerFunction']]],
+  ['_7eworkertemplate_86',['~WorkerTemplate',['../d6/d9a/classalt_1_1_worker_template.html#a78e208ba4c1f0988722c9bf899ba8193',1,'alt::WorkerTemplate']]]
 ];

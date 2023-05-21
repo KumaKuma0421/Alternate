@@ -8,6 +8,7 @@ var _t_c_p_performance_check_8h =
     [ "PerfCheck::TcpServer", "d9/d82/class_perf_check_1_1_tcp_server.html", "d9/d82/class_perf_check_1_1_tcp_server" ],
     [ "PerfCheck::UpstreamDriver", "d3/d1b/class_perf_check_1_1_upstream_driver.html", "d3/d1b/class_perf_check_1_1_upstream_driver" ],
     [ "_DUMP_DATA", "d3/dfb/_t_c_p_performance_check_8h.html#ae53f55441c1489a3eb106c6cffd07ca2", null ],
+    [ "_WINSOCKAPI_", "d3/dfb/_t_c_p_performance_check_8h.html#a8d9ac41ded5e14e0ced0dc41b3fb5258", null ],
     [ "DATA_SIZE", "d3/dfb/_t_c_p_performance_check_8h.html#af55149bc1f05cf18af067a302e31e3f9", null ],
     [ "DUMP_COUNT", "d3/dfb/_t_c_p_performance_check_8h.html#a00dbf022fd258ea4dc972d414a5c0371", null ],
     [ "KEYWORD_CLIENT_ADDRESS", "d3/dfb/_t_c_p_performance_check_8h.html#afb7988ad58758d5bdeffa0a8bb5c0037", null ],

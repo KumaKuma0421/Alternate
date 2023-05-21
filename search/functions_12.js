@@ -1,7 +1,7 @@
 var searchData=
 [
   ['tcpclient_0',['TcpClient',['../d7/de9/class_perf_check_1_1_tcp_client.html#ad2e6b99a63964caa825c44e93ff8e777',1,'PerfCheck::TcpClient']]],
-  ['tcpconnector_1',['TcpConnector',['../d3/d45/classalt_1_1_tcp_connector.html#a0ce92fdf18e0e2a4a39a3fc1ca356fc2',1,'alt::TcpConnector::TcpConnector(SOCKET socket)'],['../d3/d45/classalt_1_1_tcp_connector.html#a0973c38f38524a4963925d53064a60b4',1,'alt::TcpConnector::TcpConnector()']]],
+  ['tcpconnector_1',['TcpConnector',['../d3/d45/classalt_1_1_tcp_connector.html#a472a8886ab682e647ca91298686d5c00',1,'alt::TcpConnector::TcpConnector(SOCKET socket, LPCTSTR lpctszAcceptIPAddress, USHORT wAcceptPort)'],['../d3/d45/classalt_1_1_tcp_connector.html#a26535d3e90db629455990f1b42dcaefb',1,'alt::TcpConnector::TcpConnector()=delete']]],
   ['tcpperformancecheck_2',['TCPPerformanceCheck',['../da/d9c/class_perf_check_1_1_t_c_p_performance_check.html#a1887cb68c3bab688f332717e5ae83cbb',1,'PerfCheck::TCPPerformanceCheck']]],
   ['tcpproxy_3',['TcpProxy',['../dd/d18/class_perf_check_1_1_tcp_proxy.html#ab98760de3bd4bb8ad9ea977e712cd38a',1,'PerfCheck::TcpProxy']]],
   ['tcpserver_4',['TcpServer',['../d9/d82/class_perf_check_1_1_tcp_server.html#abc977059ef61f1c42f5fda1bc5945ab0',1,'PerfCheck::TcpServer']]],

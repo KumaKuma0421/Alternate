@@ -16,5 +16,5 @@ var searchData=
   ['freight_13',['Freight',['../d6/df8/classalt_1_1skeleton_1_1_freight.html#a6bac0efdfa271ef82ca07c40d4dedb85',1,'alt::skeleton::Freight::Freight()'],['../d6/df8/classalt_1_1skeleton_1_1_freight.html#af5fa993b64ce01da08bab0e63560b9a6',1,'alt::skeleton::Freight::Freight(IMemory *memory)'],['../d6/df8/classalt_1_1skeleton_1_1_freight.html#a7367f217592ebd4bd1ff39372dc14621',1,'alt::skeleton::Freight::Freight(T *lpData, size_t size, IMemory *memory=NULL)'],['../d6/df8/classalt_1_1skeleton_1_1_freight.html#a5d9ef54b0c263d2de37be3d2eef99780',1,'alt::skeleton::Freight::Freight(const Freight&lt; T &gt; &amp;base)']]],
   ['freightmemoryleakcheck_14',['FreightMemoryLeakCheck',['../db/d3e/class_leak_check_1_1_freight_memory_leak_check.html#a5b0bdfd391e0d80334ffcbbe5d09857e',1,'LeakCheck::FreightMemoryLeakCheck']]],
   ['freightperformancecheck_15',['FreightPerformanceCheck',['../db/dee/class_perf_check_1_1_freight_performance_check.html#a1fcef98db8b87f89b258c6018915d750',1,'PerfCheck::FreightPerformanceCheck']]],
-  ['fromsjis_16',['FromSJIS',['../d2/dd0/classalt_1_1_t_string.html#a83d64fe3bf6f9ea4b4b1ed4a6cd37b12',1,'alt::TString']]]
+  ['frommultibyte_16',['FromMultiByte',['../d2/dd0/classalt_1_1_t_string.html#af04e095502cb286db0cce943aa88b713',1,'alt::TString']]]
 ];

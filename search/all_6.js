@@ -34,7 +34,7 @@ var searchData=
   ['freightperformancecheck_2eh_31',['FreightPerformanceCheck.h',['../d9/d82/_freight_performance_check_8h.html',1,'']]],
   ['freighttest_2ecpp_32',['FreightTest.cpp',['../dc/d4a/_freight_test_8cpp.html',1,'']]],
   ['frequency_33',['Frequency',['../df/d12/struct_perf_check_1_1___watch_dog_data.html#a748b157dcaed7bdf7da7bce710a7e855',1,'PerfCheck::_WatchDogData']]],
-  ['fromsjis_34',['FromSJIS',['../d2/dd0/classalt_1_1_t_string.html#a83d64fe3bf6f9ea4b4b1ed4a6cd37b12',1,'alt::TString']]],
+  ['frommultibyte_34',['FromMultiByte',['../d2/dd0/classalt_1_1_t_string.html#af04e095502cb286db0cce943aa88b713',1,'alt::TString']]],
   ['fts5_5fapi_35',['fts5_api',['../da/d3a/structfts5__api.html',1,'fts5_api'],['../de/dd3/sqlite3_8h.html#a80e586675de6a22bb2c221d91bbaada7',1,'fts5_api():&#160;sqlite3.h']]],
   ['fts5_5fextension_5ffunction_36',['fts5_extension_function',['../de/dd3/sqlite3_8h.html#a8a1df7b5a066b194f490be5936e85c17',1,'sqlite3.h']]],
   ['fts5_5ftoken_5fcolocated_37',['FTS5_TOKEN_COLOCATED',['../de/dd3/sqlite3_8h.html#a447491a2af8fa00738a27f6eaf68d170',1,'sqlite3.h']]],

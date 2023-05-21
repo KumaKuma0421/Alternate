@@ -46,6 +46,8 @@ var dir_a23eecd3b4421913eed0c0eed82e230d =
     [ "SharedMemory.h", "d2/dac/_shared_memory_8h.html", "d2/dac/_shared_memory_8h" ],
     [ "SocketBuilder.cpp", "dc/d2c/_socket_builder_8cpp.html", null ],
     [ "SocketBuilder.h", "dd/d23/_socket_builder_8h.html", "dd/d23/_socket_builder_8h" ],
+    [ "SocketLibrary.cpp", "df/d66/_socket_library_8cpp.html", null ],
+    [ "SocketLibrary.h", "d8/d04/_socket_library_8h.html", "d8/d04/_socket_library_8h" ],
     [ "TcpConnector.cpp", "d0/d86/_tcp_connector_8cpp.html", null ],
     [ "TcpConnector.h", "d0/d0b/_tcp_connector_8h.html", "d0/d0b/_tcp_connector_8h" ],
     [ "Thread.cpp", "d9/d00/_thread_8cpp.html", null ],

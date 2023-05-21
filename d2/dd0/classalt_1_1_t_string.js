@@ -14,7 +14,7 @@ var classalt_1_1_t_string =
     [ "Ctr", "d2/dd0/classalt_1_1_t_string.html#a8a3fda12bee865d18b9e2983a402cbff", null ],
     [ "Find", "d2/dd0/classalt_1_1_t_string.html#acad2a465990b22f3b6bc701bc3d933a7", null ],
     [ "Format", "d2/dd0/classalt_1_1_t_string.html#a1ce7113032d26f878dc7e73a961a1ef5", null ],
-    [ "FromSJIS", "d2/dd0/classalt_1_1_t_string.html#a83d64fe3bf6f9ea4b4b1ed4a6cd37b12", null ],
+    [ "FromMultiByte", "d2/dd0/classalt_1_1_t_string.html#af04e095502cb286db0cce943aa88b713", null ],
     [ "Len", "d2/dd0/classalt_1_1_t_string.html#a7fd8ef7f5080a8f2f1b4b46af8187326", null ],
     [ "Length", "d2/dd0/classalt_1_1_t_string.html#a27133893fc656aa8cdb93ebc8fa1d193", null ],
     [ "operator!=", "d2/dd0/classalt_1_1_t_string.html#ad847154e9e2b4be9d02b815b04d30c20", null ],

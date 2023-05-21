@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   <div id="projectname">Alternate<span id="projectnumber">&#160;e697dbe9c5997e35395fe158628dd8c5209481da</span>
    </div>
    <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
   </td>
@@ -106,29 +106,33 @@ $(document).ready(function(){initNavTree('dd/dd0/_watch_dog_timer_8h_source.html
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d5/db9/classalt_1_1_watch_dog_timer.html">   17</a></span>    <span class="keyword">class </span><a class="code hl_define" href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a> <a class="code hl_class" href="../../d5/db9/classalt_1_1_watch_dog_timer.html">WatchDogTimer</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../d1/d35/classalt_1_1_waitable_handle_library.html">WaitableHandleLibrary</a></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        APIENTRY <a class="code hl_class" href="../../d5/db9/classalt_1_1_watch_dog_timer.html">WatchDogTimer</a> ();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        APIENTRY <a class="code hl_class" href="../../d5/db9/classalt_1_1_watch_dog_timer.html">WatchDogTimer</a> (<a class="code hl_class" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">skeleton::ITimeup</a>* timeup);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        BOOL APIENTRY InitTimer (LPCTSTR lpctszName = NULL);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        BOOL APIENTRY StartTimer (DWORD dwTime) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        DWORD APIENTRY WaitTimer () <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        APIENTRY <a class="code hl_class" href="../../d5/db9/classalt_1_1_watch_dog_timer.html">WatchDogTimer</a> (UINT uPeriod = 1);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        APIENTRY <a class="code hl_class" href="../../d5/db9/classalt_1_1_watch_dog_timer.html">WatchDogTimer</a> (<a class="code hl_class" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">skeleton::ITimeup</a>* timeup, UINT uPeriod = 1);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        APIENTRY <a class="code hl_class" href="../../d5/db9/classalt_1_1_watch_dog_timer.html">~WatchDogTimer</a> ();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        BOOL APIENTRY InitTimer (LPCTSTR lpctszName = NULL);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        BOOL APIENTRY StartTimer (DWORD dwTime) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        BOOL APIENTRY StopTimer () <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../d5/db9/classalt_1_1_watch_dog_timer.html#a498a388837eca792e5a1de389f5a390f">   55</a></span>        <a class="code hl_class" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">skeleton::ITimeup</a>* <a class="code hl_variable" href="../../d5/db9/classalt_1_1_watch_dog_timer.html#a498a388837eca792e5a1de389f5a390f">_timeup</a>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        DWORD APIENTRY WaitTimer () <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        BOOL APIENTRY StopTimer () <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d5/db9/classalt_1_1_watch_dog_timer.html#a498a388837eca792e5a1de389f5a390f">   60</a></span>        <a class="code hl_class" href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">skeleton::ITimeup</a>* <a class="code hl_variable" href="../../d5/db9/classalt_1_1_watch_dog_timer.html#a498a388837eca792e5a1de389f5a390f">_timeup</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d5/db9/classalt_1_1_watch_dog_timer.html#acd9dab3b2990978af2e8c3eaaf045aad">   61</a></span>        UINT <a class="code hl_variable" href="../../d5/db9/classalt_1_1_watch_dog_timer.html#acd9dab3b2990978af2e8c3eaaf045aad">_uPeriod</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    };</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
 <div class="ttc" id="a_function_pointers_8hpp_html"><div class="ttname"><a href="../../d0/df8/_function_pointers_8hpp.html">FunctionPointers.hpp</a></div><div class="ttdoc">コールバック機能を集約したクラス</div></div>
 <div class="ttc" id="a_query_performance_8h_html"><div class="ttname"><a href="../../d1/dc6/_query_performance_8h.html">QueryPerformance.h</a></div><div class="ttdoc">高分解能時間計測に関するWindowsAPIを集約したクラス</div></div>
 <div class="ttc" id="a_windows_library_8h_html"><div class="ttname"><a href="../../d4/d18/_windows_library_8h.html">WindowsLibrary.h</a></div><div class="ttdoc">WindowsAPIを集約したプロジェクトファイル</div></div>
-<div class="ttc" id="aclassalt_1_1_waitable_handle_library_html"><div class="ttname"><a href="../../d1/d35/classalt_1_1_waitable_handle_library.html">alt::WaitableHandleLibrary</a></div><div class="ttdoc">HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00102">WindowsLibrary.h:103</a></div></div>
+<div class="ttc" id="aclassalt_1_1_waitable_handle_library_html"><div class="ttname"><a href="../../d1/d35/classalt_1_1_waitable_handle_library.html">alt::WaitableHandleLibrary</a></div><div class="ttdoc">HANDLEを使ってシグナル操作を行うWindowsAPIを集約した基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00118">WindowsLibrary.h:119</a></div></div>
 <div class="ttc" id="aclassalt_1_1_watch_dog_timer_html"><div class="ttname"><a href="../../d5/db9/classalt_1_1_watch_dog_timer.html">alt::WatchDogTimer</a></div><div class="ttdoc">タイマーに関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd0/_watch_dog_timer_8h_source.html#l00017">WatchDogTimer.h:18</a></div></div>
-<div class="ttc" id="aclassalt_1_1_watch_dog_timer_html_a498a388837eca792e5a1de389f5a390f"><div class="ttname"><a href="../../d5/db9/classalt_1_1_watch_dog_timer.html#a498a388837eca792e5a1de389f5a390f">alt::WatchDogTimer::_timeup</a></div><div class="ttdeci">skeleton::ITimeup * _timeup</div><div class="ttdoc">コールバック関数を定義したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd0/_watch_dog_timer_8h_source.html#l00055">WatchDogTimer.h:55</a></div></div>
+<div class="ttc" id="aclassalt_1_1_watch_dog_timer_html_a498a388837eca792e5a1de389f5a390f"><div class="ttname"><a href="../../d5/db9/classalt_1_1_watch_dog_timer.html#a498a388837eca792e5a1de389f5a390f">alt::WatchDogTimer::_timeup</a></div><div class="ttdeci">skeleton::ITimeup * _timeup</div><div class="ttdoc">コールバック関数を定義したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd0/_watch_dog_timer_8h_source.html#l00060">WatchDogTimer.h:60</a></div></div>
+<div class="ttc" id="aclassalt_1_1_watch_dog_timer_html_acd9dab3b2990978af2e8c3eaaf045aad"><div class="ttname"><a href="../../d5/db9/classalt_1_1_watch_dog_timer.html#acd9dab3b2990978af2e8c3eaaf045aad">alt::WatchDogTimer::_uPeriod</a></div><div class="ttdeci">UINT _uPeriod</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dd0/_watch_dog_timer_8h_source.html#l00061">WatchDogTimer.h:61</a></div></div>
 <div class="ttc" id="aclassalt_1_1skeleton_1_1_i_timeup_html"><div class="ttname"><a href="../../db/dbd/classalt_1_1skeleton_1_1_i_timeup.html">alt::skeleton::ITimeup</a></div><div class="ttdoc">WatchDogTimerクラスのコールバック関数を設定します。</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/df8/_function_pointers_8hpp_source.html#l00047">FunctionPointers.hpp:48</a></div></div>
 <div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

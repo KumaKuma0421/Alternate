@@ -4,7 +4,7 @@ var searchData=
   ['waittimer_1',['WaitTimer',['../d5/db9/classalt_1_1_watch_dog_timer.html#a1732a76cf84ac1d1e556cc6c9e0acb40',1,'alt::WatchDogTimer']]],
   ['warn_2',['Warn',['../d8/dfd/classalt_1_1_log.html#a4e90f30a6f2feea2f0f7e5fccfdd1376',1,'alt::Log']]],
   ['watchdoctimerperformancecheck_3',['WatchDocTimerPerformanceCheck',['../d6/d59/class_perf_check_1_1_watch_doc_timer_performance_check.html#a917cf1eabf92006d5c3ba1cb3a7c7214',1,'PerfCheck::WatchDocTimerPerformanceCheck']]],
-  ['watchdogtimer_4',['WatchDogTimer',['../d5/db9/classalt_1_1_watch_dog_timer.html#a8e021efad4a766a790eb25a889227d33',1,'alt::WatchDogTimer::WatchDogTimer()'],['../d5/db9/classalt_1_1_watch_dog_timer.html#a7cf6e298f248a03cf19b9f10cef6755c',1,'alt::WatchDogTimer::WatchDogTimer(skeleton::ITimeup *timeup)']]],
+  ['watchdogtimer_4',['WatchDogTimer',['../d5/db9/classalt_1_1_watch_dog_timer.html#a6b04b5357c0f9c7b27a9c6851bb3f858',1,'alt::WatchDogTimer::WatchDogTimer(UINT uPeriod=1)'],['../d5/db9/classalt_1_1_watch_dog_timer.html#a1657231c5f21c51007a648582f2f76f5',1,'alt::WatchDogTimer::WatchDogTimer(skeleton::ITimeup *timeup, UINT uPeriod=1)']]],
   ['windowslibrary_5',['WindowsLibrary',['../de/dcb/classalt_1_1_windows_library.html#afb12ae162a339fde5e83254145cd0262',1,'alt::WindowsLibrary']]],
   ['workerfunction_6',['WorkerFunction',['../db/d8c/classalt_1_1_worker_function.html#a5c52137fbca3b9d0b2ec14018097a166',1,'alt::WorkerFunction']]],
   ['workertemplate_7',['WorkerTemplate',['../d6/d9a/classalt_1_1_worker_template.html#adb708715e477a4c73a9065591379b17e',1,'alt::WorkerTemplate']]],

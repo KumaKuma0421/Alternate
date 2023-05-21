@@ -1,7 +1,7 @@
 var searchData=
 [
   ['tcpclient_0',['TcpClient',['../d7/de9/class_perf_check_1_1_tcp_client.html',1,'PerfCheck::TcpClient'],['../d7/de9/class_perf_check_1_1_tcp_client.html#ad2e6b99a63964caa825c44e93ff8e777',1,'PerfCheck::TcpClient::TcpClient()']]],
-  ['tcpconnector_1',['TcpConnector',['../d3/d45/classalt_1_1_tcp_connector.html',1,'alt::TcpConnector'],['../d3/d45/classalt_1_1_tcp_connector.html#a0973c38f38524a4963925d53064a60b4',1,'alt::TcpConnector::TcpConnector()'],['../d3/d45/classalt_1_1_tcp_connector.html#a0ce92fdf18e0e2a4a39a3fc1ca356fc2',1,'alt::TcpConnector::TcpConnector(SOCKET socket)']]],
+  ['tcpconnector_1',['TcpConnector',['../d3/d45/classalt_1_1_tcp_connector.html',1,'alt::TcpConnector'],['../d3/d45/classalt_1_1_tcp_connector.html#a26535d3e90db629455990f1b42dcaefb',1,'alt::TcpConnector::TcpConnector()=delete'],['../d3/d45/classalt_1_1_tcp_connector.html#a472a8886ab682e647ca91298686d5c00',1,'alt::TcpConnector::TcpConnector(SOCKET socket, LPCTSTR lpctszAcceptIPAddress, USHORT wAcceptPort)']]],
   ['tcpconnector_2ecpp_2',['TcpConnector.cpp',['../d0/d86/_tcp_connector_8cpp.html',1,'']]],
   ['tcpconnector_2eh_3',['TcpConnector.h',['../d0/d0b/_tcp_connector_8h.html',1,'']]],
   ['tcpconnectortest_2ecpp_4',['TcpConnectorTest.cpp',['../dd/d0c/_tcp_connector_test_8cpp.html',1,'']]],

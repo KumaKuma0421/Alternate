@@ -8,7 +8,7 @@ var searchData=
   ['watchdoctimerperformancecheck_2ecpp_5',['WatchDocTimerPerformanceCheck.cpp',['../d9/d0e/_watch_doc_timer_performance_check_8cpp.html',1,'']]],
   ['watchdoctimerperformancecheck_2eh_6',['WatchDocTimerPerformanceCheck.h',['../da/dff/_watch_doc_timer_performance_check_8h.html',1,'']]],
   ['watchdogdata_7',['WatchDogData',['../de/d1b/struct_watch_dog_data.html',1,'WatchDogData'],['../d1/d3d/namespace_perf_check.html#ac33fc826b0e96d20878a1f803b85a4e5',1,'PerfCheck::WatchDogData()']]],
-  ['watchdogtimer_8',['WatchDogTimer',['../d5/db9/classalt_1_1_watch_dog_timer.html',1,'alt::WatchDogTimer'],['../d5/db9/classalt_1_1_watch_dog_timer.html#a8e021efad4a766a790eb25a889227d33',1,'alt::WatchDogTimer::WatchDogTimer()'],['../d5/db9/classalt_1_1_watch_dog_timer.html#a7cf6e298f248a03cf19b9f10cef6755c',1,'alt::WatchDogTimer::WatchDogTimer(skeleton::ITimeup *timeup)']]],
+  ['watchdogtimer_8',['WatchDogTimer',['../d5/db9/classalt_1_1_watch_dog_timer.html',1,'alt::WatchDogTimer'],['../d5/db9/classalt_1_1_watch_dog_timer.html#a6b04b5357c0f9c7b27a9c6851bb3f858',1,'alt::WatchDogTimer::WatchDogTimer(UINT uPeriod=1)'],['../d5/db9/classalt_1_1_watch_dog_timer.html#a1657231c5f21c51007a648582f2f76f5',1,'alt::WatchDogTimer::WatchDogTimer(skeleton::ITimeup *timeup, UINT uPeriod=1)']]],
   ['watchdogtimer_2ecpp_9',['WatchDogTimer.cpp',['../d3/d48/_watch_dog_timer_8cpp.html',1,'']]],
   ['watchdogtimer_2eh_10',['WatchDogTimer.h',['../dd/dd0/_watch_dog_timer_8h.html',1,'']]],
   ['watchdogtimertest_2ecpp_11',['WatchDogTimerTest.cpp',['../d6/dea/_watch_dog_timer_test_8cpp.html',1,'']]],

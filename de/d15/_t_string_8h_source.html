@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Alternate<span id="projectnumber">&#160;30c638a26625fe3d6cc5de0554a6507262dfb377</span>
+   <div id="projectname">Alternate<span id="projectnumber">&#160;e697dbe9c5997e35395fe158628dd8c5209481da</span>
    </div>
    <div id="projectbrief">for Visual Studio 2022 and Windows 11.</div>
   </td>
@@ -173,24 +173,24 @@ $(document).ready(function(){initNavTree('de/d15/_t_string_8h_source.html','../.
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <a class="code hl_class" href="../../d2/dd0/classalt_1_1_t_string.html">TString</a>&amp; APIENTRY Format (LPCTSTR format, ...);</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        BOOL APIENTRY FromSJIS (LPCSTR lpcszSJIS);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordtype">int</span> APIENTRY ToSJIS (LPSTR lpszSJIS, DWORD dwLen);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keywordtype">int</span> APIENTRY ParseInt () <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        VOID APIENTRY Clear ();</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        LPTSTR APIENTRY CreateMemory (ULONGLONG <a class="code hl_define" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        VOID APIENTRY Copy (LPCTSTR lpctszString);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        VOID APIENTRY Add (LPCTSTR lpctszString);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordtype">int</span> APIENTRY Compare (</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            LPCTSTR lpctszString1, LPCTSTR lpctszString2, <span class="keywordtype">int</span> <a class="code hl_define" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        INT APIENTRY Length (LPCTSTR lpctszString) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno"><a class="line" href="../../d2/dd0/classalt_1_1_t_string.html#aeacc802ed539c0328a6d85f831981f60">  212</a></span>        LPTSTR <a class="code hl_variable" href="../../d2/dd0/classalt_1_1_t_string.html#aeacc802ed539c0328a6d85f831981f60">_lptszString</a>;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    };</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>}</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        BOOL APIENTRY FromMultiByte (LPCSTR lpcszSJIS, UINT codePage = CP_ACP);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordtype">int</span> APIENTRY ToSJIS (LPSTR lpszSJIS, DWORD dwLen);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordtype">int</span> APIENTRY ParseInt () <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        VOID APIENTRY Clear ();</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        LPTSTR APIENTRY CreateMemory (ULONGLONG <a class="code hl_define" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        VOID APIENTRY Copy (LPCTSTR lpctszString);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        VOID APIENTRY Add (LPCTSTR lpctszString);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordtype">int</span> APIENTRY Compare (</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            LPCTSTR lpctszString1, LPCTSTR lpctszString2, <span class="keywordtype">int</span> <a class="code hl_define" href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        INT APIENTRY Length (LPCTSTR lpctszString) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="../../d2/dd0/classalt_1_1_t_string.html#aeacc802ed539c0328a6d85f831981f60">  215</a></span>        LPTSTR <a class="code hl_variable" href="../../d2/dd0/classalt_1_1_t_string.html#aeacc802ed539c0328a6d85f831981f60">_lptszString</a>;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    };</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
 <div class="ttc" id="a_array_8hpp_html"><div class="ttname"><a href="../../db/d5e/_array_8hpp.html">Array.hpp</a></div><div class="ttdoc">可変配列に関するクラス</div></div>
 <div class="ttc" id="a_d_b_library_2framework_8h_html_ad2d0f8f6576a9e97489435da43b2682c"><div class="ttname"><a href="../../df/d42/_d_b_library_2framework_8h.html#ad2d0f8f6576a9e97489435da43b2682c">DLL_DECLSPEC</a></div><div class="ttdeci">#define DLL_DECLSPEC</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d42/_d_b_library_2framework_8h_source.html#l00017">framework.h:17</a></div></div>
 <div class="ttc" id="a_thread_test_8cpp_html_aa23c661441688350614bd6a350d2b6ff"><div class="ttname"><a href="../../da/de1/_thread_test_8cpp.html#aa23c661441688350614bd6a350d2b6ff">size</a></div><div class="ttdeci">#define size</div></div>
@@ -198,8 +198,8 @@ $(document).ready(function(){initNavTree('de/d15/_t_string_8h_source.html','../.
 <div class="ttc" id="aclassalt_1_1_t_string_html"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html">alt::TString</a></div><div class="ttdoc">文字列に関するWindowsAPIを集約したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00016">TString.h:17</a></div></div>
 <div class="ttc" id="aclassalt_1_1_t_string_html_a8a3fda12bee865d18b9e2983a402cbff"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html#a8a3fda12bee865d18b9e2983a402cbff">alt::TString::Ctr</a></div><div class="ttdeci">LPCTSTR APIENTRY Ctr() const</div><div class="ttdoc">内部で確保している文字列ポインタを取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00046">TString.h:46</a></div></div>
 <div class="ttc" id="aclassalt_1_1_t_string_html_ae3d0db5a90bfe74e12cc384b72454733"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html#ae3d0db5a90bfe74e12cc384b72454733">alt::TString::Ptr</a></div><div class="ttdeci">LPTSTR APIENTRY Ptr() const</div><div class="ttdoc">内部で確保している文字列ポインタを取得します。</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00042">TString.h:42</a></div></div>
-<div class="ttc" id="aclassalt_1_1_t_string_html_aeacc802ed539c0328a6d85f831981f60"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html#aeacc802ed539c0328a6d85f831981f60">alt::TString::_lptszString</a></div><div class="ttdeci">LPTSTR _lptszString</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00212">TString.h:212</a></div></div>
-<div class="ttc" id="aclassalt_1_1_windows_library_html"><div class="ttname"><a href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a></div><div class="ttdoc">プロジェクト共通基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00017">WindowsLibrary.h:18</a></div></div>
+<div class="ttc" id="aclassalt_1_1_t_string_html_aeacc802ed539c0328a6d85f831981f60"><div class="ttname"><a href="../../d2/dd0/classalt_1_1_t_string.html#aeacc802ed539c0328a6d85f831981f60">alt::TString::_lptszString</a></div><div class="ttdeci">LPTSTR _lptszString</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d15/_t_string_8h_source.html#l00215">TString.h:215</a></div></div>
+<div class="ttc" id="aclassalt_1_1_windows_library_html"><div class="ttname"><a href="../../de/dcb/classalt_1_1_windows_library.html">alt::WindowsLibrary</a></div><div class="ttdoc">プロジェクト共通基底クラス</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d18/_windows_library_8h_source.html#l00033">WindowsLibrary.h:34</a></div></div>
 <div class="ttc" id="aclassalt_1_1skeleton_1_1_array_html"><div class="ttname"><a href="../../db/d6a/classalt_1_1skeleton_1_1_array.html">alt::skeleton::Array</a></div><div class="ttdoc">サイズ可変の配列を具現したクラス</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d5e/_array_8hpp_source.html#l00019">Array.hpp:20</a></div></div>
 <div class="ttc" id="anamespacealt_html"><div class="ttname"><a href="../../d6/d94/namespacealt.html">alt</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dd9/_d_b_library_8h_source.html#l00011">DBLibrary.h:12</a></div></div>
 <div class="ttc" id="apicojson_8h_html_aff57d8c4a4e6df0306c7014e51e9a36f"><div class="ttname"><a href="../../de/d63/picojson_8h.html#aff57d8c4a4e6df0306c7014e51e9a36f">operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const picojson::value &amp;x)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d63/picojson_8h_source.html#l01166">picojson.h:1166</a></div></div>
