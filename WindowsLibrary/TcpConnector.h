@@ -21,7 +21,7 @@ namespace alt
 		//! @param lpctszAcceptIPAddress 対向のIPアドレス
 		//! @param wAcceptPort 対向のポート番号
 		APIENTRY TcpConnector(
-			SOCKET socket, LPCTSTR lpctszAcceptIPAddress, u_short wAcceptPort);
+			SOCKET socket, LPCTSTR lpctszAcceptIPAddress, USHORT wAcceptPort);
 
 		//! @brief 受け入れ先のIPアドレスを取得
 		//! @return LPCTSTR 受入先IPアドレス

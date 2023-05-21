@@ -189,8 +189,8 @@ namespace alt
 		//! @return BOOL 変換に成功か否か
 		//! @retval true 成功
 		//! @retval false 失敗
-		//! @description SJIS -> CP_ACP (既定値)
-		//!              UTF-8 -> CP_UTF8
+		//! @note SJIS -> CP_ACP (既定値)
+		//!       UTF-8 -> CP_UTF8
 		BOOL APIENTRY FromMultiByte (LPCSTR lpcszSJIS, UINT codePage = CP_ACP);
 
 		//! @brief SJIS文字列を出力します。

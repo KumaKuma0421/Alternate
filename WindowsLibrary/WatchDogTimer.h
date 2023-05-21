@@ -18,11 +18,13 @@ namespace alt
 	{
 	public:
 		//! @brief コンストラクタ
+		//! @param[in] uPeriod 分解能 for timeBeginPeriod()
 		//! @note  時間になると、イベントで通知します。
 		APIENTRY WatchDogTimer (UINT uPeriod = 1);
 
 		//! @brief コンストラクタ
 		//! @param[in] timeup 時間になると、timeupコールバックで通知します。
+		//! @param[in] uPeriod 分解能 for timeBeginPeriod()
 		APIENTRY WatchDogTimer (skeleton::ITimeup* timeup, UINT uPeriod = 1);
 
 		//! @brief  デストラクタ

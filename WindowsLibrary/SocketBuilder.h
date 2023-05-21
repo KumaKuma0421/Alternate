@@ -26,11 +26,11 @@ namespace alt
 		//! @brief Windowsソケットの使用準備
 		//! @return int
 		//! @retval 0(成功)
-		//! @retval WSASYSNOTREADY(基礎となるネットワーク・サブシステムが、ネットワーク通信の準備ができていません。)
-		//! @retval WSAVERNOTSUPPORTED(要求された Windows ソケット サポートのバージョンは、この特定の Windows ソケット実装では提供されません。)
-		//! @retval WSAEINPROGRESS(ブロッキング Windows ソケット 1.1 操作が進行中です。)
-		//! @retval WSAEPROCLIM(Windows ソケットの実装でサポートされているタスクの数の制限に達しました。)
-		//! @retval WSAEFAULT(lpWSAData パラメーターが有効なポインターではありません。)
+		//! @retval WSASYSNOTREADY (基礎となるネットワーク・サブシステムが、ネットワーク通信の準備ができていません。)
+		//! @retval WSAVERNOTSUPPORTED (要求された Windows ソケット サポートのバージョンは、この特定の Windows ソケット実装では提供されません。)
+		//! @retval WSAEINPROGRESS (ブロッキング Windows ソケット 1.1 操作が進行中です。)
+		//! @retval WSAEPROCLIM (Windows ソケットの実装でサポートされているタスクの数の制限に達しました。)
+		//! @retval WSAEFAULT (lpWSAData パラメーターが有効なポインターではありません。)
 		//! @retval 上記以外は不明なエラー
 		//! @note   WSAStartup関数はこの関数の戻り値で拡張エラーコードを直接返します。WSAGetLastError関数を使用しないでください。
 		int APIENTRY Startup ();

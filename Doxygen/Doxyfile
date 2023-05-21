@@ -48,7 +48,7 @@ PROJECT_NAME           = Alternate
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 30c638a26625fe3d6cc5de0554a6507262dfb377
+PROJECT_NUMBER         = e697dbe9c5997e35395fe158628dd8c5209481da
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
